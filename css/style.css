@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Hanalei+Fill|Indie+Flower|Kirang+Haerang|Oswald');
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: gray;
+	font-size: 18px;
+	font-family: 'Indie Flower', cursive;
+}
+
+/* Шапка */
+header {
+	padding-top: 10px;
+	min-height: 135px;
+	position: relative;
+	margin-bottom: 50px;
+}
+
+.logo {
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	margin-left: -62px;
+}
+
+.phone {
+
+	float: left;
+	padding: 31px 0px 0px 0px;
+}
+
+.phone div a {
+	color: #FCB800;
+	text-decoration: none; 
+	font-size: 22px;
+}
+
+
+.worktime {
+	float: left; 
+	padding: 30px 0px 0px 50px;
+}
+
+.worktime div span {
+	color: #FCB800;
+	font-size: 22px;
+}
+
+.account {
+	float: right;
+	padding: 36px 0px 0px 0px;
+	margin-left: 50px;
+}
+
+.shop {
+	float: right;
+	padding: 18px 0px 0px 0px;
+}
+
+.upperpanel {
+	text-align: center;
+	width: 1300px;
+	margin: 0px auto;
+}
+
+
+.lowerpannel {
+	border: 2px solid #FCB800;
+	border-radius: 5px;
+	height: 100px;
+	margin: 30px auto;
+	width: 1300px;
+	position: relative;
+	min-width: 1000px;
+}
+
+.lowerpannel nav ul {
+	list-style-type: none;
+	text-align: center;
+	font-size: 18px;
+	padding: 8px 0px 0px 0px;
+}
+
+.lowerpannel nav ul li {
+	display: inline-block;
+	padding: 0px 35px;
+	text-align: center;
+	margin: 0px 4px;
+}
+
+
+.menu_image {
+	height: 59px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+
+.lowerpannel nav ul li a {
+	text-align: center;
+	text-decoration: none;
+	color: WHITE;
+}
+
+.lowerpannel nav ul li a:hover {
+	color: #FCB800;
+}
+
+.clear {
+	clear: both;
+}
+
+/*Баннер */
+
+.center {
+	margin: 0px auto;
+}
+
+.banner {
+	width: 1400px;
+	height: 550px;
+	margin: 0px auto;
+	background: url('../img/pizza1.jpg') no-repeat;
+	border: 1px solid black;
+}
+
+.text-banner {
+	margin-top: 75px;
+	margin-left: 135px; 
+	
+}
+
+.text-banner p {
+	line-height: 50px;
+}
+
+.text-banner p:not(:last-child) {
+	font-size: 40px;
+	color: #FCB800;
+}
+
+.text-banner p:last-child {
+	font-size: 25px;
+	color: white;
+}
+
+.button-banner {
+	margin: 45px 0px 0px 135px;
+}
+
+.button-banner button {
+	background: black;
+	color: white;
+	text-transform: uppercase;
+	height: 60px;
+	border: 2px solid #FCB800;
+	width: 190px;
+	transition: all .3s;
+	border-radius: 5px;
+	font-size: 20px;
+}
+
+.button-banner button:hover {
+	background: #FCB800;
+	color: black;
+	cursor: pointer;
+}
+
+/* Content */
+
+.content {
+	width: 1155px;
+	margin: 0px auto;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.content h2 {
+	margin-bottom: 32px;
+	color: white;
+	font-size: 37px;
+}
+
+aside div, main div {
+	width: 345px;
+	margin-bottom: 45px;
+	background: black;
+}
+
+
+aside div p:not(:last-of-type), aside div p:not(:last-of-type) {
+	color: white;
+	margin-top: 15px;
+}
+
+aside div p:last-of-type, aside div p:last-of-type {
+	color: #FCB800;
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+
+aside div button, main div button{
+	width: 300px;
+	height: 65px;
+	border: 2px solid #FCB800;
+	border-radius: 5px;
+	background: black;
+	color: white;
+	font-size: 25px;
+	margin-bottom: 20px;
+	transition: all .3s;
+}
+
+aside div button:hover, main div button:hover {
+	background: #FCB800;
+	color: black;
+	cursor: pointer;
+}
+
+aside div a, main div a {
+	color: white;
+}
+
+aside div a:hover, main div a:hover {
+	text-decoration: none;
+}
+
+
+.content-left {
+	float: left;
+}
+
+.content-right {
+	float: right;
+}
+
+main {
+	margin-left: 405px;
+}
+
+
+
+
