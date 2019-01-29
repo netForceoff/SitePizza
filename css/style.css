@@ -190,8 +190,8 @@ aside div, main div {
 	background: black;
 	border-radius: 5px;
 }
-
-aside div img, main div img {
+/*Поправить закругление у картики снизу
+*/aside div img, main div img {
 	border-radius: 5px;
 }
 
@@ -243,7 +243,24 @@ aside div a:hover, main div a:hover {
 }
 
 main {
-	margin-left: 405px;
+	margin: 0px 0px 50px 405px;
+}
+
+.watching-all {
+	color: white;
+	text-decoration-style: dashed;
+	text-decoration-color:  #FCB800;
+	font-size: 25px;
+	display: block;
+	margin-bottom: 110px;
+}
+
+.watching-all:hover {
+	text-decoration: none;
+}
+
+.content h2:nth-child(2) {
+	margin-top: 110px;
 }
 
 
