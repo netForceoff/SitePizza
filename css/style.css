@@ -188,15 +188,20 @@ aside div, main div {
 	width: 345px;
 	margin-bottom: 45px;
 	background: black;
+	border-radius: 5px;
+}
+
+aside div img, main div img {
+	border-radius: 5px;
 }
 
 
-aside div p:not(:last-of-type), aside div p:not(:last-of-type) {
+aside div p:not(:last-of-type), main div p:not(:last-of-type) {
 	color: white;
 	margin-top: 15px;
 }
 
-aside div p:last-of-type, aside div p:last-of-type {
+aside div p:last-of-type, main div p:last-of-type {
 	color: #FCB800;
 	font-size: 25px;
 	margin-bottom: 20px;
