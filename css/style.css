@@ -8,6 +8,7 @@ body {
 	background: gray;
 	font-size: 18px;
 	font-family: 'Indie Flower', cursive;
+	color: white;
 }
 
 /* Шапка */
@@ -102,22 +103,19 @@ header {
 .lowerpannel nav ul li a {
 	text-align: center;
 	text-decoration: none;
-	color: WHITE;
+	color: white;
 }
 
 .lowerpannel nav ul li a:hover {
 	color: #FCB800;
 }
 
+
 .clear {
 	clear: both;
 }
 
 /*Баннер */
-
-.center {
-	margin: 0px auto;
-}
 
 .banner {
 	width: 1400px;
@@ -127,7 +125,7 @@ header {
 	border: 1px solid black;
 }
 
-.text-banner {
+.text-banner, .text-banner-second {
 	margin-top: 75px;
 	margin-left: 135px; 
 	
@@ -138,13 +136,13 @@ header {
 }
 
 .text-banner p:not(:last-child) {
-	font-size: 40px;
+	font-size: 38px;
 	color: #FCB800;
+	letter-spacing: 2px;
 }
 
 .text-banner p:last-child {
 	font-size: 25px;
-	color: white;
 }
 
 .button-banner {
@@ -153,7 +151,6 @@ header {
 
 .button-banner button {
 	background: black;
-	color: white;
 	text-transform: uppercase;
 	height: 60px;
 	border: 2px solid #FCB800;
@@ -161,6 +158,7 @@ header {
 	transition: all .3s;
 	border-radius: 5px;
 	font-size: 20px;
+	color: white;
 }
 
 .button-banner button:hover {
@@ -169,19 +167,37 @@ header {
 	cursor: pointer;
 }
 
+.banner:last-of-type {
+	margin-top: -55px;
+	background: url(../img/баннер2.jpg);
+	background-size: cover;
+	margin-bottom: 140px;
+}
+
+.text-banner-second h1{
+	color: #FCB800;
+	font-size: 40px;
+	letter-spacing: 5px;
+}
+
+.text-banner-second p {
+	font-size: 25px;
+	line-height: 30px;
+}
+
 /* Content */
 
 .content {
 	width: 1155px;
 	margin: 0px auto;
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 40px;
 }
 
 .content h2 {
 	margin-bottom: 32px;
-	color: white;
 	font-size: 37px;
+	letter-spacing: 3px;
 }
 
 aside div, main div {
@@ -190,14 +206,13 @@ aside div, main div {
 	background: black;
 	border-radius: 5px;
 }
-/*Поправить закругление у картики снизу
-*/aside div img, main div img {
-	border-radius: 5px;
+
+aside div img, main div img {
+	border-radius: 5px 5px 0px 0px;
 }
 
 
 aside div p:not(:last-of-type), main div p:not(:last-of-type) {
-	color: white;
 	margin-top: 15px;
 }
 
@@ -213,10 +228,10 @@ aside div button, main div button{
 	border: 2px solid #FCB800;
 	border-radius: 5px;
 	background: black;
-	color: white;
 	font-size: 25px;
 	margin-bottom: 20px;
 	transition: all .3s;
+	color: white;
 }
 
 aside div button:hover, main div button:hover {
@@ -228,6 +243,7 @@ aside div button:hover, main div button:hover {
 aside div a, main div a {
 	color: white;
 }
+
 
 aside div a:hover, main div a:hover {
 	text-decoration: none;
@@ -247,12 +263,12 @@ main {
 }
 
 .watching-all {
-	color: white;
 	text-decoration-style: dashed;
 	text-decoration-color:  #FCB800;
 	font-size: 25px;
 	display: block;
-	margin-bottom: 110px;
+	margin-bottom: 95px;
+	color: white;
 }
 
 .watching-all:hover {
@@ -263,6 +279,147 @@ main {
 	margin-top: 110px;
 }
 
+/*Content after 2 banner`s */
 
+.content-center {
+	margin-top: -10px;
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.content-text {
+	width: 470px;
+	height: 415px;
+	background: black;
+	box-sizing: border-box;
+	border-radius: 0px 5px 5px 0px;
+}
+.content-text div {
+	text-align: left;
+	margin: 100px 0px 0px 70px;
+	font-size: 25px;
+}
+
+.content-text div p span {
+	color: #FCB800;
+	font-weight: bold;
+}
+
+.content-text div button {
+	margin-top: 40px;
+	height: 60px;
+	width: 300px;
+	background: black;
+	border: 2px solid #FCB800;
+	font-size: 20px;
+	border-radius: 5px;
+	transition: all .3s;
+	letter-spacing: 2px;
+	color: white;
+}
+
+.content-text div button:hover {
+	color: black;
+	background: #FCB800;
+	cursor: pointer;
+}
+
+/*footer*/
+
+footer {
+	margin: 0px auto;
+	margin-top: 250px;
+	width: 1400px;
+	overflow: hidden;
+	position: relative;
+}
+
+ .footer-contacts, .footer-worktime {
+	float: right;
+}
+
+.footer-menu, .payment-system {
+	float: left;
+}
+
+.footer-logo {
+	position: absolute;
+	left: 640px;
+}
+
+.footer-menu {
+
+	margin-right: 90px;
+}
+
+.footer-menu nav ul {
+	list-style-type: none;
+}
+
+.footer-menu nav ul li:not(:first-child){
+	line-height: 30px;
+}
+
+.footer-menu nav ul li a {
+	text-decoration: none;
+	font-size: 15px;
+	transition: color .4s;
+}
+
+
+.footer-menu nav ul li a:link {
+	color: white;
+}
+/*Разобраться с подчеркиванием */
+.footer-menu nav ul li a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+.footer-menu nav ul li a:hover {
+	color: #FCB800;
+	text-decoration: underline;
+}
+
+.footer-worktime {
+	margin-left: 80px;
+}
+
+.payment-system {
+	font-size: 15px;
+}
+
+.payment-system p {
+	margin-bottom: 15px;
+}
+
+.payment-system div img{
+	margin: 0px 0px 7px 6px;
+}
+
+.contacts-number p:first-child {
+	color: #FCB800;
+	font-size: 25px;
+}
+
+.contacts-number p, .contacts-country p, .worktime-time p, .worktime-address p:last-child {
+	font-size: 15px;
+	line-height: 25px;
+}
+
+.contacts-number, .worktime-time {
+	margin-bottom: 25px;
+}
+
+.contacts-country p span, .worktime-time p span {
+	font-size: 22px;
+	color: #FCB800;
+}
+
+.worktime-address p:first-child {
+	color: #FCB800;
+	font-size: 20px;
+	line-height: 24px;
+}
 
 
