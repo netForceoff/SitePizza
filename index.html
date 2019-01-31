@@ -4,16 +4,17 @@
 	<meta charset="UTF-8">
 	<title>Наша пицца</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 <body>
 	<header>
 		<div class="upperpanel">
 			<div class="phone">
 				<div>
-					<a href="#">(8029) 222-22-14</a>
+					<a class="phone-number" href="#">(8029) 222-22-14</a>
 				</div>
-				<div>
-					Заказать звонок
+				<div >
+					<a class="phone-text" href="#">Заказать звонок</a>
 				</div>
 			</div>
 			<div class="worktime">
@@ -42,7 +43,7 @@
 				<ul>
 					<li><a id="pizza" href="#">
 						<div class="menu_image">
-							<img src="img/pizza.png">
+							<img class="img_menu" src="img/pizza.png">
 						</div>
 						<div class="menu_name">
 							Пиццы
@@ -50,7 +51,7 @@
 					</a></li>
 					<li><a id = "roll" href="#">
 						<div class="menu_image">
-							<img src="img/roll.png">
+							<img class="img_menu" src="img/roll.png">
 						</div>
 						<div class="menu_name">
 							Роллы
@@ -58,7 +59,7 @@
 					</a></li>
 					<li><a id="snaks" href="#">
 						<div class="menu_image">
-							<img src="img/zakuski.png" alt="">
+							<img class="img_menu" src="img/zakuski.png" alt="">
 						</div>
 						<div class="menu_name">
 							Закуски
@@ -66,7 +67,7 @@
 					</a></li>
 					<li><a id="soup" href="#">
 						<div class="menu_image">
-							<img src="img/soup.png" alt="">
+							<img class="img_menu" src="img/soup.png" alt="">
 						</div>	
 						<div class="menu_name">
 							Супы
@@ -74,7 +75,7 @@
 					</a></li>
 					<li><a id="kombo" href="#">
 						<div class="menu_image">
-							<img src="img/kombo.png" alt="">
+							<img class="img_menu" src="img/kombo.png" alt="">
 						</div>
 						<div class="menu_name">
 							Комбо обеды
@@ -82,7 +83,7 @@
 						</a></li>
 					<li><a id="desert" href="#">
 						<div class="menu_image">
-							<img src="img/desert.png" alt="">
+							<img class="img_menu" src="img/desert.png" alt="">
 						</div>
 						<div class="menu_name">
 							Десерты
@@ -90,13 +91,13 @@
 						</a></li>
 					<li><label for="drink"></label><a id="drink" href="#">
 						<div class="menu_image">
-							<img src="img/drink.png" alt="">
+							<img class="img_menu" src="img/drink.png" alt="">
 						</div>
 						<div class="menu_name">Напитки</div>
 					</a></li>
 					<li><label for="sous"></label><a id="sous" href="#">
 						<div class="menu_image">
-							<img src="img/sous.png" alt="">
+							<img class="img_menu" src="img/sous.png" alt="">
 						</div>
 						<div class="menu_name">
 							Соусы
@@ -107,6 +108,7 @@
 		</div>
 	</header>
 	<section class="banner">
+		<img class="bazilik" src="img/bazilik.png" alt="">
 		<div class="text-banner">
 			<p>Бонусная программа "Наша пицца":</p>
 			<p>возвращаем 10% от заказа</p>
@@ -119,12 +121,14 @@
 	<div class="content">
 				<h2>Популярные пиццы</h2>
 		<aside class="content-left">
+			<img class="olives" src="img/olivki.png" alt="">
 			<div>
 				<img src="img/1.jpg" alt="">
 				<p>Пицца</p>
 				<p>"С грибами"</p>
 				<button> 200 руб.</button>
 				<a href="#">Быстрый заказ</a>
+				<img class="flour" src="img/muka.png" alt="">
 			</div>
 			<div>
 				<img src="img/2.jpg" alt="">
@@ -148,9 +152,11 @@
 				<p>"Маргарита"</p>
 				<button>280 руб.</button>
 				<a href="#">Быстрый заказ</a>
+				<img class="salad" src="img/salat.png" alt="">
 			</div>
 		</aside>
 		<main>
+			<img class="mushrooms" src="img/griby.png" alt="">
 			<div>
 				<img src="img/5.jpg" alt="">
 				<p>Пицца</p>
@@ -175,6 +181,7 @@
 				<p>"Калифорния"</p>
 				<button>260 руб.</button>
 				<a href="#">Быстрый заказ</a>
+				<img class="salad-second" src="img/salat (1).png" alt="">
 			</div>
 		</aside>
 		<aside class="content-right">
@@ -197,11 +204,11 @@
 		</main>
 		<a class="watching-all" href="#">Смотреть все</a>
 	</div>
-	<section class="banner">
+	<section class="banner-second">
 		<div class="text-banner-second">
 			<h1>Горячая НОВИНКА!</h1>
 			<p>Быстрые и сытные Комбо-обеды</p>
-			<p>с бесплатной доставкой в офис и на дом</p>
+			<p><strong>с бесплатной доставкой в офис и на дом</strong></p>
 			<p>с 11:00 до 15:00. Спешите попробовать!</p>
 		</div>
 		<div class="button-banner">
@@ -210,6 +217,7 @@
 	</section>
 	<div class="content">
 		<h2>Выгодный заказ</h2>
+		<img class="spoon" src="img/lozhka.png" alt="">
 		<div class="content-center">
 			<div class="content-image">
 				<img src="img/bonus1.png" alt="">
@@ -241,6 +249,10 @@
 		<div class="footer-logo">
 			<img src="img/logo.png" alt="">
 		</div>
+		<div class="social">
+				<img src="img/instagram.png" alt="">
+				<img src="img/vkontakte.png" alt="">
+			</div>
 		<div class="footer-menu">
 			<nav>
 				<ul>
@@ -248,7 +260,7 @@
 					<li><a href="#">Оплата и доставка</a></li>
 					<li><a href="#">Бонусная программа</a></li>
 					<li><a href="#">О компании</a></li>
-					<li><a href="#">Связаться с руководством</a></li>
+					<li><a class="active" href="#">Связаться с руководством</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
 			</nav>
@@ -289,5 +301,31 @@
 			</div>
 		</div>
 	</footer>
+	<section class="footer-licence">
+		<div class="organization">
+			<p>ООО “Вкусно и легко”, Гос. регистрация от 17.03.2010 УНП: 290949615</p>
+			<p>Администрацией Московского р-на г. Бреста. Зарегестрирован в Торговом реестре РБ 05.02.2018</p>
+		</div>
+		<div class="licence">
+			<p>&copy; 2011-2019 Наша Пицца. Все права защищены.</p>
+		</div>
+	</section>
+	<script type="text/javascript">
+		let icons = document.querySelectorAll('.img_menu');
+		console.log(icons);
+		let arrayWithImg = ['img/pizza2.png', 'img/roll2.png', 'img/zakuski2.png', 'img/soup2.png', 'img/kombo2.png', 'img/desert2.png', 'img/drink2.png', 'img/sous2.png'];
+
+		for (let i = 0; i < icons.length; i++) {
+			icons[i].addEventListener('mouseover', () => {
+				this.src = arrayWithImg[i];
+			});
+		}
+
+		/*icons.forEach((elem, idnex) => {
+			elem.addEventListener('mouseover', () => {
+				this.src = arrayWithImg[idnex];
+			});
+		});*/
+	</script>
 </body>
 </html>

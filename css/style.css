@@ -1,14 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Hanalei+Fill|Indie+Flower|Kirang+Haerang|Oswald');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Sarabun');
 * {
 	margin: 0;
 	padding: 0;
 }
 
 body {
-	background: gray;
+	background: url(../img/background.jpg) no-repeat center center;
 	font-size: 18px;
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Sarabun', sans-serif;
 	color: white;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 /* Шапка */
@@ -27,21 +31,44 @@ header {
 }
 
 .phone {
-
+	letter-spacing: 1px;
 	float: left;
 	padding: 31px 0px 0px 0px;
 }
 
-.phone div a {
+
+.phone-number {
 	color: #FCB800;
 	text-decoration: none; 
 	font-size: 22px;
 }
 
+.phone-number:hover {
+	text-decoration: underline;
+}
+
+.phone-text {
+	font-size: 15px;
+	padding: 5px;
+	color: white;
+	text-decoration: none;
+	transition: color .4s;
+}
+
+.phone-text:hover {
+	color: #FCB800;
+}
+
+
+
 
 .worktime {
+	font-size: 15px;
 	float: left; 
 	padding: 30px 0px 0px 50px;
+	margin-top: 5px;
+	margin-left: 5px;
+	letter-spacing: 1px;
 }
 
 .worktime div span {
@@ -123,6 +150,13 @@ header {
 	margin: 0px auto;
 	background: url('../img/pizza1.jpg') no-repeat;
 	border: 1px solid black;
+	position: relative;
+}
+
+.bazilik {
+	position: absolute;
+	top: -65px;
+	left: -80px;
 }
 
 .text-banner, .text-banner-second {
@@ -132,17 +166,19 @@ header {
 }
 
 .text-banner p {
-	line-height: 50px;
+	
 }
 
 .text-banner p:not(:last-child) {
 	font-size: 38px;
 	color: #FCB800;
 	letter-spacing: 2px;
+	line-height: 55px;
 }
 
 .text-banner p:last-child {
 	font-size: 25px;
+	line-height: 50px;
 }
 
 .button-banner {
@@ -167,22 +203,28 @@ header {
 	cursor: pointer;
 }
 
-.banner:last-of-type {
-	margin-top: -55px;
+.banner-second {
+	width: 1400px;
+	height: 550px;
+	margin: 0px auto;
+	margin-top: -35px;
 	background: url(../img/баннер2.jpg);
 	background-size: cover;
 	margin-bottom: 140px;
+	border: 1px solid black;
 }
 
 .text-banner-second h1{
 	color: #FCB800;
 	font-size: 40px;
 	letter-spacing: 5px;
+	margin-bottom: 10px;
 }
 
 .text-banner-second p {
 	font-size: 25px;
 	line-height: 30px;
+	box-shadow: inherit 2px 2px 0px 3px #9D9E9D;
 }
 
 /* Content */
@@ -192,6 +234,7 @@ header {
 	margin: 0px auto;
 	text-align: center;
 	margin-top: 40px;
+	position: relative;
 }
 
 .content h2 {
@@ -205,6 +248,7 @@ aside div, main div {
 	margin-bottom: 45px;
 	background: black;
 	border-radius: 5px;
+	position: relative;
 }
 
 aside div img, main div img {
@@ -229,7 +273,7 @@ aside div button, main div button{
 	border-radius: 5px;
 	background: black;
 	font-size: 25px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	transition: all .3s;
 	color: white;
 }
@@ -242,6 +286,9 @@ aside div button:hover, main div button:hover {
 
 aside div a, main div a {
 	color: white;
+	display: block;
+	margin-bottom: 10px;
+
 }
 
 
@@ -252,6 +299,45 @@ aside div a:hover, main div a:hover {
 
 .content-left {
 	float: left;
+	position: relative;
+}
+
+.olives {
+	position: absolute;
+	top: -100px;
+	z-index: -1;
+	left: 190px;
+}
+
+.mushrooms {
+	position: absolute;
+	left: 120px;
+	z-index: -1;
+}
+
+.flour {
+	position: absolute;
+	left: -450px;
+	top: 200px;
+}
+
+.salad {
+	position: absolute;
+	top: 150px;
+	left: 350px;
+}
+
+.salad-second {
+	position: absolute;
+	left: -400px;
+	top: 200px;
+}
+
+.spoon {
+	position: absolute;
+	left: 120px;
+	top: -105px;
+	z-index: -1;
 }
 
 .content-right {
@@ -259,8 +345,10 @@ aside div a:hover, main div a:hover {
 }
 
 main {
+	position: relative;
 	margin: 0px 0px 50px 405px;
 }
+
 
 .watching-all {
 	text-decoration-style: dashed;
@@ -348,8 +436,7 @@ footer {
 }
 
 .footer-menu {
-
-	margin-right: 90px;
+	margin-right: 100px;
 }
 
 .footer-menu nav ul {
@@ -360,25 +447,25 @@ footer {
 	line-height: 30px;
 }
 
-.footer-menu nav ul li a {
+.footer-menu nav ul li a:not(.active) {
 	text-decoration: none;
 	font-size: 15px;
 	transition: color .4s;
-}
-
-
-.footer-menu nav ul li a:link {
 	color: white;
 }
+
+
 /*Разобраться с подчеркиванием */
-.footer-menu nav ul li a:visited {
-	text-decoration: none;
-	color: white;
-}
 
 .footer-menu nav ul li a:hover {
 	color: #FCB800;
 	text-decoration: underline;
+}
+
+.active {
+	color: #FCB800;
+	font-size: 15px;
+	text-decoration: none;
 }
 
 .footer-worktime {
@@ -390,16 +477,16 @@ footer {
 }
 
 .payment-system p {
-	margin-bottom: 15px;
+	margin: 0px 0px 20px 15px;
 }
 
 .payment-system div img{
-	margin: 0px 0px 7px 6px;
+	margin: 0px 0px 10px 15px;
 }
 
 .contacts-number p:first-child {
 	color: #FCB800;
-	font-size: 25px;
+	font-size: 20px;
 }
 
 .contacts-number p, .contacts-country p, .worktime-time p, .worktime-address p:last-child {
@@ -412,7 +499,7 @@ footer {
 }
 
 .contacts-country p span, .worktime-time p span {
-	font-size: 22px;
+	font-size: 20px;
 	color: #FCB800;
 }
 
@@ -420,6 +507,34 @@ footer {
 	color: #FCB800;
 	font-size: 20px;
 	line-height: 24px;
+}
+
+.social {
+	position: absolute;
+	left: 670px;
+	top: 110px
+}
+
+.social img:first-child {
+	margin-right: 10px;
+}
+
+.footer-licence {
+	width: 1400px;
+	margin: 0px auto;
+	margin-top: 50px;
+	height: 60px;
+}
+
+.organization {
+	float: left;
+	font-size: 11px;
+}
+
+.licence {
+	float: right;
+	font-size: 11px;
+	margin-top: 15px;
 }
 
 
