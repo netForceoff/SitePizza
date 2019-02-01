@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Sarabun');
 * {
+	-ms-margin: 0;
 	margin: 0;
+	-ms-padding: 0px 35px;
 	padding: 0;
 }
 
 body {
 	background: url(../img/background.jpg) no-repeat center center;
+	-ms-background: url(../img/background.jpg) no-repeat center center;
+	-moz-background: url(../img/background.jpg) no-repeat center center;
 	font-size: 18px;
 	font-family: 'Sarabun', sans-serif;
 	color: white;
@@ -18,6 +22,7 @@ body {
 
 /* Шапка */
 header {
+	-ms-padding-top: 10px;
 	padding-top: 10px;
 	min-height: 135px;
 	position: relative;
@@ -34,25 +39,41 @@ header {
 .phone {
 	letter-spacing: 1px;
 	float: left;
+	-moz-float: left;
+	-ms-float: left;
+	-ms-padding: 31px 0px 0px 0px;
 	padding: 31px 0px 0px 0px;
 }
 
 
 .phone-number {
 	color: #FCB800;
-	text-decoration: none; 
+	text-decoration: none;
+	-ms-text-decoration: none;
+	-moz-text-decoration: none;
+	-webkit-text-decoration: none;
+	-o-text-decoration: none;
 	font-size: 22px;
 }
 
 .phone-number:hover {
 	text-decoration: underline;
+	-ms-text-decoration: underline;
+	-moz-text-decoration: underline;
+	-webkit-text-decoration: underline;
+	-o-text-decoration: underline;
 }
 
 .phone-text {
 	font-size: 15px;
+	-ms-padding: 5px;
 	padding: 5px;
 	color: white;
 	text-decoration: none;
+	-ms-text-decoration: none;
+	-moz-text-decoration: none;
+	-webkit-text-decoration: none;
+	-o-text-decoration: none;
 	transition: color .4s;
 }
 
@@ -62,7 +83,10 @@ header {
 
 .worktime {
 	font-size: 15px;
+	-moz-float: left;
+	-ms-float: left;
 	float: left; 
+	-ms-padding: 30px 0px 0px 50px;
 	padding: 30px 0px 0px 50px;
 	margin-top: 5px;
 	margin-left: 5px;
@@ -75,21 +99,30 @@ header {
 }
 
 .account {
+	-moz-float: right;
+	-ms-float: right;
 	float: right;
+	-ms-padding: 36px 0px 0px 0px;
 	padding: 36px 0px 0px 0px;
 	margin-left: 50px;
+	-ms-display: flex;
 	display: flex;
 	font-size: 15px;
 	line-height: 24px;
 }
 
 .shop {
+	-moz-float: right;
+	-ms-float: right;
 	float: right;
+	-ms-padding: 18px 0px 0px 0px;
 	padding: 18px 0px 0px 0px;
 	font-size: 15px;
 }
 
 .shop div:first-of-type {
+	-ms-margin-top: 10px;
+	-ms-margin-bottom: 10px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
@@ -100,12 +133,15 @@ header {
 }
 
 .shop img, .account img {
+	-moz-float: left;
+	-ms-float: left;
 	float: left;
 }
 
 .upperpanel {
 	text-align: center;
 	width: 1300px;
+	-ms-margin: 0px auto;
 	margin: 0px auto;
 }
 
@@ -114,6 +150,7 @@ header {
 	border: 2px solid #FCB800;
 	border-radius: 5px;
 	height: 100px;
+	-ms-margin: 30px auto;
 	margin: 30px auto;
 	width: 1300px;
 	position: relative;
@@ -124,19 +161,24 @@ header {
 	list-style-type: none;
 	text-align: center;
 	font-size: 18px;
+	-ms-padding: 8px 0px 0px 0px;
 	padding: 8px 0px 0px 0px;
 }
 
 .lowerpannel nav ul li {
+	-ms-display: inline-block;
 	display: inline-block;
+	-ms-padding: 0px 35px;
 	padding: 0px 35px;
 	text-align: center;
+	-ms-margin: 0px 8px;
 	margin: 0px 8px;
 }
 
 
 .menu_image {
 	height: 59px;
+	-ms-display: table-cell;
 	display: table-cell;
 	vertical-align: middle;
 }
@@ -145,16 +187,24 @@ header {
 
 .lowerpannel nav ul li a {
 	text-align: center;
+	-ms-text-decoration: none;
+	-moz-text-decoration: none;
+	-webkit-text-decoration: none;
+	-o-text-decoration: none;
 	text-decoration: none;
 	color: white;
 }
 
 #pizza div img:hover {
+	-ms-background: url('../img/pizza2.png');
+	-moz-background: url('../img/pizza2.png');
 	background: url('../img/pizza2.png');
 }
 
 
 .clear {
+	-ms-clear: both;
+	-webkit-clear: both;
 	clear: both;
 }
 
@@ -163,7 +213,10 @@ header {
 .banner {
 	width: 1400px;
 	height: 550px;
+	-ms-margin: 0px auto;
 	margin: 0px auto;
+	-ms-background: url('../img/pizza1.jpg') no-repeat;
+	-moz-background: url('../img/pizza1.jpg') no-repeat;
 	background: url('../img/pizza1.jpg') no-repeat;
 	border: 1px solid black;
 	position: relative;
@@ -176,7 +229,9 @@ header {
 }
 
 .text-banner, .text-banner-second {
+	-ms-margin-top: 75px;
 	margin-top: 75px;
+	-ms-margin-left: 135px;
 	margin-left: 135px; 
 	
 }
@@ -194,10 +249,13 @@ header {
 }
 
 .button-banner {
+	-ms-margin: 45px 0px 0px 135px;
 	margin: 45px 0px 0px 135px;
 }
 
 .button-banner button {
+	-ms-background:  black;
+	-moz-background:  black;
 	background: black;
 	text-transform: uppercase;
 	height: 60px;
@@ -210,6 +268,8 @@ header {
 }
 
 .button-banner button:hover {
+	-ms-background:  #FCB800;
+	-moz-background:  #FCB800;
 	background: #FCB800;
 	color: black;
 	cursor: pointer;
@@ -218,10 +278,15 @@ header {
 .banner-second {
 	width: 1400px;
 	height: 550px;
+	-ms-margin: 0px auto;
+	-ms-margin-top: -35px;
 	margin: 0px auto;
 	margin-top: -35px;
+	-ms-background: url(../img/баннер2.jpg);
+	-moz-background: url(../img/баннер2.jpg);
 	background: url(../img/баннер2.jpg);
 	background-size: cover;
+	-ms-margin-bottom: 140px;
 	margin-bottom: 140px;
 	border: 1px solid black;
 }
@@ -230,6 +295,7 @@ header {
 	color: #FCB800;
 	font-size: 40px;
 	letter-spacing: 5px;
+	-ms-margin-bottom: 10px;
 	margin-bottom: 10px;
 }
 
@@ -243,13 +309,16 @@ header {
 
 .content {
 	width: 1155px;
+	-ms-margin: 0px auto;
 	margin: 0px auto;
 	text-align: center;
+	-ms-margin-top: 40px;
 	margin-top: 40px;
 	position: relative;
 }
 
 .content h2 {
+	-ms-margin-bottom: 32px;
 	margin-bottom: 32px;
 	font-size: 37px;
 	letter-spacing: 3px;
@@ -257,7 +326,10 @@ header {
 
 aside div, main div {
 	width: 345px;
+	-ms-margin-bottom: 45px;
 	margin-bottom: 45px;
+	-ms-background: black;
+	-moz-background: black;
 	background: black;
 	border-radius: 5px;
 	position: relative;
@@ -270,12 +342,14 @@ aside div img, main div img {
 
 
 aside div p:not(:last-of-type), main div p:not(:last-of-type) {
+	-ms-margin-top: 15px;
 	margin-top: 15px;
 }
 
 aside div p:last-of-type, main div p:last-of-type {
 	color: #FCB800;
 	font-size: 25px;
+	-ms-margin-bottom: 20px;
 	margin-bottom: 20px;
 }
 
@@ -284,14 +358,19 @@ aside div button, main div button{
 	height: 65px;
 	border: 2px solid #FCB800;
 	border-radius: 5px;
+	-ms-background: black;
+	-moz-background: black;
 	background: black;
 	font-size: 25px;
+	-ms-margin-bottom: 10px;
 	margin-bottom: 10px;
 	transition: all .3s;
 	color: white;
 }
 
 aside div button:hover, main div button:hover {
+	-ms-background: #FCB800;
+	-moz-background: #FCB800;
 	background: #FCB800;
 	color: black;
 	cursor: pointer;
@@ -299,18 +378,26 @@ aside div button:hover, main div button:hover {
 
 aside div a, main div a {
 	color: white;
+	-ms-display: block;
 	display: block;
+	-ms-margin-bottom: 10px;
 	margin-bottom: 10px;
 
 }
 
 
 aside div a:hover, main div a:hover {
+	-ms-text-decoration: none;
+	-moz-text-decoration: none;
+	-webkit-text-decoration: none;
+	-o-text-decoration: none;
 	text-decoration: none;
 }
 
 
 .content-left {
+	-moz-float: left;
+	-ms-float: left;
 	float: left;
 	position: relative;
 }
@@ -326,6 +413,8 @@ aside div a:hover, main div a:hover {
 .retractable {
 	width: 345px;
 	height: 0px;
+	-ms-background: black;
+	-moz-background: black;
 	background: black;
 	position: absolute;
 	transition: all .5s;
@@ -339,6 +428,7 @@ aside div a:hover, main div a:hover {
 
 
 .retractable h1 {
+	-ms-margin-top: 10px;
 	margin-top: 10px;
 	font-size: 20px;
 	color: #FCB800;
@@ -358,11 +448,14 @@ aside div a:hover, main div a:hover {
 	line-height: 40px;
 }
 .content-right {
+	-moz-float: right;
+	-ms-float: right;
 	float: right;
 }
 
 main {
 	position: relative;
+	-ms-margin: 0px 405px 50px 405px;
 	margin: 0px 405px 50px 405px;
 }
 
@@ -371,16 +464,23 @@ main {
 	text-decoration-style: dashed;
 	text-decoration-color:  #FCB800;
 	font-size: 25px;
+	-ms-display: block;
 	display: block;
+	-ms-margin-bottom: 95px;
 	margin-bottom: 95px;
 	color: white;
 }
 
 .watching-all:hover {
+	-ms-text-decoration: none;
+	-moz-text-decoration: none;
+	-webkit-text-decoration: none;
+	-o-text-decoration: none;
 	text-decoration: none;
 }
 
 .content h2:nth-child(2) {
+	-ms-margin-top: 110px;
 	margin-top: 110px;
 }
 
@@ -430,20 +530,26 @@ main {
 /*Content after 2 banner`s */
 
 .content-center {
+	-ms-margin-top: -10px;
 	margin-top: -10px;
+	-ms-display: flex;
 	display: flex;
+	-ms-margin-bottom: 50px;
 	margin-bottom: 50px;
 }
 
 .content-text {
 	width: 470px;
 	height: 415px;
+	-ms-background: black;
+	-moz-background: black;
 	background: black;
 	box-sizing: border-box;
 	border-radius: 0px 5px 5px 0px;
 }
 .content-text div {
 	text-align: left;
+	-ms-margin: 100px 0px 0px 70px;
 	margin: 100px 0px 0px 70px;
 	font-size: 25px;
 }
@@ -454,9 +560,12 @@ main {
 }
 
 .content-text div button {
+	-ms-margin-top: 40px;
 	margin-top: 40px;
 	height: 60px;
 	width: 300px;
+	-ms-background: black;
+	-moz-background: black;
 	background: black;
 	border: 2px solid #FCB800;
 	font-size: 20px;
@@ -468,6 +577,8 @@ main {
 
 .content-text div button:hover {
 	color: black;
+	-ms-background: #FCB800;
+	-moz-background: #FCB800;
 	background: #FCB800;
 	cursor: pointer;
 }
@@ -484,7 +595,9 @@ main {
 /*footer*/
 
 footer {
+	-ms-margin: 0px auto;
 	margin: 0px auto;
+	-ms-margin-top: 250px;
 	margin-top: 250px;
 	width: 1400px;
 	overflow: hidden;
@@ -492,10 +605,14 @@ footer {
 }
 
  .footer-contacts, .footer-worktime {
+ 	-moz-float: right;
+	-ms-float: right;
 	float: right;
 }
 
 .footer-menu, .payment-system {
+	-moz-float: left;
+	-ms-float: left;
 	float: left;
 }
 
@@ -505,6 +622,7 @@ footer {
 }
 
 .footer-menu {
+	-ms-margin-right: 100px;
 	margin-right: 100px;
 }
 
@@ -517,6 +635,10 @@ footer {
 }
 
 .footer-menu nav ul li a:not(.active) {
+	-ms-text-decoration: none;
+	-moz-text-decoration: none;
+	-webkit-text-decoration: none;
+	-o-text-decoration: none;
 	text-decoration: none;
 	font-size: 15px;
 	transition: color .4s;
@@ -528,16 +650,25 @@ footer {
 
 .footer-menu nav ul li a:hover {
 	color: #FCB800;
+	-ms-text-decoration: underline;
+	-moz-text-decoration: underline;
+	-webkit-text-decoration: underline;
+	-o-text-decoration: underline;
 	text-decoration: underline;
 }
 
 .active {
 	color: #FCB800;
 	font-size: 15px;
+	-ms-text-decoration: none;
+	-moz-text-decoration: none;
+	-webkit-text-decoration: none;
+	-o-text-decoration: none;
 	text-decoration: none;
 }
 
 .footer-worktime {
+	-ms-margin-left: 80px;
 	margin-left: 80px;
 }
 
@@ -546,10 +677,12 @@ footer {
 }
 
 .payment-system p {
+	-ms-margin: 0px 0px 20px 15px;
 	margin: 0px 0px 20px 15px;
 }
 
 .payment-system div img{
+	-ms-margin: 0px 0px 10px 15px;
 	margin: 0px 0px 10px 15px;
 }
 
@@ -564,6 +697,7 @@ footer {
 }
 
 .contacts-number, .worktime-time {
+	-ms-margin-bottom: 25px;
 	margin-bottom: 25px;
 }
 
@@ -585,24 +719,32 @@ footer {
 }
 
 .social img:first-child {
+	-ms-margin-right: 10px;
 	margin-right: 10px;
 }
 
 .footer-licence {
 	width: 1400px;
+	-ms-margin: 0px auto;
 	margin: 0px auto;
+	-ms-margin-top: 50px;
 	margin-top: 50px;
 	height: 60px;
 }
 
 .organization {
+	-ms-float: left;
+	-moz-float: left;
 	float: left;
 	font-size: 11px;
 }
 
 .licence {
+	-ms-float: right;
+	-moz-float: right;
 	float: right;
 	font-size: 11px;
+	-ms-margin-top: 15px;
 	margin-top: 15px;
 }
 
