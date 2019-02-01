@@ -13,6 +13,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    overflow-x: hidden;
 }
 
 /* Шапка */
@@ -59,9 +60,6 @@ header {
 	color: #FCB800;
 }
 
-
-
-
 .worktime {
 	font-size: 15px;
 	float: left; 
@@ -80,11 +78,29 @@ header {
 	float: right;
 	padding: 36px 0px 0px 0px;
 	margin-left: 50px;
+	display: flex;
+	font-size: 15px;
+	line-height: 24px;
 }
 
 .shop {
 	float: right;
 	padding: 18px 0px 0px 0px;
+	font-size: 15px;
+}
+
+.shop div:first-of-type {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.shop div span {
+	color: #FCB800;
+	font-size: 20px;
+}
+
+.shop img, .account img {
+	float: left;
 }
 
 .upperpanel {
@@ -115,7 +131,7 @@ header {
 	display: inline-block;
 	padding: 0px 35px;
 	text-align: center;
-	margin: 0px 4px;
+	margin: 0px 8px;
 }
 
 
@@ -133,8 +149,8 @@ header {
 	color: white;
 }
 
-.lowerpannel nav ul li a:hover {
-	color: #FCB800;
+#pizza div img:hover {
+	background: url('../img/pizza2.png');
 }
 
 
@@ -162,10 +178,6 @@ header {
 .text-banner, .text-banner-second {
 	margin-top: 75px;
 	margin-left: 135px; 
-	
-}
-
-.text-banner p {
 	
 }
 
@@ -253,6 +265,7 @@ aside div, main div {
 
 aside div img, main div img {
 	border-radius: 5px 5px 0px 0px;
+	cursor: pointer;
 }
 
 
@@ -302,51 +315,55 @@ aside div a:hover, main div a:hover {
 	position: relative;
 }
 
-.olives {
-	position: absolute;
-	top: -100px;
-	z-index: -1;
-	left: 190px;
+.content-right {
+	position: relative;
 }
 
-.mushrooms {
-	position: absolute;
-	left: 120px;
-	z-index: -1;
+.info {
+	position: relative;
 }
 
-.flour {
+.retractable {
+	width: 345px;
+	height: 0px;
+	background: black;
 	position: absolute;
-	left: -450px;
-	top: 200px;
+	transition: all .5s;
+	bottom: -45px;
+	overflow: hidden;
 }
 
-.salad {
-	position: absolute;
-	top: 150px;
-	left: 350px;
+.info img:hover ~ .retractable {
+	height: 220px;
 }
 
-.salad-second {
-	position: absolute;
-	left: -400px;
-	top: 200px;
+
+.retractable h1 {
+	margin-top: 10px;
+	font-size: 20px;
+	color: #FCB800;
 }
 
-.spoon {
-	position: absolute;
-	left: 120px;
-	top: -105px;
-	z-index: -1;
+.retractable p {
+	font-size: 15px;
 }
 
+.retractable p span {
+	color: #FCB800;
+}
+
+.retractable p:last-child {
+	font-size: 15px;
+	color: white;
+	line-height: 40px;
+}
 .content-right {
 	float: right;
 }
 
 main {
 	position: relative;
-	margin: 0px 0px 50px 405px;
+	margin: 0px 405px 50px 405px;
 }
 
 
@@ -366,6 +383,49 @@ main {
 .content h2:nth-child(2) {
 	margin-top: 110px;
 }
+
+/*Предметы на фоне */
+.olives {
+	position: absolute;
+	top: -100px;
+	z-index: -1;
+	left: 190px;
+}
+
+.mushrooms {
+	position: absolute;
+	left: 120px;
+	z-index: -1;
+}
+
+.flour {
+	position: absolute;
+	left: -420px;
+	top: 200px;
+	z-index: -1;
+}
+
+.salad {
+	position: absolute;
+	top: 150px;
+	left: 350px;
+	z-index: -1;
+}
+
+.salad-second {
+	position: absolute;
+	left: -400px;
+	top: 200px;
+	z-index: -1;
+}
+
+.spoon {
+	position: absolute;
+	left: 120px;
+	top: -105px;
+	z-index: -1;
+}
+
 
 /*Content after 2 banner`s */
 
@@ -410,6 +470,15 @@ main {
 	color: black;
 	background: #FCB800;
 	cursor: pointer;
+}
+
+.content-image {
+	position: relative;
+}
+.pig {
+	position: absolute;
+	top: 20px;
+	left: 20px;
 }
 
 /*footer*/
