@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Заказ пиццы</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/stylePizza.css">
+</head>
+<body>
+	<header>
+            <div class="upperpanel">
+                <div class="phone">
+                    <div>
+                        <a class="phone-number" href="#">(8029) 222-22-14</a>
+                    </div>
+                    <div>
+                        <a class="phone-text" href="#">Заказать звонок</a>
+                    </div>
+                </div>
+                <div class="worktime">
+                    <div>Работаем для вас
+				</div>
+                    <div>
+                        с <span>10:00</span>
+                        до <span>23:00</span>
+                    </div>
+                </div>
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="account">
+                    <img src="img/White/30.User.png" alt="">
+                    <div>
+                        <p>Личный</p>
+                        <p>Кабинет</p>
+                    </div>
+                </div>
+                <div class="shop">
+                    <img src="img/White/07.Wallet.png" alt="">
+                    <div>Корзина пуста</div>
+                    <div>
+                        <span>0</span>
+                        бонусных баллов
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="lowerpannel">
+                <nav>
+                    <ul>
+                        <li class="MainMenu">
+                            <a id="pizza" class="forChangeColor" href="#">
+                                <div class="menu_image">
+                                    <img class="img_menu" src="img/pizza.png">
+                                </div>
+                                <div class="menu_name">Пиццы
+						</div>
+                            </a>
+                        </li>
+                        <li class="MainMenu">
+                            <a id="roll" class="forChangeColor" href="#">
+                                <div class="menu_image">
+                                    <img class="img_menu" src="img/roll.png">
+                                </div>
+                                <div class="menu_name">Роллы
+						</div>
+                            </a>
+                        </li>
+                        <li class="MainMenu">
+                            <a id="snaks" class="forChangeColor" href="#">
+                                <div class="menu_image">
+                                    <img class="img_menu" src="img/zakuski.png" alt="">
+                                </div>
+                                <div class="menu_name">Закуски
+						</div>
+                            </a>
+                        </li>
+                        <li class="MainMenu">
+                            <a id="soup" class="forChangeColor" href="#">
+                                <div class="menu_image">
+                                    <img class="img_menu" src="img/soup.png" alt="">
+                                </div>
+                                <div class="menu_name">Супы
+						</div>
+                            </a>
+                        </li>
+                        <li class="MainMenu">
+                            <a id="kombo" class="forChangeColor" href="#">
+                                <div class="menu_image">
+                                    <img class="img_menu" src="img/kombo.png" alt="">
+                                </div>
+                                <div class="menu_name">Комбо обеды
+						</div>
+                            </a>
+                        </li>
+                        <li class="MainMenu">
+                            <a id="desert" class="forChangeColor" href="#">
+                                <div class="menu_image">
+                                    <img class="img_menu" src="img/desert.png" alt="">
+                                </div>
+                                <div class="menu_name">Десерты
+						</div>
+                            </a>
+                        </li>
+                        <li class="MainMenu">
+                            <a id="drink" class="forChangeColor" href="#">
+                                <div class="menu_image">
+                                    <img class="img_menu" src="img/drink.png" alt="">
+                                </div>
+                                <div class="menu_name">Напитки</div>
+                            </a>
+                        </li>
+                        <li class="MainMenu">
+                            <a id="sous" class="forChangeColor" href="#">
+                                <div class="menu_image">
+                                    <img class="img_menu" src="img/sous.png" alt="">
+                                </div>
+                                <div class="menu_name">Соусы
+						</div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+		  <div class="content">
+            <h2>Пиццы</h2>
+            <aside class="content-left">
+            	<div class="scroll-box">
+            		<div class="filter-box">
+            		Фильтры
+            	</div>
+            	<div class="select-box">
+            		<div class="close-box">
+            		</div>
+            	<form action="" method="get">
+            		<div class="filter_head">
+            			<span>СТИКЕР</span>
+            		</div>
+            		<div class="filter_box">
+            			<div class="filter_item">
+            				<input type="checkbox" id = "filter_new" class="checkbox_f">
+            				<label for="filter_new">
+            					Новинка
+            				</label>
+            			</div>
+            			<div class="filter_item">
+            				<input type="checkbox" id = "filter_hit" class="checkbox_f">
+            				<label for="filter_hit">
+            					Хит
+            				</label>
+            			</div>
+            			<div class="filter_item">
+            				<input type="checkbox" id = "filter_kids" class="checkbox_f">
+            				<label for="filter_kids">
+            					Детям
+            				</label>
+            			</div>
+            			<div class="filter_item">
+            				<input type="checkbox" id = "filter_acute" class="checkbox_f">
+            				<label for="filter_acute">
+            					Острое
+            				</label>
+            			</div>
+            		</div>
+            		<div class="desktop">
+            			<div class="filter_head">
+            			<span>ИНГРЕДИЕНТЫ</span>
+            		</div>
+            		<div class="filter_box">
+            			<div class="filter_item">
+            				<input type="checkbox" id = "filter_pineapple" class="checkbox_f">
+            				<label for="filter_pineapple">
+            					Ананас
+            				</label>
+            			</div>
+            			<div class="filter_item">
+            				<input type="checkbox" id = "filter_bacon" class="checkbox_f">
+            				<label for="filter_bacon">
+            					Бекон
+            				</label>
+            			</div>
+            			<div class="filter_item">
+            				<input type="checkbox" id = "filter_boiled_pork" class="checkbox_f">
+            				<label for="filter_boiled_pork">
+            					Буженина
+            				</label>
+            			</div>
+            			<div class="filter_item">
+            				<input type="checkbox" id = "filter_ham" class="checkbox_f">
+            				<label for="filter_ham">
+            					Ветчина
+            				</label>
+            			</div>
+            			<div class="filter_item">
+            				<input type="checkbox" id = "filter_Beef" class="checkbox_f">
+            				<label for="filter_Beef">
+            					Говядина
+            				</label>
+            			</div>
+            			<div class="filter_item">
+            				<input type="checkbox" id = "filter_mushrooms" class="checkbox_f">
+            				<label for="filter_mushrooms">
+            					Грибы
+            				</label>
+            			</div>
+            			<div class="filter_item">
+            				<input type="checkbox" id = "filter_chicken" class="checkbox_f">
+            				<label for="filter_chicken">
+            					Курица
+            				</label>
+            			</div>
+            			<div class="filter_item">
+            				<input type="checkbox" id = "filter_pickled_cucumber" class="checkbox_f">
+            				<label for="filter_pickled_cucumber">Марин.
+            				огурцы
+            				</label>
+            			</div>
+            			<div class="filter_item">
+            				<input type="checkbox" id = "filter_pepperoni" class="checkbox_f">
+            				<label for="filter_pepperoni">
+            					Пепперони
+            				</label>
+            			</div>
+            			<div class="filter_item">
+            				<input type="checkbox" id = "filter_pepper" class="checkbox_f">
+            				<label for="filter_pepper">
+            					Перец "Халапеньо"
+            				</label>
+            			</div>
+            			<div class="filter_item">
+            				<input type="checkbox" id = "filter_sous" class="checkbox_f">
+            				<label for="filter_sous">
+            					соус "Чили"
+            				</label>
+            			</div>
+            			<div class="filter_item">
+            				<input type="checkbox" id = "filter_cheese_dor_blue" class="checkbox_f">
+            				<label for="filter_cheese_dor_blue">
+            					Сыр "Дор блю"
+            				</label>
+            			</div>
+            			<div class="filter_item">
+            				<input type="checkbox" id = "filter_cheese_mocarella" class="checkbox_f">
+            				<label for="filter_cheese_mocarella">
+            					Сыр "Моцарелла"
+            				</label>
+            			</div>
+            			<div class="filter_item">
+            				<input type="checkbox" id = "filter_cheese_parmesan" class="checkbox_f">
+            				<label for="filter_cheese_parmesan">
+            					Сыр "Пармезан"
+            				</label>
+            			</div>
+            			<div class="filter_item">
+            				<input type="checkbox" id = "filter_cheese_chedder" class="checkbox_f">
+            				<label for="filter_cheese_chedder">
+            					Сыр "Чеддер"
+            				</label>
+            			</div>
+            			<div class="filter_item">
+            				<input type="checkbox" id = "filter_tomats" class="checkbox_f">
+            				<label for="filter_tomats">
+            					Томаты
+            				</label>
+            			</div>
+            			<div class="filter_item">
+            				<input type="checkbox" id = "filter_duck" class="checkbox_f">
+            				<label for="filter_duck">
+            					Утка
+            				</label>
+            			</div>
+            			<div class="filter_item">
+            				<input type="checkbox" id = "filter_champignons" class="checkbox_f">
+            				<label for="filter_champignons">
+            					Шампиньоны
+            				</label>
+            			</div>
+            		</div>
+            		</div>
+            		<div class="reset_block">
+            			<button id = "buttonCloseBlock">Сбросить фильтры</button>
+            		</div>
+            	</form>
+            	</div>		
+            	</div>
+            	
+                <img class="olives" src="img/olivki.png" alt="">
+                <div class="info">
+                    <img src="img/pekinskaya.jpg" alt="">
+                    <p>Пицца</p>
+                    <p>"Пекинская утка"</p>
+                    <button>200 руб.</button>
+                    <a href="#">Быстрый заказ</a>
+                    <img class="flour" src="img/muka.png" alt="">
+                    <div class="retractable">
+                        <h1>Состав:</h1>
+                        <p>
+                            Свежие белые грибы<span>;</span>
+                        </p>
+                        <p>
+                            нежнейшие томаты<span>;</span>
+                        </p>
+                        <p>
+                            французкий сыр<span>;</span>
+                        </p>
+                        <p>
+                            Зелень<span>;</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="info">
+                    <img src="img/vetchina.jpg" alt="">
+                    <p>Пицца</p>
+                    <p>"Ветчина и грибы"</p>
+                    <button>260 руб.</button>
+                    <a href="#">Быстрый заказ</a>
+                    <div class="retractable">
+                        <h1>Состав:</h1>
+                        <p>
+                            Красный перец<span>;</span>
+                        </p>
+                        <p>
+                            Курица<span>;</span>
+                        </p>
+                        <p>
+                            Оливки<span>;</span>
+                        </p>
+                        <p>
+                            Огурцы<span>;</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="info">
+                    <img src="img/pobavarski.jpg" alt="">
+                    <p>Пицца</p>
+                    <p>"По-баварски"</p>
+                    <button>270 руб.</button>
+                    <a href="#">Быстрый заказ</a>
+                    <div class="retractable">
+                        <h1>Состав:</h1>
+                        <p>
+                            Красный перец<span>;</span>
+                        </p>
+                        <p>
+                            Курица<span>;</span>
+                        </p>
+                        <p>
+                            Оливки<span>;</span>
+                        </p>
+                        <p>
+                            Огурцы<span>;</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="info">
+                    <img src="img/Пеперони с курочкой.jpg" alt="">
+                    <p>Пицца</p>
+                    <p>"Пеперони с курочкой"</p>
+                    <button>240 руб.</button>
+                    <a href="#">Быстрый заказ</a>
+                    <div class="retractable">
+                        <h1>Состав:</h1>
+                        <p>
+                            Красный перец<span>;</span>
+                        </p>
+                        <p>
+                            Курица<span>;</span>
+                        </p>
+                        <p>
+                            Оливки<span>;</span>
+                        </p>
+                        <p>
+                            Огурцы<span>;</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="info">
+                    <img src="img/Домашняя.jpg" alt="">
+                    <p>Пицца</p>
+                    <p>"Домашняя"</p>
+                    <button>220 руб.</button>
+                    <a href="#">Быстрый заказ</a>
+                    <div class="retractable">
+                        <h1>Состав:</h1>
+                        <p>
+                            Красный перец<span>;</span>
+                        </p>
+                        <p>
+                            Курица<span>;</span>
+                        </p>
+                        <p>
+                            Оливки<span>;</span>
+                        </p>
+                        <p>
+                            Огурцы<span>;</span>
+                        </p>
+                    </div>
+                </div>
+            </aside>
+            <aside class="content-right">
+                <div class="info">
+                    <img src="img/myasnoe.jpg" alt="">
+                    <p>Пицца</p>
+                    <p>"Мясное удовольствие"</p>
+                    <button>300 руб.</button>
+                    <a href="#">Быстрый заказ</a>
+                    <div class="retractable">
+                        <h1>Состав:</h1>
+                        <p>
+                            Салями свежий<span>;</span>
+                        </p>
+                        <p>
+                            Маслины вкусные<span>;</span>
+                        </p>
+                        <p>
+                            Перенц зеленый<span>;</span>
+                        </p>
+                        <p>
+                            Масло<span>;</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="info">
+                    <img src="img/svetchinoy.jpg" alt="">
+                    <p>Пицца</p>
+                    <p>"С ветчиной"</p>
+                    <button>280 руб.</button>
+                    <a href="#">Быстрый заказ</a>
+                    <img class="salad" src="img/salat.png" alt="">
+                    <div class="retractable">
+                        <h1>Состав:</h1>
+                        <p>
+                            1 сыр<span>;</span>
+                        </p>
+                        <p>
+                            2 сыра<span>;</span>
+                        </p>
+                        <p>
+                            3 сыра<span>;</span>
+                        </p>
+                        <p>
+                            4 сыра<span>;</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="info">
+                    <img src="img/Прошутто.jpg" alt="">
+                    <p>Пицца</p>
+                    <p>"Прошутто"</p>
+                    <button>170 руб.</button>
+                    <a href="#">Быстрый заказ</a>
+                    <div class="retractable">
+                        <h1>Состав:</h1>
+                        <p>
+                            Салями свежий<span>;</span>
+                        </p>
+                        <p>
+                            Маслины вкусные<span>;</span>
+                        </p>
+                        <p>
+                            Перенц зеленый<span>;</span>
+                        </p>
+                        <p>
+                            Масло<span>;</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="info">
+                    <img src="img/Мексиканская.jpg" alt="">
+                    <p>Пицца</p>
+                    <p>"Мексиканская"</p>
+                    <button>210 руб.</button>
+                    <a href="#">Быстрый заказ</a>
+                    <div class="retractable">
+                        <h1>Состав:</h1>
+                        <p>
+                            Салями свежий<span>;</span>
+                        </p>
+                        <p>
+                            Маслины вкусные<span>;</span>
+                        </p>
+                        <p>
+                            Перенц зеленый<span>;</span>
+                        </p>
+                        <p>
+                            Масло<span>;</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="info">
+                    <img src="img/Гавайская с ветчиной.jpg" alt="">
+                    <p>Пицца</p>
+                    <p>"Гавайская с ветчиной"</p>
+                    <button>170 руб.</button>
+                    <a href="#">Быстрый заказ</a>
+                    <div class="retractable">
+                        <h1>Состав:</h1>
+                        <p>
+                            Салями свежий<span>;</span>
+                        </p>
+                        <p>
+                            Маслины вкусные<span>;</span>
+                        </p>
+                        <p>
+                            Перенц зеленый<span>;</span>
+                        </p>
+                        <p>
+                            Масло<span>;</span>
+                        </p>
+                    </div>
+                </div>
+            </aside>
+            <main>
+                <img class="mushrooms" src="img/griby.png" alt="">
+                <div class="info">
+                    <img src="img/chicken.jpg" alt="">
+                    <p>Пицца</p>
+                    <p>"Чикен-Рэнч"</p>
+                    <button>190 руб.</button>
+                    <a href="#">Быстрый заказ</a>
+                    <div class="retractable">
+                        <h1>Состав:</h1>
+                        <p>
+                            Трава<span>;</span>
+                        </p>
+                        <p>
+                            Перец<span>;</span>
+                        </p>
+                        <p>
+                            Сыр<span>;</span>
+                        </p>
+                        <p>
+                            Помидоры<span>;</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="info">
+                    <img src="img/skuricey.jpg" alt="">
+                    <p>Пицца</p>
+                    <p>"С курицей"</p>
+                    <button>160 руб.</button>
+                    <a href="#">Быстрый заказ</a>
+                    <div class="retractable">
+                        <h1>Состав:</h1>
+                        <p>
+                            1 е помидоры<span>;</span>
+                        </p>
+                        <p>
+                            2 е помидоры<span>;</span>
+                        </p>
+                        <p>
+                            3 и помидоры<span>;</span>
+                        </p>
+                        <p>
+                            4 е помидоры<span>;</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="info">
+                    <img src="img/ципленок пармезан.jpg" alt="">
+                    <p>Пицца</p>
+                    <p>"Цыпленок пармезан"</p>
+                    <button>250 руб.</button>
+                    <a href="#">Быстрый заказ</a>
+                    <div class="retractable">
+                        <h1>Состав:</h1>
+                        <p>
+                            Трава<span>;</span>
+                        </p>
+                        <p>
+                            Перец<span>;</span>
+                        </p>
+                        <p>
+                            Сыр<span>;</span>
+                        </p>
+                        <p>
+                            Помидоры<span>;</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="info">
+                    <img src="img/Двойная пеперони.jpg" alt="">
+                    <p>Пицца</p>
+                    <p>"Двойная пеперони"</p>
+                    <button>290 руб.</button>
+                    <a href="#">Быстрый заказ</a>
+                    <div class="retractable">
+                        <h1>Состав:</h1>
+                        <p>
+                            Трава<span>;</span>
+                        </p>
+                        <p>
+                            Перец<span>;</span>
+                        </p>
+                        <p>
+                            Сыр<span>;</span>
+                        </p>
+                        <p>
+                            Помидоры<span>;</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="info">
+                    <img src="img/Гавайская с курицей.jpg" alt="">
+                    <p>Пицца</p>
+                    <p>"Гавайская с курицей"</p>
+                    <button>250 руб.</button>
+                    <a href="#">Быстрый заказ</a>
+                    <div class="retractable">
+                        <h1>Состав:</h1>
+                        <p>
+                            Трава<span>;</span>
+                        </p>
+                        <p>
+                            Перец<span>;</span>
+                        </p>
+                        <p>
+                            Сыр<span>;</span>
+                        </p>
+                        <p>
+                            Помидоры<span>;</span>
+                        </p>
+                    </div>
+                </div>
+            </main>
+		</div>
+		<div class="last-box-content">
+			<div class="left-box">
+				 <div class="info">
+                    <img src="img/4 сыра.jpg" alt="">
+                    <p>Пицца</p>
+                    <p>"Четыре сыра"</p>
+                    <button>250 руб.</button>
+                    <a href="#">Быстрый заказ</a>
+                    <div class="retractable">
+                        <h1>Состав:</h1>
+                        <p>
+                            Трава<span>;</span>
+                        </p>
+                        <p>
+                            Перец<span>;</span>
+                        </p>
+                        <p>
+                            Сыр<span>;</span>
+                        </p>
+                        <p>
+                            Помидоры<span>;</span>
+                        </p>
+                    </div>
+                </div>
+			</div>
+			<div class="right-box">
+				 <div class="info">
+                    <img src="img/Цыпленок барбекю.jpg" alt="">
+                    <p>Пицца</p>
+                    <p>"Цыпленок барбекю"</p>
+                    <button>260 руб.</button>
+                    <a href="#">Быстрый заказ</a>
+                    <div class="retractable">
+                        <h1>Состав:</h1>
+                        <p>
+                            Трава<span>;</span>
+                        </p>
+                        <p>
+                            Перец<span>;</span>
+                        </p>
+                        <p>
+                            Сыр<span>;</span>
+                        </p>
+                        <p>
+                            Помидоры<span>;</span>
+                        </p>
+                    </div>
+                </div>
+			</div>
+		</div>
+		<div class="content">
+            <h2>Выгодный заказ</h2>
+            <img class="spoon" src="img/lozhka.png" alt="">
+            <div class="content-center">
+                <div class="content-image">
+                    <img class="pig" src="img/pig.png" alt="">
+                    <img src="img/bonus1.png" alt="">
+                </div>
+                <div class="content-text">
+                    <div>
+                        <p>
+                            Закажи <span>4</span>
+                            любые пиццы
+                        </p>
+                        <p>
+                            - получи <span>пятую</span>
+                            пиццу
+                        </p>
+                        <p>
+                            <span>бесплатно</span>
+                        </p>
+                        <button>ВЫБРАТЬ ПИЦЦЫ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="content-center">
+                <div class="content-image">
+                    <img class="pig" src="img/pig.png" alt="">
+                    <img src="img/bonus2.png" alt="">
+                </div>
+                <div class="content-text">
+                    <div>
+                        <p>
+                            Закажи <span>2</span>
+                            любые пиццы
+                        </p>
+                        <p>
+                            - получи <span>1 л </span>
+                            Кока-Коллы
+                        </p>
+                        <p>
+                            <span>бесплатно</span>
+                        </p>
+                        <button>ВЫБРАТЬ ПИЦЦЫ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="social">
+                <img src="img/instagram.png" alt="">
+                <img src="img/vkontakte.png" alt="">
+            </div>
+            <div class="footer-menu">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">Оформление заказа</a>
+                        </li>
+                        <li>
+                            <a href="#">Оплата и доставка</a>
+                        </li>
+                        <li>
+                            <a href="#">Бонусная программа</a>
+                        </li>
+                        <li>
+                            <a href="#">О компании</a>
+                        </li>
+                        <li>
+                            <a class="active" href="#">Связаться с руководством</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="payment-system">
+                <p>Принимаем к оплате</p>
+                <div class="image-cards1">
+                    <img src="img/mastercard.png" alt="">
+                    <img src="img/mastercard2.png" alt="">
+                </div>
+                <div class="image-cards2">
+                    <img src="img/visa.png" alt="">
+                    <img src="img/visa2.png" alt="">
+                </div>
+                <div class="image-cards3">
+                    <img src="img/belcard.png" alt="">
+                    <img src="img/assist.png" alt="">
+                </div>
+            </div>
+            <div class="footer-worktime">
+                <div class="worktime-time">
+                    <p>Работаем для Вас</p>
+                    <p>
+                        с <span>10:00</span>
+                        до <span>23:00</span>
+                    </p>
+                </div>
+                <div class="worktime-address">
+                    <p>Бар "BROOKLYN:"</p>
+                    <p>г. Брест,ул. Пушкинская 23</p>
+                </div>
+            </div>
+            <div class="footer-contacts">
+                <div class="contacts-number">
+                    <p>(8029) 222-22-14</p>
+                    <p>без выходных</p>
+                </div>
+                <div class="contacts-country">
+                    <p>Доставка еды</p>
+                    <p>
+                        в <span>Бресте</span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <section class="footer-licence">
+            <div class="organization">
+                <p>ООО “Вкусно и легко”, Гос. регистрация от 17.03.2010 УНП: 290949615</p>
+                <p>Администрацией Московского р-на г. Бреста. Зарегестрирован в Торговом реестре РБ 05.02.2018</p>
+            </div>
+            <div class="licence">
+                <p>&copy;2011-2019 Наша Пицца. Все права защищены.</p>
+            </div>
+        </section>
+        <script type="text/javascript" src="script/script.js"></script>
+        <script type="text/javascript">
+        	let box = document.querySelector('.filter-box');
+        	let selectBox = document.querySelector('.select-box');
+
+        	let closeBox = document.querySelector('.close-box');
+
+        	let checkboxAll = document.querySelectorAll('.checkbox_f');
+        	let buttonCloseBlock = document.getElementById('buttonCloseBlock');
+
+        	openBox(box, selectBox);
+
+        	function openBox(box, selectBox) {
+        		box.addEventListener('click', open);
+        		
+        		function open() {
+        			selectBox.style.display = 'block';
+        			box.removeEventListener('click', open);
+        			box.addEventListener('click', close);
+        		}
+
+        		function close() {
+        			selectBox.style.display = 'none';
+        			box.removeEventListener('click', close);
+        			box.addEventListener('click', open);
+        		}
+        	}
+
+
+        	buttonCloseBlock.addEventListener('click', () => {
+        		for (let elem of checkboxAll) {
+        			elem.checked = false;
+        		}
+        		openBox(box, selectBox);
+        	});
+
+        	closeBox.addEventListener('click', () => {
+        		selectBox.style.display = 'none';
+        		openBox(box, selectBox);
+        	});
+
+        	window.onscroll = () => {
+        		if (this.pageYOffset < 300) {
+        		box.style.display = 'none';
+        		selectBox.style.display = 'none';
+        	} else {
+        		box.style.display = 'block';
+        	}
+        	}
+
+        	
+        </script>
+</body>
+</html>

@@ -324,7 +324,7 @@ header {
 	letter-spacing: 3px;
 }
 
-aside div, main div {
+.info {
 	width: 345px;
 	-ms-margin-bottom: 45px;
 	margin-bottom: 45px;
@@ -335,25 +335,25 @@ aside div, main div {
 	position: relative;
 }
 
-aside div img, main div img {
+.info img {
 	border-radius: 5px 5px 0px 0px;
 	cursor: pointer;
 }
 
 
-aside div p:not(:last-of-type), main div p:not(:last-of-type) {
+.info p:not(:last-of-type) {
 	-ms-margin-top: 15px;
 	margin-top: 15px;
 }
 
-aside div p:last-of-type, main div p:last-of-type {
+.info p:last-of-type {
 	color: #FCB800;
 	font-size: 25px;
 	-ms-margin-bottom: 20px;
 	margin-bottom: 20px;
 }
 
-aside div button, main div button{
+.info button{
 	width: 300px;
 	height: 65px;
 	border: 2px solid #FCB800;
@@ -368,7 +368,7 @@ aside div button, main div button{
 	color: white;
 }
 
-aside div button:hover, main div button:hover {
+.info button:hover {
 	-ms-background: #FCB800;
 	-moz-background: #FCB800;
 	background: #FCB800;
@@ -376,7 +376,7 @@ aside div button:hover, main div button:hover {
 	cursor: pointer;
 }
 
-aside div a, main div a {
+.info a {
 	color: white;
 	-ms-display: block;
 	display: block;
@@ -386,7 +386,7 @@ aside div a, main div a {
 }
 
 
-aside div a:hover, main div a:hover {
+.info a:hover {
 	-ms-text-decoration: none;
 	-moz-text-decoration: none;
 	-webkit-text-decoration: none;
@@ -418,8 +418,9 @@ aside div a:hover, main div a:hover {
 	background: black;
 	position: absolute;
 	transition: all .5s;
-	bottom: -45px;
+	bottom: 0px;
 	overflow: hidden;
+	border-radius: 5px 5px 0px 0px;
 }
 
 .info img:hover ~ .retractable {

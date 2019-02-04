@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.last-box-content {
+	width: 750px;
+	-ms-margin: 0px auto;
+	-ms-display: flex;
+	margin: 0 auto;
+	display: flex;
+	text-align: center;
+}
+
+.left-box {
+	-ms-margin-right: 60px;
+	margin-right: 60px;
+}
+
+.scroll-box {
+	position: fixed;
+	display: flex;
+	left: 264px;
+	top: 280px;
+	z-index: 2;
+}
+
+.filter-box {
+	width: 90px;
+	height: 90px;
+	background: #FCB800;
+	border-radius: 0px 5px 5px 0px;
+	display: none;
+	cursor: pointer;
+}
+
+
+.filter_head {
+	margin-top: 30px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.desktop {
+	margin-top: -30px;
+}
+
+.select-box {
+	position: absolute;
+	left: 110px;
+	top: -50px;
+	width: 550px;
+	height: 505px;
+	background: white;
+	color: black;
+	box-sizing: border-box;
+	text-align: left;
+	border-radius: 5px;
+	display: none;
+}
+
+.filter_item {
+	display: inline-block;
+    width: 32.6%;
+    padding-bottom: 16px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.filter_item label {
+	position: relative;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 100;
+    margin: 0px;
+    padding: 0px 0px 0px 26px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    color: #000;
+    line-height: 18px;
+}
+
+.filter_item label:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 15px;
+    height: 16px;
+    border: 1px solid #fcb800;
+    border-radius: 5px;
+    margin-top: -8px;
+}
+
+.checkbox_f:checked+label:after {
+    opacity: 1;
+}
+
+.checkbox_f:not(checked)+label:after {
+    content: '';
+    background: #fcb800;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 15px;
+    height: 16px;
+    opacity: 0;
+    border-radius: 5px;
+    margin-top: -7px;
+    margin-left: 1px;
+}
+
+.filter_item .checkbox_f {
+    opacity: 0;
+    display: none;
+}
+
+.filter_box {
+    padding: 0px 0px 10px 0px;
+    margin-left: 40px;
+}
+
+.reset_block {
+	text-align: center;
+}
+
+.reset_block button {
+	border: none;
+	background: white;
+	font-size: 16px;
+	color: #7F7F86;
+	text-decoration: underline;
+}
+
+.reset_block button:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.close-box {
+	width: 100px;
+	height: 100px;
+	background: url('../img/close.png') no-repeat;
+	position: absolute;
+	right: -55px;
+	top: 10px;
+	cursor: pointer;
+}

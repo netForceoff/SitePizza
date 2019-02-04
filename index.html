@@ -48,7 +48,7 @@
                 <nav>
                     <ul>
                         <li class="MainMenu">
-                            <a id="pizza" class="forChangeColor" href="#">
+                            <a id="pizza" class="forChangeColor" href="pizza.html">
                                 <div class="menu_image">
                                     <img class="img_menu" src="img/pizza.png">
                                 </div>
@@ -499,29 +499,6 @@
                 <p>&copy;2011-2019 Наша Пицца. Все права защищены.</p>
             </div>
         </section>
-        <script type="text/javascript">
-            let icons = document.querySelectorAll('.img_menu');
-            let li = document.querySelectorAll('.MainMenu');
-            let a = document.querySelectorAll('.forChangeColor');
-
-            let arrayWithImg = ['img/pizza2.png', 'img/roll2.png', 'img/zakuski2.png', 'img/soup2.png', 'img/kombo2.png', 'img/desert2.png', 'img/drink2.png', 'img/sous2.png'];
-            let arrayWithImg2 = ['img/pizza.png', 'img/roll.png', 'img/zakuski.png', 'img/soup.png', 'img/kombo.png', 'img/desert.png', 'img/drink.png', 'img/sous.png'];
-
-            li.forEach((elem,idnex)=>{
-                elem.addEventListener('mouseover', ()=>{
-                    icons[idnex].src = arrayWithImg[idnex];
-                    a[idnex].style.color = '#FCB800';
-                    elem.removeEventListener('mouseover', this);
-                }
-                );
-
-                elem.addEventListener('mouseout', ()=>{
-                    icons[idnex].src = arrayWithImg2[idnex];
-                    a[idnex].style.color = 'white';
-                }
-                );
-            }
-            );
-        </script>
+        <script type="text/javascript" src="script/script.js"></script>
     </body>
 </html>
