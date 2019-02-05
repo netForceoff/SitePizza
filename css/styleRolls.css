@@ -1,0 +1,23 @@
+.conductor {
+	margin-bottom: 80px;
+
+}
+
+
+.active {
+	color: #FCB800;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.conductor span {
+	margin: 0px 5px;
+}
+
+.conductor a {
+	margin: 0px 10px;
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+}
+

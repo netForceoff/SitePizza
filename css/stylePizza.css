@@ -33,13 +33,48 @@
 	border-radius: 0px 5px 5px 0px;
 	display: none;
 	cursor: pointer;
+	color: black;
 }
 
+.catalogue {
+	float: left;
+	margin-top: 15px;
+}
+
+.catalogue ul {
+	display: flex;
+	list-style-type: none;
+	color: white;
+}
+
+.catalogue ul li {
+	margin: 0px 10px;
+}
+
+.catalogue ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+
+.filter-box-content {
+	margin-top: 20px;
+}
 
 .filter_head {
 	margin-top: 30px;
 	text-align: center;
 	margin-bottom: 10px;
+}
+
+.content:not(:last-of-type) {
+	margin-top: -70px;
+}
+
+
+
+.exception {
+	margin-right: 250px;
 }
 
 .desktop {
@@ -76,7 +111,7 @@
     margin: 0px;
     padding: 0px 0px 0px 26px;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     color: #000;
     line-height: 18px;
 }
@@ -99,7 +134,7 @@
 
 .checkbox_f:not(checked)+label:after {
     content: '';
-    background: #fcb800;
+    background: #fcb800 url('../img/galka.png') 50% 50% no-repeat;
     position: absolute;
     top: 50%;
     left: 0px;
