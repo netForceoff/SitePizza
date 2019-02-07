@@ -36,6 +36,12 @@ header {
 	margin-left: -62px;
 }
 
+.logo a {
+	width: 125px;
+	height: 100px;
+	position: absolute;
+}
+
 .phone {
 	letter-spacing: 1px;
 	float: left;
@@ -326,6 +332,7 @@ header {
 
 .info {
 	width: 345px;
+	height: 491px;
 	-ms-margin-bottom: 45px;
 	margin-bottom: 45px;
 	-ms-background: black;
@@ -518,6 +525,7 @@ main {
 	left: -400px;
 	top: 200px;
 	z-index: -1;
+	transform: scale(-1, 1);
 }
 
 .spoon {

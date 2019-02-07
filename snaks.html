@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <title>Наша пицца</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
-    </head>
-    <body>
-        <header>
+<head>
+	<meta charset="UTF-8">
+	<title>Заказ закусок</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/stylePizza.css">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+</head>
+<body>
+	<header>
             <div class="upperpanel">
                 <div class="phone">
                     <div>
@@ -124,28 +125,29 @@
                 </nav>
             </div>
         </header>
-        <section class="banner">
-            <img class="bazilik" src="img/bazilik.png" alt="">
-            <div class="text-banner">
-                <p>Бонусная программа "Наша пицца":</p>
-                <p>возвращаем 10% от заказа</p>
-                <p>Копи баллы - и заказывай дешевле</p>
-            </div>
-            <div class="button-banner">
-                <button>Условия</button>
-            </div>
-        </section>
-        <div class="content">
-            <h2>Популярные пиццы</h2>
+		  <div class="content">
+		  	<div class="catalogue">
+		  		<nav>
+		  			<ul>
+		  				<li><a href="index.html">Главная</a></li>
+		  				<span>></span>
+		  				<li><a href="#">Каталог</a></li>
+		  				<span>></span>
+		  				<li><a href="#">Закуски</a></li>
+		  			</ul>
+		  		</nav>
+		  	</div>
+            <h2 class="exception">Закуски</h2>
             <aside class="content-left">
-                <img class="olives" src="img/olivki.png" alt="">
                 <div class="info">
-                    <img src="img/pizza/chicken.jpg" alt="">
-                    <p>Пицца</p>
-                    <p>"Чикен-Рэнч"</p>
+                	<div class="background-bazilik">
+                		<img src="img/bazilik.png" alt="">
+                	</div>
+                    <img src="img/snaks/Наггетсы куриные.JPG" alt="">
+                    <p>"Наггетсы куриные"</p>
                     <button>200 руб.</button>
                     <a href="#">Быстрый заказ</a>
-                    <img class="flour" src="img/muka.png" alt="">
+                   
                     <div class="retractable">
                         <h1>Состав:</h1>
                         <p>
@@ -162,35 +164,15 @@
                         </p>
                     </div>
                 </div>
-                <div class="info">
-                    <img src="img/pizza/Домашняя.jpg" alt="">
-                    <p>Пицца</p>
-                    <p>"Домашняя"</p>
-                    <button>260 руб.</button>
-                    <a href="#">Быстрый заказ</a>
-                    <div class="retractable">
-                        <h1>Состав:</h1>
-                        <p>
-                            Красный перец<span>;</span>
-                        </p>
-                        <p>
-                            Курица<span>;</span>
-                        </p>
-                        <p>
-                            Оливки<span>;</span>
-                        </p>
-                        <p>
-                            Огурцы<span>;</span>
-                        </p>
-                    </div>
-                </div>
+                <img class="background-salat" src="img/salat (1).png" alt="">
             </aside>
             <aside class="content-right">
+            	<img class="olives" src="img/olivki.png" alt="">
                 <div class="info">
-                    <img src="img/pizza/vetchina.jpg" alt="">
-                    <p>Пицца</p>
-                    <p>"Ветчина и грибы"</p>
-                    <button>270 руб.</button>
+                    <img src="img/snaks/Цезарь с курицей.JPG" alt="">
+                    <p>Салат</p>
+                    <p>"Цезарь с курицей"</p>
+                    <button>300 руб.</button>
                     <a href="#">Быстрый заказ</a>
                     <div class="retractable">
                         <h1>Состав:</h1>
@@ -208,37 +190,15 @@
                         </p>
                     </div>
                 </div>
-                <div class="info">
-                    <img src="img/pizza/Прошутто.jpg" alt="">
-                    <p>Пицца</p>
-                    <p>"Прошутто"</p>
-                    <button>280 руб.</button>
-                    <a href="#">Быстрый заказ</a>
-                    <img class="salad" src="img/salat.png" alt="">
-                    <div class="retractable">
-                        <h1>Состав:</h1>
-                        <p>
-                            1 сыр<span>;</span>
-                        </p>
-                        <p>
-                            2 сыра<span>;</span>
-                        </p>
-                        <p>
-                            3 сыра<span>;</span>
-                        </p>
-                        <p>
-                            4 сыра<span>;</span>
-                        </p>
-                    </div>
-                </div>
+                <img class="oregano" src="img/oregano.png" alt="">
+                <img class="background-muka" src="img/muka.png" alt="">
             </aside>
             <main>
                 <img class="mushrooms" src="img/griby.png" alt="">
-                <div class="info">
-                    <img src="img/pizza/myasnoe.jpg" alt="">
-                    <p>Пицца</p>
-                    <p>"Мясное удовольствие"</p>
-                    <button>250 руб.</button>
+                <div id = "background-opacity" class="info">
+                    <img src="img/snaks/Картофель фри.jpg" alt="">
+                    <p>"Картофель фри"</p>
+                    <button>190 руб.</button>
                     <a href="#">Быстрый заказ</a>
                     <div class="retractable">
                         <h1>Состав:</h1>
@@ -257,10 +217,9 @@
                     </div>
                 </div>
                 <div class="info">
-                    <img src="img/pizza/Пеперони с курочкой.jpg" alt="">
-                    <p>Пицца</p>
-                    <p>"Пеперони с курочкой"</p>
-                    <button>240 руб.</button>
+                    <img src="img/snaks/Крылишки кентуки.JPG" alt="">
+                    <p>"Крылишки кентуки"</p>
+                    <button>160 руб.</button>
                     <a href="#">Быстрый заказ</a>
                     <div class="retractable">
                         <h1>Состав:</h1>
@@ -279,99 +238,8 @@
                     </div>
                 </div>
             </main>
-            <a class="watching-all" href="pizza.html">Смотреть все</a>
-            <div>
-                <h2>Популярные роллы</h2>
-            </div>
-            <aside class="content-left">
-                <div class="info">
-                    <img src="img/rolls/Кавой.JPG" alt="">
-                    <p>Роллы</p>
-                    <p>"Кавой"</p>
-                    <button>260 руб.</button>
-                    <a href="#">Быстрый заказ</a>
-                    <img class="salad-second" src="img/salat (1).png" alt="">
-                    <div class="retractable">
-                        <h1>Состав:</h1>
-                        <p>
-                            Из калифорнии<span>;</span>
-                        </p>
-                        <p>
-                            Рис<span>;</span>
-                        </p>
-                        <p>
-                            Огурец<span>;</span>
-                        </p>
-                        <p>
-                            Рыба<span>;</span>
-                        </p>
-                    </div>
-                </div>
-            </aside>
-            <aside class="content-right">
-                <div class="info">
-                    <img src="img/rolls/Хот.JPG" alt="">
-                    <p>Роллы</p>
-                    <p>"Хот"</p>
-                    <button>350 руб.</button>
-                    <a href="#">Быстрый заказ</a>
-                    <div class="retractable">
-                        <h1>Состав:</h1>
-                        <p>
-                            Семга<span>;</span>
-                        </p>
-                        <p>
-                            Икра красная<span>;</span>
-                        </p>
-                        <p>
-                            Огурец<span>;</span>
-                        </p>
-                        <p>
-                            Белая жижа<span>;</span>
-                        </p>
-                    </div>
-                </div>
-            </aside>
-            <main>
-                <div class="info">
-                    <img src="img/rolls/Филадельфия.JPG" alt="">
-                    <p>Роллы</p>
-                    <p>"Филадельфия"</p>
-                    <button>420 руб.</button>
-                    <a href="#">Быстрый заказ</a>
-                    <div class="retractable">
-                        <h1>Состав:</h1>
-                        <p>
-                            Селедочка свежая<span>;</span>
-                        </p>
-                        <p>
-                            Какие то стручки<span>;</span>
-                        </p>
-                        <p>
-                            типа икры черной<span>;</span>
-                        </p>
-                        <p>
-                            Оболочка из хлеба<span>;</span>
-                        </p>
-                    </div>
-                </div>
-            </main>
-            <a class="watching-all" href="rolls.html">Смотреть все</a>
-        </div>
-        <section class="banner-second">
-            <div class="text-banner-second">
-                <h1>Горячая НОВИНКА!</h1>
-                <p>Быстрые и сытные Комбо-обеды</p>
-                <p>
-                    <strong>с бесплатной доставкой в офис и на дом</strong>
-                </p>
-                <p>с 11:00 до 15:00. Спешите попробовать!</p>
-            </div>
-            <div class="button-banner">
-                <button>Выбрать</button>
-            </div>
-        </section>
-        <div class="content">
+		</div>
+		<div class="content">
             <h2>Выгодный заказ</h2>
             <img class="spoon" src="img/lozhka.png" alt="">
             <div class="content-center">
@@ -502,5 +370,6 @@
             </div>
         </section>
         <script type="text/javascript" src="script/script.js"></script>
-    </body>
+  
+</body>
 </html>

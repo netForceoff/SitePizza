@@ -4,7 +4,7 @@
 }
 
 
-.active {
+.active-conductor {
 	color: #FCB800;
 	font-weight: bold;
 	font-size: 25px;
@@ -19,5 +19,12 @@
 	font-size: 20px;
 	text-decoration: none;
 	color: white;
+}
+
+.background-pomidor {
+	position: absolute;
+
+	left: -200px;
+	bottom: 10px;
 }
 

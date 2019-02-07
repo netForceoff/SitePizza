@@ -17,23 +17,32 @@ let img = document.querySelector('.image-filter-box');
 let blackBackground = 'img/menu (1).png';
 let whiteBackground = 'img/menu white.png';
 
-li.forEach((elem,idnex)=>{
-    elem.addEventListener('mouseover', ()=>{
-        icons[idnex].src = arrayWithImg[idnex];
-        a[idnex].style.color = '#FCB800';
-        elem.removeEventListener('mouseover', this);
-    }
-    );
-
-    elem.addEventListener('mouseout', ()=>{
-        icons[idnex].src = arrayWithImg2[idnex];
-        a[idnex].style.color = 'white';
-    }
-    );
-}
-);
-
+visitAndPaint(li, icons, a);
 openBox(box, selectBox);
+
+function giveActiveStatusToMenuItem(li, icons, a) {
+    li.forEach((elem, index) => {
+        elem.addEventListener('click', () => {
+            icons[idnex].src = arrayWithImg[idnex];
+            a[idnex].style.color = '#FCB800';
+        });
+    });
+}
+
+function visitAndPaint(li, icons, a) {
+    li.forEach((elem,idnex) => {
+        elem.addEventListener('mouseover', ()=> {
+            icons[idnex].src = arrayWithImg[idnex];
+            a[idnex].style.color = '#FCB800';
+            elem.removeEventListener('mouseover', this);
+        });
+
+        elem.addEventListener('mouseout', () => {
+            icons[idnex].src = arrayWithImg2[idnex];
+            a[idnex].style.color = 'white';
+        });
+    });
+}
 
 box.addEventListener('mouseover', () => {
     box.style.color = 'white';

@@ -86,13 +86,17 @@
 	left: 110px;
 	top: -50px;
 	width: 550px;
-	height: 505px;
+	height: 470px;
 	background: white;
 	color: black;
 	box-sizing: border-box;
 	text-align: left;
 	border-radius: 5px;
 	display: none;
+}
+
+.onlyOne-select {
+	height: 150px;
 }
 
 .filter_item {
@@ -182,3 +186,47 @@
 	top: 10px;
 	cursor: pointer;
 }
+
+.background-bazilik {
+	position: absolute;
+	left: -255px;
+	top: 200px;
+}
+
+.oregano {
+	position: absolute;
+	top: 350px;
+	left: 350px;
+	z-index: 1;
+}
+
+.background-salat {
+	position: absolute;
+	transform: scale(-1, 1);
+	left: -400px;
+	top: 700px;
+}
+
+.background-muka {
+	position: absolute;
+	z-index: 2;
+	transform:  scale(-1, 1);
+	left: 220px;
+	top: 850px;
+}
+
+.pomidor {
+	position: absolute;
+	left: -200px;
+	top: 2100px;
+}
+
+#background-opacity {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+#background-opacity button:hover {
+	background: #FCB800;
+}
+
+

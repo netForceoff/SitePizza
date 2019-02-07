@@ -1,0 +1,27 @@
+.header-kombo {
+	font-size: 25px;
+	margin-bottom: 35px;
+}
+
+.content-text div p, .content-text div p span {
+	letter-spacing: 2px;
+	line-height: 40px;
+}
+
+.content-center {
+	position: relative;
+}
+
+.olives {
+	top: -195px;
+	left: 1040px;
+
+}
+
+.oregano {
+	left: 1200px;
+}
+
+.background-muka {
+	left: 1010px;
+}

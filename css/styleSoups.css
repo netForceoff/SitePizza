@@ -1,0 +1,26 @@
+.right-box {
+	position: relative;
+}
+
+.olives {
+	left: 430px;
+	top: -135px;
+}
+
+.content-image {
+	position: relative;
+}
+
+.pomidor {
+	position: absolute;
+	top: 150px;
+	z-index: -1;
+}
+
+.background-salat {
+	z-index: -2;
+}
+
+.oregano {
+	left: 555px;
+}
