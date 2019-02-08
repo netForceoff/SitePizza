@@ -10,12 +10,16 @@ body {
 	background: url(../img/background.jpg) no-repeat center center;
 	-ms-background: url(../img/background.jpg) no-repeat center center;
 	-moz-background: url(../img/background.jpg) no-repeat center center;
+	-o-background: url(../img/background.jpg) no-repeat center center;
+	-webkit-background: url(../img/background.jpg) no-repeat center center;
 	font-size: 18px;
 	font-family: 'Sarabun', sans-serif;
 	color: white;
+
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    -ms-background-size: cover;
     background-size: cover;
     overflow-x: hidden;
 }
@@ -115,6 +119,27 @@ header {
 	display: flex;
 	font-size: 15px;
 	line-height: 24px;
+}
+
+.account:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.model-accaunt {
+	display: none;
+	position: fixed;
+	z-index: 5;
+	-ms-margin: 0px auto;
+	margin: 0px auto;
+	height: 350px;
+	width: 380px;
+	-o-background: rgba(255, 255, 255);
+	-moz-background: rgba(255, 255, 255);
+	-webkit-background: rgba(255, 255, 255);
+	-ms-background: rgba(255, 255, 255);
+	background: rgba(255, 255, 255);
+	border-radius: 5px;
 }
 
 .shop {

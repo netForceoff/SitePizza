@@ -1,4 +1,5 @@
 .conductor {
+	-ms-margin-bottom: 80px;
 	margin-bottom: 80px;
 
 }
@@ -11,10 +12,12 @@
 }
 
 .conductor span {
+	-ms-margin: 0px 5px;
 	margin: 0px 5px;
 }
 
 .conductor a {
+	-ms-margin: 0px 10px;
 	margin: 0px 10px;
 	font-size: 20px;
 	text-decoration: none;

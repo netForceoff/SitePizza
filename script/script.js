@@ -17,6 +17,14 @@ let img = document.querySelector('.image-filter-box');
 let blackBackground = 'img/menu (1).png';
 let whiteBackground = 'img/menu white.png';
 
+let accountButton = document.querySelector('.account');
+let windowModelAccount = document.querySelector('.model-accaunt');
+
+accountButton.addEventListener('click', () => {
+    windowModelAccount.style.display = 'block';
+    document.body.style.opacity = .5;
+});
+
 visitAndPaint(li, icons, a);
 openBox(box, selectBox);
 
