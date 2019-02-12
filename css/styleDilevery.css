@@ -1,0 +1,50 @@
+.content-text {
+	margin-left: 70px;
+	margin-bottom: 35px;
+	width: 1030px;
+}
+
+.content-text div {
+	margin-top: 25px;
+	margin-left: 70px;
+}
+
+.content-text div div:first-child {
+	margin-top: 50px;
+}
+
+.content-text div div:last-child {
+	margin-bottom: 50px;
+}
+
+.content-text div div h4 span {
+	color: #FCB800;
+}
+
+.content-text div div {
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+.content-text div div p {
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.content-text div div p span {
+	line-height: 0px;
+}
+
+
+.header-kombo {
+	letter-spacing: 2px;
+}
+
+.catalogue {
+	margin-top: 75px;
+	margin-left: 55px;
+}
+
+.content {
+	margin-top: 213px;
+}

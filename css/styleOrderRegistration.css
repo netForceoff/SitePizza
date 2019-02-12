@@ -1,0 +1,90 @@
+.contnet-center {
+	position: relative;
+
+}
+
+.content-image {
+	position: absolute;
+	top: 50px;
+	right: 115px;
+}
+
+
+.content-text {
+	margin-left: 70px;
+	width: 1030px;
+	height: 325px;
+	margin-bottom: 25px;
+}
+
+.content-text div {
+	margin-top: 50px;
+	margin-left: 25px;
+}
+
+.content-text div div {
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+.content-text div div p {
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.content-text div div p  span{
+	line-height: 0px;
+}
+
+.header-kombo {
+	letter-spacing: 2px;
+}
+
+.catalogue {
+	margin-top: 75px;
+	margin-left: 55px;
+}
+
+.content {
+	margin-top: 213px;
+}
+
+.big-text {
+	height: 660px;
+
+}
+
+.big-text div div, .big-text-2 div div, .big-text-3 div div, .big-text-4 div div{
+	text-align: center;
+}
+
+.big-image {
+	position: absolute;
+	top: 265px;
+	left: 115px;
+}
+
+.big-text-2 {
+	height: 793px;
+}
+
+.big-text-3 {
+	height: 835px;
+}
+
+.big-text-4 {
+	height: 185px;
+}
+
+.big-text-4 div{
+	margin-top: 30px;
+	margin-left: -10px;
+}
+
+.big-text-2 div div p span{
+	line-height: 32px;
+}
+
+.big-text-2 div div img, .big-text-3 div div img {
+	margin-right: 100px;
+}
