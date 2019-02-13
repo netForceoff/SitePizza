@@ -1,0 +1,69 @@
+#content-colums {
+	text-align: left;
+	display: flex;
+}
+
+#content-colums div:not(:first-child) {
+	margin-top: 50px;
+}
+
+#content-colums div h4:last-of-type {
+	margin-bottom: 25px;
+}
+
+#content-colums img {
+	margin-bottom: 20px;
+}
+
+.content-text div {
+	margin-left: 30px;
+}
+
+.block_1 {
+	background: url('../img/pizza/pizza1.png') 100% 0 no-repeat, black;
+	z-index: 5;
+}
+
+.block_2 {
+	background: url('../img/pizza/pizza2.png') 0% 100% no-repeat, black;
+}
+
+.block_2 div {
+	margin-left: 230px;
+}
+
+.block_3 {
+	background: url('../img/pizza/pizza5.png') 0% 60% no-repeat, black;
+}
+
+.block_3 div {
+	margin-left: 250px;
+	margin-bottom: 120px;
+}
+
+.content-text {
+	display: flex;
+
+}
+
+.address-not-flex {
+	display: block;
+}
+
+.block7-bottom {
+	display: block;
+	overflow: hidden;
+}
+
+.image-address-left {
+	display: inline-block;
+}
+
+.image-address-right {
+	display: inline-block;
+
+}
+
+.image-address-right img:first-child {
+	padding-bottom: 25px;
+}
