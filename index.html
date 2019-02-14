@@ -19,14 +19,14 @@
                 </div>
                 <div class="worktime">
                     <div>Работаем для вас
-				</div>
+                </div>
                     <div>
                         с <span>10:00</span>
                         до <span>23:00</span>
                     </div>
                 </div>
                 <div class="logo">
-                	<a href="index.html"></a>
+                    <a href="index.html"></a>
                     <img src="img/logo.png" alt="">
                 </div>
                 <div class="account">
@@ -39,9 +39,10 @@
                 <div class="shop">
                     <img src="img/White/07.Wallet.png" alt="">
                     <div>Корзина пуста</div>
-                    <div>
+                    <div class="tooltip" title="Сделайте заказ, чтобы получить бонусы">
                         <span>0</span>
                         бонусных баллов
+                    
                     </div>
                 </div>
             </div>
@@ -55,7 +56,7 @@
                                     <img class="img_menu" src="img/pizza.png">
                                 </div>
                                 <div class="menu_name">Пиццы
-						</div>
+                        </div>
                             </a>
                         </li>
                         <li class="MainMenu">
@@ -64,7 +65,7 @@
                                     <img class="img_menu" src="img/roll.png">
                                 </div>
                                 <div class="menu_name">Роллы
-						</div>
+                        </div>
                             </a>
                         </li>
                         <li class="MainMenu">
@@ -73,7 +74,7 @@
                                     <img class="img_menu" src="img/zakuski.png" alt="">
                                 </div>
                                 <div class="menu_name">Закуски
-						</div>
+                        </div>
                             </a>
                         </li>
                         <li class="MainMenu">
@@ -82,7 +83,7 @@
                                     <img class="img_menu" src="img/soup.png" alt="">
                                 </div>
                                 <div class="menu_name">Супы
-						</div>
+                        </div>
                             </a>
                         </li>
                         <li class="MainMenu">
@@ -91,7 +92,7 @@
                                     <img class="img_menu" src="img/kombo.png" alt="">
                                 </div>
                                 <div class="menu_name">Комбо обеды
-						</div>
+                        </div>
                             </a>
                         </li>
                         <li class="MainMenu">
@@ -100,7 +101,7 @@
                                     <img class="img_menu" src="img/desert.png" alt="">
                                 </div>
                                 <div class="menu_name">Десерты
-						</div>
+                        </div>
                             </a>
                         </li>
                         <li class="MainMenu">
@@ -117,7 +118,7 @@
                                     <img class="img_menu" src="img/sous.png" alt="">
                                 </div>
                                 <div class="menu_name">Соусы
-						</div>
+                        </div>
                             </a>
                         </li>
                     </ul>
@@ -125,39 +126,54 @@
             </div>
         </header>
         <div class="bg-modal">
-             <div class="model-account">
+            <div class="model-account">
                 <div class="registration-account">
-                   <a class="registration-button" href="#">Регистрация</a> 
-                   <img class = "close-account" src="img/close.png" alt="">
+                    <a class="registration-button" href="#">Регистрация</a>
+                    <img class="close-account" src="img/close.png" alt="">
                 </div>
                 <p>ВХОД</p>
                 <span>Номер телефона*</span>
-                <input id = "phone" type="tel" name="phone" value="+7(___)___-____">
+                <input id="phone" type="tel" name="phone" value="+7(___)___-____">
                 <p>Получить код в СМС</p>
                 <div class="block-password">
                     <span>Пароль или код из смс*</span>
-                    <input type="password" name="password" id = "password">
-                    <div class="showPassword" title="Показать пароль"></div>  
+                    <input type="password" name="password" id="password">
+                    <div class="showPassword" title="Показать пароль"></div>
                 </div>
                 <button>ВОЙТИ</button>
-            </div> 
+            </div>
             <div class="model-account-second">
                 <div class="in-account">
-                   <a class="in-button" href="#">Вход</a> 
-                   <img class = "close-account-second" src="img/close.png" alt="">
+                    <a class="in-button" href="#">Вход</a>
+                    <img class="close-account-second" src="img/close.png" alt="">
                 </div>
                 <p>Регистрация</p>
                 <p>Для регистрации введите номер телефона и нажмите на надпись «получить код в СМС». После этого введите код, и нажмите кнопку «Регистрация»</p>
                 <span>Номер телефона*</span>
-                <input id = "phone" type="tel" name="phone" value="+7(___)___-____">
+                <input id="phone" type="tel" name="phone" value="+7(___)___-____">
                 <p>Получить код в СМС</p>
                 <div class="block-password">
                     <span>Пароль или код из смс*</span>
-                    <input type="password" name="password" id = "password">
-                    <div class="showPassword" title="Показать пароль"></div>  
+                    <input type="password" name="password" id="password">
+                    <div class="showPassword" title="Показать пароль"></div>
                 </div>
                 <button>ВОЙТИ</button>
-            </div> 
+            </div>
+        </div>
+        <div class="bg-modal-guide">
+            <div class="model-account" id="model-account-guide">
+                <div class="registration-account">
+                    <img class="close-account-third" src="img/close.png" alt="">
+                </div>
+                <p>СВЯЗАТЬСЯ С РУКОВОДСТВОМ</p>
+                <span>Имя*</span>
+                <input type="text">
+                <span>Телефон*</span>
+                <input id="phoneGuide" type="tel" name="phone" value="+7(___)___-____">
+                <span>Текст сообщения*</span>
+                <textarea name="text" cols="32" rows="10"></textarea>
+                <button>Отправить</button>
+            </div>
         </div>
         <section class="banner">
             <img class="bazilik" src="img/bazilik.png" alt="">
@@ -167,7 +183,7 @@
                 <p>Копи баллы - и заказывай дешевле</p>
             </div>
             <div class="button-banner">
-                <button>Условия</button>
+                <a href="bonusProgramms.html">УСЛОВИЯ</a>
             </div>
         </section>
         <div class="content">
@@ -183,9 +199,20 @@
                     <img class="flour" src="img/muka.png" alt="">
                     <div class="retractable">
                         <h1>Состав:</h1>
-                        <p>фирменный сливочно-чесночный соус "Шпинат Альфредо"<span>;</span> сыр моцарелла<span>;</span> куриная грудка<span>;</span> золотистый бекон<span>;</span> куриная грудка<span>;</span> золотистый бекон <span>;</span> томаты свежие <span>;</span> шампиньоны <span>;</span> соус "Рэнч"<span>;</span> сыр "Пармезан"<span>;</span> травы средизерноморские <span>;</span></p>
+                        <p>
+                            фирменный сливочно-чесночный соус "Шпинат Альфредо"<span>;</span>
+                            сыр моцарелла<span>;</span>
+                            куриная грудка<span>;</span>
+                            золотистый бекон<span>;</span>
+                            куриная грудка<span>;</span>
+                            золотистый бекон <span>;</span>
+                            томаты свежие <span>;</span>
+                            шампиньоны <span>;</span>
+                            соус "Рэнч"<span>;</span>
+                            сыр "Пармезан"<span>;</span>
+                            травы средизерноморские <span>;</span>
+                        </p>
                         <p></p>
-                        
                     </div>
                 </div>
                 <div class="info">
@@ -197,7 +224,15 @@
                     <div class="retractable">
                         <h1>Состав:</h1>
                         <p>
-                            Красный перец<span>;</span> сливочно-чесночный соус <span>;</span> запеченая буженина в печи <span>;</span> грибы гриль <span>;</span> сыр "Моцарелла" <span>;</span> золотистый лук фри <span>;</span> хрустящие маринованные огурчики <span>;</span> соус "Датский" <span>;</span> средизерноморские травы <span>;</span>
+                            Красный перец<span>;</span>
+                            сливочно-чесночный соус <span>;</span>
+                            запеченая буженина в печи <span>;</span>
+                            грибы гриль <span>;</span>
+                            сыр "Моцарелла" <span>;</span>
+                            золотистый лук фри <span>;</span>
+                            хрустящие маринованные огурчики <span>;</span>
+                            соус "Датский" <span>;</span>
+                            средизерноморские травы <span>;</span>
                         </p>
                         <p></p>
                     </div>
@@ -213,7 +248,13 @@
                     <div class="retractable">
                         <h1>Состав:</h1>
                         <p>
-                            фирменный красный соус "Наша пицца"<span>;</span> сыр "Моцарелла" <span>;</span> ветчина <span>;</span> маслины <span>;</span> оливково-чесночный соус <span>;</span> свежие шампиньоны <span>;</span> средиземноморские травы <span>;</span>
+                            фирменный красный соус "Наша пицца"<span>;</span>
+                            сыр "Моцарелла" <span>;</span>
+                            ветчина <span>;</span>
+                            маслины <span>;</span>
+                            оливково-чесночный соус <span>;</span>
+                            свежие шампиньоны <span>;</span>
+                            средиземноморские травы <span>;</span>
                         </p>
                         <p></p>
                     </div>
@@ -228,7 +269,12 @@
                     <div class="retractable">
                         <h1>Состав:</h1>
                         <p>
-                            фирменный сливочно-чесночный соус<span>;</span> сыр "Моцарелла" <span>;</span> ветчина <span>;</span> свежие томаты <span>;</span> оливково-чесночный соус <span>;</span> средиземноморские травы <span>;</span>
+                            фирменный сливочно-чесночный соус<span>;</span>
+                            сыр "Моцарелла" <span>;</span>
+                            ветчина <span>;</span>
+                            свежие томаты <span>;</span>
+                            оливково-чесночный соус <span>;</span>
+                            средиземноморские травы <span>;</span>
                         </p>
                         <p></p>
                     </div>
@@ -245,7 +291,16 @@
                     <div class="retractable">
                         <h1>Состав:</h1>
                         <p>
-                            фирменный красный соус "Наша пицца"<span>;</span> сыр "Моцарелла"<span>;</span> томаты свежие <span>;</span> сыр "Пармезан" <span>;</span> перец болгарский сладкий <span>;</span> курочка <span>;</span> буженина запеченая <span>;</span> говядина запеченая <span>;</span> бекон хрустящий <span>;</span> ветчина <span>;</span>
+                            фирменный красный соус "Наша пицца"<span>;</span>
+                            сыр "Моцарелла"<span>;</span>
+                            томаты свежие <span>;</span>
+                            сыр "Пармезан" <span>;</span>
+                            перец болгарский сладкий <span>;</span>
+                            курочка <span>;</span>
+                            буженина запеченая <span>;</span>
+                            говядина запеченая <span>;</span>
+                            бекон хрустящий <span>;</span>
+                            ветчина <span>;</span>
                         </p>
                         <p></p>
                     </div>
@@ -259,9 +314,15 @@
                     <div class="retractable">
                         <h1>Состав:</h1>
                         <p>
-                           фирменный томатный соус "Наша пицца"<span>;</span> сыр "Моцарелла" <span>;</span> колбаска "Пепперони" <span>;</span> куриная грудка <span>;</span> сыр "Пармезан" <span>;</span> соус "сладкий чили" <span>;</span> средиземноморские травы <span>;</span>
+                            фирменный томатный соус "Наша пицца"<span>;</span>
+                            сыр "Моцарелла" <span>;</span>
+                            колбаска "Пепперони" <span>;</span>
+                            куриная грудка <span>;</span>
+                            сыр "Пармезан" <span>;</span>
+                            соус "сладкий чили" <span>;</span>
+                            средиземноморские травы <span>;</span>
                         </p>
-                       <p></p>
+                        <p></p>
                     </div>
                 </div>
             </main>
@@ -280,7 +341,11 @@
                     <div class="retractable">
                         <h1>Состав:</h1>
                         <p>
-                            лосось слабосоленый<span>;</span> огурец свежий <span>;</span> сыр "Филадельфия" <span>;</span> лист нори <span>;</span> рис <span>;</span>
+                            лосось слабосоленый<span>;</span>
+                            огурец свежий <span>;</span>
+                            сыр "Филадельфия" <span>;</span>
+                            лист нори <span>;</span>
+                            рис <span>;</span>
                         </p>
                         <p></p>
                     </div>
@@ -296,8 +361,12 @@
                     <div class="retractable">
                         <h1>Состав:</h1>
                         <p>
-                            угорь копченый<span>;</span> томат свежий <span>;</span> сыр "Филадельфия" <span>;</span> сухари "Панко" <span>;</span> лист нори<span>;</span>
-                             рис <span>;</span>
+                            угорь копченый<span>;</span>
+                            томат свежий <span>;</span>
+                            сыр "Филадельфия" <span>;</span>
+                            сухари "Панко" <span>;</span>
+                            лист нори<span>;</span>
+                            рис <span>;</span>
                         </p>
                         <p></p>
                     </div>
@@ -313,7 +382,11 @@
                     <div class="retractable">
                         <h1>Состав:</h1>
                         <p>
-                            лосось слабосоленый<span>;</span> огурец свежий <span>;</span> сыр "Филадельфия" <span>;</span> лист нори <span>;</span> рис <span>;</span>
+                            лосось слабосоленый<span>;</span>
+                            огурец свежий <span>;</span>
+                            сыр "Филадельфия" <span>;</span>
+                            лист нори <span>;</span>
+                            рис <span>;</span>
                         </p>
                         <p></p>
                     </div>
@@ -331,7 +404,7 @@
                 <p>с 11:00 до 15:00. Спешите попробовать!</p>
             </div>
             <div class="button-banner">
-                <button>Выбрать</button>
+                <a href="kombo.html">ВЫБРАТЬ</a>
             </div>
         </section>
         <div class="content">
@@ -347,15 +420,17 @@
                         <p>
                             Закажи <span>4</span>
                             любые пиццы
+                        
                         </p>
                         <p>
                             - получи <span>пятую</span>
                             пиццу
+                        
                         </p>
                         <p>
                             <span>бесплатно</span>
                         </p>
-                        <button>ВЫБРАТЬ ПИЦЦЫ</button>
+                        <a href="pizza.html">ВЫБРАТЬ ПИЦЦЫ</a>
                     </div>
                 </div>
             </div>
@@ -369,15 +444,17 @@
                         <p>
                             Закажи <span>2</span>
                             любые пиццы
+                        
                         </p>
                         <p>
                             - получи <span>1 л </span>
                             Кока-Коллы
+                        
                         </p>
                         <p>
                             <span>бесплатно</span>
                         </p>
-                        <button>ВЫБРАТЬ ПИЦЦЫ</button>
+                        <a href="pizza.html">ВЫБРАТЬ ПИЦЦЫ</a>
                     </div>
                 </div>
             </div>
@@ -406,10 +483,10 @@
                             <a href="aboutCompanies.html">О компании</a>
                         </li>
                         <li>
-                            <a class="active" href="#">Связаться с руководством</a>
+                            <a class="active" id="guide">Связаться с руководством</a>
                         </li>
                         <li>
-                            <a href="#">Контакты</a>
+                            <a href="contacts.html">Контакты</a>
                         </li>
                     </ul>
                 </nav>

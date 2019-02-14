@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Оплата и доставка</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/stylePizza.css">
-    <link rel="stylesheet" href="css/styleKombo.css">
-    <link rel="stylesheet" href="css/styleDilevery.css">
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
-</head>
-<body>
-    <header>
+    <head>
+        <meta charset="UTF-8">
+        <title>Оплата и доставка</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/stylePizza.css">
+        <link rel="stylesheet" href="css/styleKombo.css">
+        <link rel="stylesheet" href="css/styleDilevery.css">
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+    </head>
+    <body>
+        <header>
             <div class="upperpanel">
                 <div class="phone">
                     <div>
@@ -42,9 +42,10 @@
                 <div class="shop">
                     <img src="img/White/07.Wallet.png" alt="">
                     <div>Корзина пуста</div>
-                    <div>
+                    <div class="tooltip" title="Сделайте заказ, чтобы получить бонусы">
                         <span>0</span>
                         бонусных баллов
+                    
                     </div>
                 </div>
             </div>
@@ -127,124 +128,195 @@
                 </nav>
             </div>
         </header>
-         <div class="bg-modal">
-             <div class="model-account">
+        <div class="bg-modal">
+            <div class="model-account">
                 <div class="registration-account">
-                   <a class="registration-button" href="#">Регистрация</a> 
-                   <img class = "close-account" src="img/close.png" alt="">
+                    <a class="registration-button" href="#">Регистрация</a>
+                    <img class="close-account" src="img/close.png" alt="">
                 </div>
                 <p>ВХОД</p>
                 <span>Номер телефона*</span>
-                <input id = "phone" type="tel" name="phone" value="+7(___)___-____">
+                <input id="phone" type="tel" name="phone" value="+7(___)___-____">
                 <p>Получить код в СМС</p>
                 <div class="block-password">
                     <span>Пароль или код из смс*</span>
-                    <input type="password" name="password" id = "password">
-                    <div class="showPassword" title="Показать пароль"></div>  
+                    <input type="password" name="password" id="password">
+                    <div class="showPassword" title="Показать пароль"></div>
                 </div>
                 <button>ВОЙТИ</button>
-            </div> 
+            </div>
             <div class="model-account-second">
                 <div class="in-account">
-                   <a class="in-button" href="#">Вход</a> 
-                   <img class = "close-account-second" src="img/close.png" alt="">
+                    <a class="in-button" href="#">Вход</a>
+                    <img class="close-account-second" src="img/close.png" alt="">
                 </div>
                 <p>Регистрация</p>
                 <p>Для регистрации введите номер телефона и нажмите на надпись «получить код в СМС». После этого введите код, и нажмите кнопку «Регистрация»</p>
                 <span>Номер телефона*</span>
-                <input id = "phone" type="tel" name="phone" value="+7(___)___-____">
+                <input id="phone" type="tel" name="phone" value="+7(___)___-____">
                 <p>Получить код в СМС</p>
                 <div class="block-password">
                     <span>Пароль или код из смс*</span>
-                    <input type="password" name="password" id = "password">
-                    <div class="showPassword" title="Показать пароль"></div>  
+                    <input type="password" name="password" id="password">
+                    <div class="showPassword" title="Показать пароль"></div>
                 </div>
                 <button>ВОЙТИ</button>
-            </div> 
+            </div>
         </div>
-          <div class="content">
+        <div class="bg-modal-guide">
+            <div class="model-account" id="model-account-guide">
+                <div class="registration-account">
+                    <img class="close-account-third" src="img/close.png" alt="">
+                </div>
+                <p>СВЯЗАТЬСЯ С РУКОВОДСТВОМ</p>
+                <span>Имя*</span>
+                <input type="text">
+                <span>Телефон*</span>
+                <input id="phoneGuide" type="tel" name="phone" value="+7(___)___-____">
+                <span>Текст сообщения*</span>
+                <textarea name="text" cols="32" rows="10"></textarea>
+                <button>Отправить</button>
+            </div>
+        </div>
+        <div class="content">
             <div class="catalogue">
                 <nav>
                     <ul>
-                        <li><a href="index.html">Главная</a></li>
+                        <li>
+                            <a href="index.html">Главная</a>
+                        </li>
                         <span>></span>
-                        <li><a href="Catalogue.html">Оплата и доставка</a></li>
+                        <li>
+                            <a href="Catalogue.html">Оплата и доставка</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
             <aside class="content-left">
-                    <div class="background-bazilik">
-                        <img src="img/bazilik.png" alt="">
-                    </div>
+                <div class="background-bazilik">
+                    <img src="img/bazilik.png" alt="">
+                </div>
             </aside>
         </div>
         <div class="content">
             <h3 class="header-kombo">Доставка</h3>
             <div class="content-center">
-            <img class="olives" src="img/olivki.png" alt="">
-            <img class="oregano" src="img/oregano.png" alt="">
-            <img class="background-muka" src="img/muka.png" alt="">
+                <img class="olives" src="img/olivki.png" alt="">
+                <img class="oregano" src="img/oregano.png" alt="">
+                <img class="background-muka" src="img/muka.png" alt="">
                 <div class="content-text">
                     <div>
                         <div>
-                            <p><span>"Наша пицца"</span> предлагает бесплатную доставку <span>готовых блюд</span> на любой вкус</p>
-                            <p>на дом и в офис по <span>городу Бресту</span></p>
+                            <p>
+                                <span>"Наша пицца"</span>
+                                предлагает бесплатную доставку <span>готовых блюд</span>
+                                на любой вкус
+                            </p>
+                            <p>
+                                на дом и в офис по <span>городу Бресту</span>
+                            </p>
                         </div>
                         <div>
-                            <p>доставка<span> бесплатна</span> при заказе <span>от 10 руб.</span></p>
-                            <p>при заказе на сумму<span>менее 10 руб.</span> стоимость доставки составляет <span>5 руб.</span></p>
+                            <p>
+                                доставка<span>бесплатна</span>
+                                при заказе <span>от 10 руб.</span>
+                            </p>
+                            <p>
+                                при заказе на сумму<span>менее 10 руб.</span>
+                                стоимость доставки составляет <span>5 руб.</span>
+                            </p>
                         </div>
-                        
                     </div>
                 </div>
             </div>
             <div class="content-center">
                 <div class="content-text">
-                   <div>
+                    <div>
                         <div>
-                            <p><span>Режим работы</span> службы доставки:</p>
-                            <p>прием заказов и доставка с <span>10:00 до 23:00, без выходных</span></p>
+                            <p>
+                                <span>Режим работы</span>
+                                службы доставки:
+                            </p>
+                            <p>
+                                прием заказов и доставка с <span>10:00 до 23:00, без выходных</span>
+                            </p>
                         </div>
                         <div>
-                            <p>Доставка еды осуществляется в течение <span>1 часа</span>в <span>любой район</span> города</p>
+                            <p>
+                                Доставка еды осуществляется в течение <span>1 часа</span>
+                                в <span>любой район</span>
+                                города
+                            </p>
                         </div>
                         <div>
-                            <p><span>Время доставки</span> может быть <span>увеличено</span> из-за:</p>
+                            <p>
+                                <span>Время доставки</span>
+                                может быть <span>увеличено</span>
+                                из-за:
+                            </p>
                         </div>
                         <div>
-                            <p><span>~</span> большого количества заказов</p>
-                            <p><span>~</span> сложной дорожной обстановки</p>
-                            <p><span>~</span> плохих погодных условий</p>
-                            <p><span>~</span> технических причин</p>
+                            <p>
+                                <span>~</span>
+                                большого количества заказов
+                            </p>
+                            <p>
+                                <span>~</span>
+                                сложной дорожной обстановки
+                            </p>
+                            <p>
+                                <span>~</span>
+                                плохих погодных условий
+                            </p>
+                            <p>
+                                <span>~</span>
+                                технических причин
+                            </p>
                         </div>
                         <div>
-                            <p>Об этом <span>диспетчер сообщает дополнительно при подтверждении заказа</span> по</p>
+                            <p>
+                                Об этом <span>диспетчер сообщает дополнительно при подтверждении заказа</span>
+                                по
+                            </p>
                             <p>телефону</p>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="content-center">
                 <div class="content-text">
                     <div>
                         <div>
-                            <p>Блюда готовятся к доставке только
-                            <span>после принятия и подтверждения</span></p> 
-                            <p><span>заказа диспетчером</span></p>
+                            <p>
+                                Блюда готовятся к доставке только
+                            <span>после принятия и подтверждения</span>
+                            </p>
+                            <p>
+                                <span>заказа диспетчером</span>
+                            </p>
                         </div>
                         <div>
                             <p>Заказ доставляет курьер в специальных сумках, в которые помещают</p>
                             <p>коробки и контейнеры для сохранности и поддержки температуры</p>
                         </div>
                         <div>
-                            <p>При заказе обязательно оставить <span>действующий контактный телефон</span></p>
+                            <p>
+                                При заказе обязательно оставить <span>действующий контактный телефон</span>
+                            </p>
                             <p>(со скрытых номеров заказы не принимаются), по которому будет </p>
-                            <p><span>подтвержден состав и общая сумма заказа</span></p>
+                            <p>
+                                <span>подтвержден состав и общая сумма заказа</span>
+                            </p>
                         </div>
                         <div>
-                            <p><span>Телефон должен быть доступен</span> до прибытия заказа по адресу </p>
-                            <p><span>для уточнения информации по доставке</span> диспетчером или курьером</p>
+                            <p>
+                                <span>Телефон должен быть доступен</span>
+                                до прибытия заказа по адресу 
+                            </p>
+                            <p>
+                                <span>для уточнения информации по доставке</span>
+                                диспетчером или курьером
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -254,30 +326,55 @@
                     <div>
                         <div>
                             <p>
-                            <span>Оплата заказа</span> принимается<span> наличными при получении заказа, банковской </span></p> 
-                            <p><span>картой онлайн, или банковской картой на месте</span> при получении заказа.</p>
+                                <span>Оплата заказа</span>
+                                принимается<span>наличными при получении заказа, банковской </span>
+                            </p>
+                            <p>
+                                <span>картой онлайн, или банковской картой на месте</span>
+                                при получении заказа.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-             <h3 class="header-kombo">Оплата</h3>
+            <h3 class="header-kombo">Оплата</h3>
             <div class="content-center">
                 <div class="content-text">
                     <div>
                         <div>
-                           <h4>Оплата банковской картой <span>Visa, MasterCard, Белкарт</span></h4>
-                           <h4>через систему <span>Assist Belarus</span></h4>
+                            <h4>
+                                Оплата банковской картой <span>Visa, MasterCard, Белкарт</span>
+                            </h4>
+                            <h4>
+                                через систему <span>Assist Belarus</span>
+                            </h4>
                         </div>
                         <div>
                             <p>
-                            <span>1. </span> Оплата производится <span>через интернет</span> в режиме реального времени</p> 
-                            <p>непосредственно <span>после оформления заказа</span></p>
+                                <span>1. </span>
+                                Оплата производится <span>через интернет</span>
+                                в режиме реального времени
+                            </p>
+                            <p>
+                                непосредственно <span>после оформления заказа</span>
+                            </p>
                         </div>
                         <div>
-                            <p><span>2. </span> Для совершения финансовой операции подходят карточки</p>
-                            <p>международных платежных систем <span>Visa (всех видов), MasterCard</span></p>
-                            <p><span>(в том числе Maestro),</span> эмитированные любым банком мира, в том числе</p>
-                            <p>эмитированные <span>АСБ "Беларусбанк",</span> а также <span>карты систем Белкарт</span></p>
+                            <p>
+                                <span>2. </span>
+                                Для совершения финансовой операции подходят карточки
+                            </p>
+                            <p>
+                                международных платежных систем <span>Visa (всех видов), MasterCard</span>
+                            </p>
+                            <p>
+                                <span>(в том числе Maestro),</span>
+                                эмитированные любым банком мира, в том числе
+                            </p>
+                            <p>
+                                эмитированные <span>АСБ "Беларусбанк",</span>
+                                а также <span>карты систем Белкарт</span>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -286,28 +383,50 @@
                 <div class="content-text">
                     <div>
                         <div>
-                            <h4 style="text-align: center;"> О процедуре оплаты по карточкам Белкарт</h4>
+                            <h4 style="text-align: center;">О процедуре оплаты по карточкам Белкарт</h4>
                         </div>
                         <div>
-                            <p>При выборе оплаты заказа
-                            <span>с помощью банковской карты,</span> обработка</p>
-                            <p>платежа (включая ввод номера банковской карты) производится<span> ООО</span></p>
-                            <p><span>"Компания электронных платежей "Ассист",</span> с использованием программно-</p>
-                            <p>аппаратного комплекса <span>системы электронных платежей Assist Belarus,</span></p>
+                            <p>
+                                При выборе оплаты заказа
+                            <span>с помощью банковской карты,</span>
+                                обработка
+                            </p>
+                            <p>
+                                платежа (включая ввод номера банковской карты) производится<span>ООО</span>
+                            </p>
+                            <p>
+                                <span>"Компания электронных платежей "Ассист",</span>
+                                с использованием программно-
+                            </p>
+                            <p>
+                                аппаратного комплекса <span>системы электронных платежей Assist Belarus,</span>
+                            </p>
                             <p>которая прошла международную сертификацию</p>
                         </div>
                         <div>
                             <p>В системе, обеспечивающей безопасность платежей, используется </p>
-                            <p><span>защищённый протокол TLS</span> для передачи конфиденциальной информации </p>
+                            <p>
+                                <span>защищённый протокол TLS</span>
+                                для передачи конфиденциальной информации 
+                            </p>
                             <p>от клиента на сервер и дальнейшей обработки в процессинговом центре. </p>
-                            <p>Это значит, что <span>конфиденциальные данные плательщика</span> (реквизиты карты, </p>
-                            <p>регистрационные данные и др.) <span>не поступают в интернет-магазин,</span>их </p>
+                            <p>
+                                Это значит, что <span>конфиденциальные данные плательщика</span>
+                                (реквизиты карты, 
+                            </p>
+                            <p>
+                                регистрационные данные и др.) <span>не поступают в интернет-магазин,</span>
+                                их 
+                            </p>
                             <p>обработка полностью защищена, и никто не может получить персональные и </p>
                             <p>банковские данные клиента</p>
                         </div>
                         <div>
                             <p>Кроме того, при обработке платежей по банковским картам, используется </p>
-                            <p>безопасная <span>технология 3D-Secure,</span> которую в обязательном порядке требуют </p>
+                            <p>
+                                безопасная <span>технология 3D-Secure,</span>
+                                которую в обязательном порядке требуют 
+                            </p>
                             <p>международные платёжные системы Visa и MasterCard</p>
                         </div>
                     </div>
@@ -317,33 +436,71 @@
                 <div class="content-text">
                     <div>
                         <div>
-                            <h4 style="text-align: center;"> Порядок оплаты:</h4>
+                            <h4 style="text-align: center;">Порядок оплаты:</h4>
                         </div>
                         <div>
-                            <p> Выбрать способ отплаты
-                            <span>картой on-line.</span> После нажатия на кнопку </p>
-                            <p><span>"Подтвердить и оплатить"</span> система направит вас на сайт провайдера</p>
-                            <p>электронных платежей<span>belassist.by,</span> обеспечивающего безопасность</p>
+                            <p>
+                                Выбрать способ отплаты
+                            <span>картой on-line.</span>
+                                После нажатия на кнопку 
+                            </p>
+                            <p>
+                                <span>"Подтвердить и оплатить"</span>
+                                система направит вас на сайт провайдера
+                            </p>
+                            <p>
+                                электронных платежей<span>belassist.by,</span>
+                                обеспечивающего безопасность
+                            </p>
                             <p>платежей. Авторизационный сервер устанавливает с покупателем </p>
                             <p>соединение по защищённому протоколу TLS и принимает от покупателя </p>
-                            <p><span>параметры его банковской карты</span> (номер карты, дата окончания действия </p>
+                            <p>
+                                <span>параметры его банковской карты</span>
+                                (номер карты, дата окончания действия 
+                            </p>
                             <p>карты, имя держателя карты в той транскрипции, как оно указано на </p>
-                            <p>банковской карте, а также <span>номер CVC2 либо CVV2,</span> указанные на обратной </p>
+                            <p>
+                                банковской карте, а также <span>номер CVC2 либо CVV2,</span>
+                                указанные на обратной 
+                            </p>
                             <p>стороне карты)</p>
                         </div>
                         <div>
-                            <p>Операция оплаты банковской картой онлайн полностью <span>конфиденциальна и </span></p>
-                            <p><span>безопасна.</span> Ваши персональные данные и реквизиты карточки вводятся не </p>
-                            <p>на странице нашего сайта, а на <span>авторизационной странице платежной </span></p>
-                            <p><span>системы.</span> Доступ к этим данным осуществляется по протоколу безопасной </p>
-                            <p>передачи данных TLS, также применяются <span>технологии безопасных интернет-</span></p>
-                            <p><span>платежей Verified by Visa и MasterCard SecureСode</span></p>
+                            <p>
+                                Операция оплаты банковской картой онлайн полностью <span>конфиденциальна и </span>
+                            </p>
+                            <p>
+                                <span>безопасна.</span>
+                                Ваши персональные данные и реквизиты карточки вводятся не 
+                            </p>
+                            <p>
+                                на странице нашего сайта, а на <span>авторизационной странице платежной </span>
+                            </p>
+                            <p>
+                                <span>системы.</span>
+                                Доступ к этим данным осуществляется по протоколу безопасной 
+                            </p>
+                            <p>
+                                передачи данных TLS, также применяются <span>технологии безопасных интернет-</span>
+                            </p>
+                            <p>
+                                <span>платежей Verified by Visa и MasterCard SecureСode</span>
+                            </p>
                         </div>
                         <div>
-                            <p>К оплате принимаются <span>карты платежных систем Visa, MasterCard и Белкарт,</span></p>
-                            <p>эмитированные любыми банками мира. Мы рекомендуем заранее <span>обратиться </span></p>
-                            <p><span>в свой банк,</span> чтобы удостовериться в том, что ваша карта <span>может быть </span></p>
-                            <p><span>использована для платежей в сети интернет</span></p>
+                            <p>
+                                К оплате принимаются <span>карты платежных систем Visa, MasterCard и Белкарт,</span>
+                            </p>
+                            <p>
+                                эмитированные любыми банками мира. Мы рекомендуем заранее <span>обратиться </span>
+                            </p>
+                            <p>
+                                <span>в свой банк,</span>
+                                чтобы удостовериться в том, что ваша карта <span>может быть </span>
+                            </p>
+                            <p>
+                                <span>использована для платежей в сети интернет</span>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -352,23 +509,49 @@
                 <div class="content-text">
                     <div>
                         <div>
-                            <p><span>Причины отказа в авторизации</span> могут быть следующими:</p>
+                            <p>
+                                <span>Причины отказа в авторизации</span>
+                                могут быть следующими:
+                            </p>
                         </div>
                         <div>
-                           <p><span>~</span> на карте недостаточно средств для оплаты заказа</p>
-                           <p><span>~</span> банк, выпустивший карточку покупателя, установил запрет на оплату в </p>
-                           <p><span>~</span> интернете</p>
-                           <p><span>~</span> истекло время ожидания ввода данных банковской карты</p>
-                           <p><span>~</span> введённые данные не были подтверждены вами на платежной странице, </p>
-                           <p>ошибка формата данных и т.д.</p>
+                            <p>
+                                <span>~</span>
+                                на карте недостаточно средств для оплаты заказа
+                            </p>
+                            <p>
+                                <span>~</span>
+                                банк, выпустивший карточку покупателя, установил запрет на оплату в 
+                            </p>
+                            <p>
+                                <span>~</span>
+                                интернете
+                            </p>
+                            <p>
+                                <span>~</span>
+                                истекло время ожидания ввода данных банковской карты
+                            </p>
+                            <p>
+                                <span>~</span>
+                                введённые данные не были подтверждены вами на платежной странице, 
+                            </p>
+                            <p>ошибка формата данных и т.д.</p>
                         </div>
                         <div>
-                            <p>В зависимости от причины отказа в авторизации <span>для решения вопроса</span></p>
+                            <p>
+                                В зависимости от причины отказа в авторизации <span>для решения вопроса</span>
+                            </p>
                             <p>вы можете:</p>
                         </div>
                         <div>
-                            <p><span>~</span> обратиться за разъяснениями в банк, выпустивший карточку покупателя</p>
-                            <p><span>~</span> в случае невозможности решения проблемы банком — повторить попытку </p>
+                            <p>
+                                <span>~</span>
+                                обратиться за разъяснениями в банк, выпустивший карточку покупателя
+                            </p>
+                            <p>
+                                <span>~</span>
+                                в случае невозможности решения проблемы банком — повторить попытку 
+                            </p>
                             <p>оплаты, воспользовавшись картой, выпущенной другим банком</p>
                         </div>
                     </div>
@@ -399,10 +582,10 @@
                             <a href="aboutCompanies.html">О компании</a>
                         </li>
                         <li>
-                            <a class="active" href="#">Связаться с руководством</a>
+                            <a class="active" id="guide">Связаться с руководством</a>
                         </li>
                         <li>
-                            <a href="#">Контакты</a>
+                            <a href="contacts.html">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -458,6 +641,5 @@
             </div>
         </section>
         <script type="text/javascript" src="script/script.js"></script>
-  
-</body>
+    </body>
 </html>

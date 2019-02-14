@@ -126,7 +126,53 @@ header {
 	text-decoration: underline;
 }
 
-.bg-modal {
+.tooltip {
+	border-bottom: 1px dashed #FCB800;
+	cursor: pointer;
+	position: relative;
+}
+
+.tooltip::before, .tooltip::after {
+	position: absolute;
+	display: block;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.tooltip::before {
+	content: attr(title);
+	width: 150px;
+	background: white;
+	color: black;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 16px;
+	z-index: 1;
+	right: 160px;
+}
+
+.tooltip::after {
+	content: "";
+	border-top: 10px solid white;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	width: 2px;
+	-ms-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	left: -33px;
+	bottom: 3px;
+	z-index: -1;
+}
+
+.tooltip:hover::before, .tooltip:hover::after {
+	visibility: visible;
+	opacity: 1;
+}
+
+.bg-modal, .bg-modal-guide  {
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -137,7 +183,7 @@ header {
 	-webkit-background: rgba(0, 0, 0, 0.7);
 	-ms-background: rgba(0, 0, 0, 0.7);
 	color: #282828;
-	z-index: 6;
+	z-index: 150;
 	overflow: hidden;
 	letter-spacing: 1px;
 	-ms-display: none;
@@ -157,6 +203,7 @@ header {
 	background: rgba(255, 255, 255);
 	border-radius: 5px;
 	box-sizing: border-box;
+	z-index: 160;
 }
 
 .model-account-second {
@@ -228,6 +275,18 @@ header {
 	-ms-margin-left: 20px;
 	margin-left: 20px;
 	font-size: 13px;
+	color: #7D7D7D;
+}
+
+.model-account textarea {
+	border: 1px solid #FCB800;
+	-ms-margin-left: 20px;
+	margin-left: 20px;
+	font-size: 18px;
+	border-radius: 5px;
+	outline: none;
+	-ms-margin-top: 5px;
+	margin-top: 5px;
 	color: #7D7D7D;
 }
 
@@ -418,11 +477,10 @@ header {
 	margin: 45px 0px 0px 135px;
 }
 
-.button-banner button {
+.button-banner a {
 	-ms-background:  black;
 	-moz-background:  black;
 	background: black;
-	text-transform: uppercase;
 	height: 60px;
 	border: 2px solid #FCB800;
 	width: 190px;
@@ -430,9 +488,11 @@ header {
 	border-radius: 5px;
 	font-size: 20px;
 	color: white;
+	text-decoration: none;
+	padding: 11px 40px;
 }
 
-.button-banner button:hover {
+.button-banner a:hover{
 	-ms-background:  #FCB800;
 	-moz-background:  #FCB800;
 	background: #FCB800;
@@ -721,6 +781,7 @@ main {
 	-ms-margin: 100px 0px 0px 70px;
 	margin: 100px 0px 0px 70px;
 	font-size: 25px;
+
 }
 
 .content-text div p span {
@@ -728,7 +789,11 @@ main {
 	font-weight: bold;
 }
 
-.content-text div button {
+.content-text div a {
+	display: block;
+	text-align: center;
+	line-height: 60px;
+	text-decoration: none;
 	-ms-margin-top: 40px;
 	margin-top: 40px;
 	height: 60px;
@@ -744,7 +809,7 @@ main {
 	color: white;
 }
 
-.content-text div button:hover {
+.content-text div a:hover {
 	color: black;
 	-ms-background: #FCB800;
 	-moz-background: #FCB800;
@@ -835,6 +900,7 @@ footer {
 	-webkit-text-decoration: none;
 	-o-text-decoration: none;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 .footer-worktime {

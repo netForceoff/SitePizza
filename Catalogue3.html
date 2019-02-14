@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<title>Каталог</title>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/stylePizza.css">
-    <link rel="stylesheet" href="css/styleRolls.css">
-	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
-</head>
-<body>
-	<header>
+    <head>
+        <meta charset="UTF-8">
+        <title>Каталог</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/stylePizza.css">
+        <link rel="stylesheet" href="css/styleRolls.css">
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+    </head>
+    <body>
+        <header>
             <div class="upperpanel">
                 <div class="phone">
                     <div>
@@ -21,14 +21,14 @@
                 </div>
                 <div class="worktime">
                     <div>Работаем для вас
-				</div>
+                </div>
                     <div>
                         с <span>10:00</span>
                         до <span>23:00</span>
                     </div>
                 </div>
                 <div class="logo">
-                	<a href="index.html"></a>
+                    <a href="index.html"></a>
                     <img src="img/logo.png" alt="">
                 </div>
                 <div class="account">
@@ -41,9 +41,10 @@
                 <div class="shop">
                     <img src="img/White/07.Wallet.png" alt="">
                     <div>Корзина пуста</div>
-                    <div>
+                    <div class="tooltip" title="Сделайте заказ, чтобы получить бонусы">
                         <span>0</span>
                         бонусных баллов
+                    
                     </div>
                 </div>
             </div>
@@ -57,7 +58,7 @@
                                     <img class="img_menu" src="img/pizza.png">
                                 </div>
                                 <div class="menu_name">Пиццы
-						</div>
+                        </div>
                             </a>
                         </li>
                         <li class="MainMenu">
@@ -66,7 +67,7 @@
                                     <img class="img_menu" src="img/roll.png">
                                 </div>
                                 <div class="menu_name">Роллы
-						</div>
+                        </div>
                             </a>
                         </li>
                         <li class="MainMenu">
@@ -75,7 +76,7 @@
                                     <img class="img_menu" src="img/zakuski.png" alt="">
                                 </div>
                                 <div class="menu_name">Закуски
-						</div>
+                        </div>
                             </a>
                         </li>
                         <li class="MainMenu">
@@ -84,7 +85,7 @@
                                     <img class="img_menu" src="img/soup.png" alt="">
                                 </div>
                                 <div class="menu_name">Супы
-						</div>
+                        </div>
                             </a>
                         </li>
                         <li class="MainMenu">
@@ -93,7 +94,7 @@
                                     <img class="img_menu" src="img/kombo.png" alt="">
                                 </div>
                                 <div class="menu_name">Комбо обеды
-						</div>
+                        </div>
                             </a>
                         </li>
                         <li class="MainMenu">
@@ -102,7 +103,7 @@
                                     <img class="img_menu" src="img/desert.png" alt="">
                                 </div>
                                 <div class="menu_name">Десерты
-						</div>
+                        </div>
                             </a>
                         </li>
                         <li class="MainMenu">
@@ -119,226 +120,222 @@
                                     <img class="img_menu" src="img/sous.png" alt="">
                                 </div>
                                 <div class="menu_name">Соусы
-						</div>
+                        </div>
                             </a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </header>
-         <div class="bg-modal">
-             <div class="model-account">
+        <div class="bg-modal">
+            <div class="model-account">
                 <div class="registration-account">
-                   <a class="registration-button" href="#">Регистрация</a> 
-                   <img class = "close-account" src="img/close.png" alt="">
+                    <a class="registration-button" href="#">Регистрация</a>
+                    <img class="close-account" src="img/close.png" alt="">
                 </div>
                 <p>ВХОД</p>
                 <span>Номер телефона*</span>
-                <input id = "phone" type="tel" name="phone" value="+7(___)___-____">
+                <input id="phone" type="tel" name="phone" value="+7(___)___-____">
                 <p>Получить код в СМС</p>
                 <div class="block-password">
                     <span>Пароль или код из смс*</span>
-                    <input type="password" name="password" id = "password">
-                    <div class="showPassword" title="Показать пароль"></div>  
+                    <input type="password" name="password" id="password">
+                    <div class="showPassword" title="Показать пароль"></div>
                 </div>
                 <button>ВОЙТИ</button>
-            </div> 
+            </div>
             <div class="model-account-second">
                 <div class="in-account">
-                   <a class="in-button" href="#">Вход</a> 
-                   <img class = "close-account-second" src="img/close.png" alt="">
+                    <a class="in-button" href="#">Вход</a>
+                    <img class="close-account-second" src="img/close.png" alt="">
                 </div>
                 <p>Регистрация</p>
                 <p>Для регистрации введите номер телефона и нажмите на надпись «получить код в СМС». После этого введите код, и нажмите кнопку «Регистрация»</p>
                 <span>Номер телефона*</span>
-                <input id = "phone" type="tel" name="phone" value="+7(___)___-____">
+                <input id="phone" type="tel" name="phone" value="+7(___)___-____">
                 <p>Получить код в СМС</p>
                 <div class="block-password">
                     <span>Пароль или код из смс*</span>
-                    <input type="password" name="password" id = "password">
-                    <div class="showPassword" title="Показать пароль"></div>  
+                    <input type="password" name="password" id="password">
+                    <div class="showPassword" title="Показать пароль"></div>
                 </div>
                 <button>ВОЙТИ</button>
-            </div> 
+            </div>
         </div>
-		  <div class="content">
-		  	<div class="catalogue">
-		  		<nav>
-		  			<ul>
-		  				<li><a href="index.html">Главная</a></li>
-		  				<span>></span>
-		  				<li><a href="#">Каталог</a></li>
-		  			</ul>
-		  		</nav>
-		  	</div>
+        <div class="bg-modal-guide">
+            <div class="model-account" id="model-account-guide">
+                <div class="registration-account">
+                    <img class="close-account-third" src="img/close.png" alt="">
+                </div>
+                <p>СВЯЗАТЬСЯ С РУКОВОДСТВОМ</p>
+                <span>Имя*</span>
+                <input type="text">
+                <span>Телефон*</span>
+                <input id="phoneGuide" type="tel" name="phone" value="+7(___)___-____">
+                <span>Текст сообщения*</span>
+                <textarea name="text" cols="32" rows="10"></textarea>
+                <button>Отправить</button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="catalogue">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Главная</a>
+                        </li>
+                        <span>></span>
+                        <li>
+                            <a href="#">Каталог</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
             <h2 class="exception" style="margin-left: 250px">Каталог</h2>
             <aside class="content-left">
-            	<div class="scroll-box">
-            		<div class="filter-box">
-            			<div class="filter-box-content">
-            				<img src="img/menu (1).png" class="image-filter-box" alt="">
-            		Фильтры
-            			</div>
-            			
-            	</div>
-            	<div class="select-box">
-            		<div class="close-box">
-            		</div>
-            	<form action="" method="get">
-            		<div class="filter_head">
-            			<span>СТИКЕР</span>
-            		</div>
-            		<div class="filter_box">
-            			<div class="filter_item">
-            				<input type="checkbox" id = "filter_new" class="checkbox_f">
-            				<label for="filter_new">
-            					Новинка
-            				</label>
-            			</div>
-            			<div class="filter_item">
-            				<input type="checkbox" id = "filter_hit" class="checkbox_f">
-            				<label for="filter_hit">
-            					Хит
-            				</label>
-            			</div>
-            			<div class="filter_item">
-            				<input type="checkbox" id = "filter_kids" class="checkbox_f">
-            				<label for="filter_kids">
-            					Детям
-            				</label>
-            			</div>
-            			<div class="filter_item">
-            				<input type="checkbox" id = "filter_acute" class="checkbox_f">
-            				<label for="filter_acute">
-            					Острое
-            				</label>
-            			</div>
-            		</div>
-            		<div class="desktop">
-            			<div class="filter_head">
-            			<span>ИНГРЕДИЕНТЫ</span>
-            		</div>
-            		<div class="filter_box">
-            			<div class="filter_item">
-            				<input type="checkbox" id = "filter_pineapple" class="checkbox_f">
-            				<label for="filter_pineapple">
-            					Ананас
-            				</label>
-            			</div>
-            			<div class="filter_item">
-            				<input type="checkbox" id = "filter_bacon" class="checkbox_f">
-            				<label for="filter_bacon">
-            					Бекон
-            				</label>
-            			</div>
-            			<div class="filter_item">
-            				<input type="checkbox" id = "filter_boiled_pork" class="checkbox_f">
-            				<label for="filter_boiled_pork">
-            					Буженина
-            				</label>
-            			</div>
-            			<div class="filter_item">
-            				<input type="checkbox" id = "filter_ham" class="checkbox_f">
-            				<label for="filter_ham">
-            					Ветчина
-            				</label>
-            			</div>
-            			<div class="filter_item">
-            				<input type="checkbox" id = "filter_Beef" class="checkbox_f">
-            				<label for="filter_Beef">
-            					Говядина
-            				</label>
-            			</div>
-            			<div class="filter_item">
-            				<input type="checkbox" id = "filter_mushrooms" class="checkbox_f">
-            				<label for="filter_mushrooms">
-            					Грибы
-            				</label>
-            			</div>
-            			<div class="filter_item">
-            				<input type="checkbox" id = "filter_chicken" class="checkbox_f">
-            				<label for="filter_chicken">
-            					Курица
-            				</label>
-            			</div>
-            			<div class="filter_item">
-            				<input type="checkbox" id = "filter_pickled_cucumber" class="checkbox_f">
-            				<label for="filter_pickled_cucumber">Марин.
-            				огурцы
-            				</label>
-            			</div>
-            			<div class="filter_item">
-            				<input type="checkbox" id = "filter_pepperoni" class="checkbox_f">
-            				<label for="filter_pepperoni">
-            					Пепперони
-            				</label>
-            			</div>
-            			<div class="filter_item">
-            				<input type="checkbox" id = "filter_pepper" class="checkbox_f">
-            				<label for="filter_pepper">
-            					Перец "Халапеньо"
-            				</label>
-            			</div>
-            			<div class="filter_item">
-            				<input type="checkbox" id = "filter_sous" class="checkbox_f">
-            				<label for="filter_sous">
-            					соус "Чили"
-            				</label>
-            			</div>
-            			<div class="filter_item">
-            				<input type="checkbox" id = "filter_cheese_dor_blue" class="checkbox_f">
-            				<label for="filter_cheese_dor_blue">
-            					Сыр "Дор блю"
-            				</label>
-            			</div>
-            			<div class="filter_item">
-            				<input type="checkbox" id = "filter_cheese_mocarella" class="checkbox_f">
-            				<label for="filter_cheese_mocarella">
-            					Сыр "Моцарелла"
-            				</label>
-            			</div>
-            			<div class="filter_item">
-            				<input type="checkbox" id = "filter_cheese_parmesan" class="checkbox_f">
-            				<label for="filter_cheese_parmesan">
-            					Сыр "Пармезан"
-            				</label>
-            			</div>
-            			<div class="filter_item">
-            				<input type="checkbox" id = "filter_cheese_chedder" class="checkbox_f">
-            				<label for="filter_cheese_chedder">
-            					Сыр "Чеддер"
-            				</label>
-            			</div>
-            			<div class="filter_item">
-            				<input type="checkbox" id = "filter_tomats" class="checkbox_f">
-            				<label for="filter_tomats">
-            					Томаты
-            				</label>
-            			</div>
-            			<div class="filter_item">
-            				<input type="checkbox" id = "filter_duck" class="checkbox_f">
-            				<label for="filter_duck">
-            					Утка
-            				</label>
-            			</div>
-            			<div class="filter_item">
-            				<input type="checkbox" id = "filter_champignons" class="checkbox_f">
-            				<label for="filter_champignons">
-            					Шампиньоны
-            				</label>
-            			</div>
-            		</div>
-            		</div>
-            		<div class="reset_block">
-            			<button id = "buttonCloseBlock">Сбросить фильтры</button>
-            		</div>
-            	</form>
-            	</div>		
-            	</div>
+                <div class="scroll-box">
+                    <div class="filter-box">
+                        <div class="filter-box-content">
+                            <img src="img/menu (1).png" class="image-filter-box" alt="">Фильтры
+                        
+                        </div>
+                    </div>
+                    <div class="select-box">
+                        <div class="close-box"></div>
+                        <form action="" method="get">
+                            <div class="filter_head">
+                                <span>СТИКЕР</span>
+                            </div>
+                            <div class="filter_box">
+                                <div class="filter_item">
+                                    <input type="checkbox" id="filter_new" class="checkbox_f">
+                                    <label for="filter_new">Новинка
+                            </label>
+                                </div>
+                                <div class="filter_item">
+                                    <input type="checkbox" id="filter_hit" class="checkbox_f">
+                                    <label for="filter_hit">Хит
+                            </label>
+                                </div>
+                                <div class="filter_item">
+                                    <input type="checkbox" id="filter_kids" class="checkbox_f">
+                                    <label for="filter_kids">Детям
+                            </label>
+                                </div>
+                                <div class="filter_item">
+                                    <input type="checkbox" id="filter_acute" class="checkbox_f">
+                                    <label for="filter_acute">Острое
+                            </label>
+                                </div>
+                            </div>
+                            <div class="desktop">
+                                <div class="filter_head">
+                                    <span>ИНГРЕДИЕНТЫ</span>
+                                </div>
+                                <div class="filter_box">
+                                    <div class="filter_item">
+                                        <input type="checkbox" id="filter_pineapple" class="checkbox_f">
+                                        <label for="filter_pineapple">Ананас
+                            </label>
+                                    </div>
+                                    <div class="filter_item">
+                                        <input type="checkbox" id="filter_bacon" class="checkbox_f">
+                                        <label for="filter_bacon">Бекон
+                            </label>
+                                    </div>
+                                    <div class="filter_item">
+                                        <input type="checkbox" id="filter_boiled_pork" class="checkbox_f">
+                                        <label for="filter_boiled_pork">Буженина
+                            </label>
+                                    </div>
+                                    <div class="filter_item">
+                                        <input type="checkbox" id="filter_ham" class="checkbox_f">
+                                        <label for="filter_ham">Ветчина
+                            </label>
+                                    </div>
+                                    <div class="filter_item">
+                                        <input type="checkbox" id="filter_Beef" class="checkbox_f">
+                                        <label for="filter_Beef">Говядина
+                            </label>
+                                    </div>
+                                    <div class="filter_item">
+                                        <input type="checkbox" id="filter_mushrooms" class="checkbox_f">
+                                        <label for="filter_mushrooms">Грибы
+                            </label>
+                                    </div>
+                                    <div class="filter_item">
+                                        <input type="checkbox" id="filter_chicken" class="checkbox_f">
+                                        <label for="filter_chicken">Курица
+                            </label>
+                                    </div>
+                                    <div class="filter_item">
+                                        <input type="checkbox" id="filter_pickled_cucumber" class="checkbox_f">
+                                        <label for="filter_pickled_cucumber">Марин.
+                            огурцы
+                            </label>
+                                    </div>
+                                    <div class="filter_item">
+                                        <input type="checkbox" id="filter_pepperoni" class="checkbox_f">
+                                        <label for="filter_pepperoni">Пепперони
+                            </label>
+                                    </div>
+                                    <div class="filter_item">
+                                        <input type="checkbox" id="filter_pepper" class="checkbox_f">
+                                        <label for="filter_pepper">Перец "Халапеньо"
+                            </label>
+                                    </div>
+                                    <div class="filter_item">
+                                        <input type="checkbox" id="filter_sous" class="checkbox_f">
+                                        <label for="filter_sous">соус "Чили"
+                            </label>
+                                    </div>
+                                    <div class="filter_item">
+                                        <input type="checkbox" id="filter_cheese_dor_blue" class="checkbox_f">
+                                        <label for="filter_cheese_dor_blue">Сыр "Дор блю"
+                            </label>
+                                    </div>
+                                    <div class="filter_item">
+                                        <input type="checkbox" id="filter_cheese_mocarella" class="checkbox_f">
+                                        <label for="filter_cheese_mocarella">Сыр "Моцарелла"
+                            </label>
+                                    </div>
+                                    <div class="filter_item">
+                                        <input type="checkbox" id="filter_cheese_parmesan" class="checkbox_f">
+                                        <label for="filter_cheese_parmesan">Сыр "Пармезан"
+                            </label>
+                                    </div>
+                                    <div class="filter_item">
+                                        <input type="checkbox" id="filter_cheese_chedder" class="checkbox_f">
+                                        <label for="filter_cheese_chedder">Сыр "Чеддер"
+                            </label>
+                                    </div>
+                                    <div class="filter_item">
+                                        <input type="checkbox" id="filter_tomats" class="checkbox_f">
+                                        <label for="filter_tomats">Томаты
+                            </label>
+                                    </div>
+                                    <div class="filter_item">
+                                        <input type="checkbox" id="filter_duck" class="checkbox_f">
+                                        <label for="filter_duck">Утка
+                            </label>
+                                    </div>
+                                    <div class="filter_item">
+                                        <input type="checkbox" id="filter_champignons" class="checkbox_f">
+                                        <label for="filter_champignons">Шампиньоны
+                            </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reset_block">
+                                <button id="buttonCloseBlock">Сбросить фильтры</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
                 <div class="info">
-                	<div class="background-bazilik">
-                		<img src="img/bazilik.png" alt="">
-                	</div>
+                    <div class="background-bazilik">
+                        <img src="img/bazilik.png" alt="">
+                    </div>
                     <img src="img/sous/Датский.jpg" alt="">
                     <p>Соус</p>
                     <p>"Датский"</p>
@@ -404,7 +401,7 @@
                         </p>
                     </div>
                 </div>
-                 <div class="info">
+                <div class="info">
                     <img src="img/rolls/Хот.JPG" alt="">
                     <p>Роллы</p>
                     <p>"Хот"</p>
@@ -428,7 +425,7 @@
                 </div>
             </aside>
             <aside class="content-right">
-            	<img class="olives" src="img/olivki.png" alt="">
+                <img class="olives" src="img/olivki.png" alt="">
                 <div class="info">
                     <img src="img/sous/Барбекю.jpg" alt="">
                     <p>Соус</p>
@@ -479,7 +476,7 @@
                     <p>"Чизу"</p>
                     <button>280 руб.</button>
                     <a href="#">Быстрый заказ</a>
-                     <div class="retractable">
+                    <div class="retractable">
                         <h1>Состав:</h1>
                         <p>
                             Салями свежий<span>;</span>
@@ -495,7 +492,7 @@
                         </p>
                     </div>
                 </div>
-                 <div class="info">
+                <div class="info">
                     <img src="img/rolls/Хикару.JPG" alt="">
                     <p>Роллы</p>
                     <p>"Хикару"</p>
@@ -520,7 +517,7 @@
             </aside>
             <main>
                 <img class="mushrooms" src="img/griby.png" alt="">
-                <div id = "background-opacity" class="info">
+                <div id="background-opacity" class="info">
                     <img src="img/sous/Чесночный.jpg" alt="">
                     <p>Соус</p>
                     <p>"Чесночный"</p>
@@ -615,7 +612,7 @@
                         </p>
                     </div>
                 </div>
-                  <div class="info">
+                <div class="info">
                     <img src="img/rolls/Фудзияма.JPG" alt="">
                     <p>Роллы</p>
                     <p>"Фудзияма"</p>
@@ -638,12 +635,16 @@
                     </div>
                 </div>
                 <div class="conductor">
-                <span>странциа</span> <a href="Catalogue.html.html">1</a> <a href="Catalogue2.html">2</a>
-                <span class="active-conductor">3</span> <a href="Catalogue4.html">4</a> <a href="Catalogue5.html">5</a>
-            </div>
+                    <span>странциа</span>
+                    <a href="Catalogue.html.html">1</a>
+                    <a href="Catalogue2.html">2</a>
+                    <span class="active-conductor">3</span>
+                    <a href="Catalogue4.html">4</a>
+                    <a href="Catalogue5.html">5</a>
+                </div>
             </main>
-		</div>
-		<div class="content">
+        </div>
+        <div class="content">
             <h2>Выгодный заказ</h2>
             <img class="spoon" src="img/lozhka.png" alt="">
             <div class="content-center">
@@ -656,15 +657,17 @@
                         <p>
                             Закажи <span>4</span>
                             любые пиццы
+                        
                         </p>
                         <p>
                             - получи <span>пятую</span>
                             пиццу
+                        
                         </p>
                         <p>
                             <span>бесплатно</span>
                         </p>
-                        <button>ВЫБРАТЬ ПИЦЦЫ</button>
+                        <a href="pizza.html">ВЫБРАТЬ ПИЦЦЫ</a>
                     </div>
                 </div>
             </div>
@@ -678,15 +681,17 @@
                         <p>
                             Закажи <span>2</span>
                             любые пиццы
+                        
                         </p>
                         <p>
                             - получи <span>1 л </span>
                             Кока-Коллы
+                        
                         </p>
                         <p>
                             <span>бесплатно</span>
                         </p>
-                        <button>ВЫБРАТЬ ПИЦЦЫ</button>
+                        <a href="pizza.html">ВЫБРАТЬ ПИЦЦЫ</a>
                     </div>
                 </div>
             </div>
@@ -715,10 +720,10 @@
                             <a href="aboutCompanies.html">О компании</a>
                         </li>
                         <li>
-                            <a class="active" href="#">Связаться с руководством</a>
+                            <a class="active" id="guide">Связаться с руководством</a>
                         </li>
                         <li>
-                            <a href="#">Контакты</a>
+                            <a href="contacts.html">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -774,6 +779,5 @@
             </div>
         </section>
         <script type="text/javascript" src="script/script.js"></script>
-  
-</body>
+    </body>
 </html>

@@ -40,9 +40,10 @@
                 <div class="shop">
                     <img src="img/White/07.Wallet.png" alt="">
                     <div>Корзина пуста</div>
-                    <div>
+                    <div class="tooltip" title="Сделайте заказ, чтобы получить бонусы">
                         <span>0</span>
                         бонусных баллов
+                    
                     
                     </div>
                 </div>
@@ -126,40 +127,55 @@
                 </nav>
             </div>
         </header>
-         <div class="bg-modal">
-             <div class="model-account">
+        <div class="bg-modal">
+            <div class="model-account">
                 <div class="registration-account">
-                   <a class="registration-button" href="#">Регистрация</a> 
-                   <img class = "close-account" src="img/close.png" alt="">
+                    <a class="registration-button" href="#">Регистрация</a>
+                    <img class="close-account" src="img/close.png" alt="">
                 </div>
                 <p>ВХОД</p>
                 <span>Номер телефона*</span>
-                <input id = "phone" type="tel" name="phone" value="+7(___)___-____">
+                <input id="phone" type="tel" name="phone" value="+7(___)___-____">
                 <p>Получить код в СМС</p>
                 <div class="block-password">
                     <span>Пароль или код из смс*</span>
-                    <input type="password" name="password" id = "password">
-                    <div class="showPassword" title="Показать пароль"></div>  
+                    <input type="password" name="password" id="password">
+                    <div class="showPassword" title="Показать пароль"></div>
                 </div>
                 <button>ВОЙТИ</button>
-            </div> 
+            </div>
             <div class="model-account-second">
                 <div class="in-account">
-                   <a class="in-button" href="#">Вход</a> 
-                   <img class = "close-account-second" src="img/close.png" alt="">
+                    <a class="in-button" href="#">Вход</a>
+                    <img class="close-account-second" src="img/close.png" alt="">
                 </div>
                 <p>Регистрация</p>
                 <p>Для регистрации введите номер телефона и нажмите на надпись «получить код в СМС». После этого введите код, и нажмите кнопку «Регистрация»</p>
                 <span>Номер телефона*</span>
-                <input id = "phone" type="tel" name="phone" value="+7(___)___-____">
+                <input id="phone" type="tel" name="phone" value="+7(___)___-____">
                 <p>Получить код в СМС</p>
                 <div class="block-password">
                     <span>Пароль или код из смс*</span>
-                    <input type="password" name="password" id = "password">
-                    <div class="showPassword" title="Показать пароль"></div>  
+                    <input type="password" name="password" id="password">
+                    <div class="showPassword" title="Показать пароль"></div>
                 </div>
                 <button>ВОЙТИ</button>
-            </div> 
+            </div>
+        </div>
+        <div class="bg-modal-guide">
+            <div class="model-account" id="model-account-guide">
+                <div class="registration-account">
+                    <img class="close-account-third" src="img/close.png" alt="">
+                </div>
+                <p>СВЯЗАТЬСЯ С РУКОВОДСТВОМ</p>
+                <span>Имя*</span>
+                <input type="text">
+                <span>Телефон*</span>
+                <input id="phoneGuide" type="tel" name="phone" value="+7(___)___-____">
+                <span>Текст сообщения*</span>
+                <textarea name="text" cols="32" rows="10"></textarea>
+                <button>Отправить</button>
+            </div>
         </div>
         <div class="content">
             <div class="catalogue">
@@ -185,6 +201,7 @@
                     <div class="filter-box">
                         <div class="filter-box-content">
                             <img src="img/menu (1).png" class="image-filter-box" alt="">Фильтры
+                        
                         
                         </div>
                     </div>
@@ -332,10 +349,15 @@
                     <div class="retractable">
                         <h1>Состав:</h1>
                         <p>
-                            фирменный томатный соус "Наша пицца"<span>;</span> сочная утиная грудка "По-пекински" <span>;</span> хрустящие маринованные огурчики <span>;</span>
-                            золотистый лук фри <span>;</span> сыр "Моцарелла" <span>;</span> сладкий соус чили <span>;</span> средиземноморские травы <span>;</span>
+                            фирменный томатный соус "Наша пицца"<span>;</span>
+                            сочная утиная грудка "По-пекински" <span>;</span>
+                            хрустящие маринованные огурчики <span>;</span>
+                            золотистый лук фри <span>;</span>
+                            сыр "Моцарелла" <span>;</span>
+                            сладкий соус чили <span>;</span>
+                            средиземноморские травы <span>;</span>
                         </p>
-                       <p></p>
+                        <p></p>
                     </div>
                 </div>
                 <img class="background-salat" src="img/salat (1).png" alt="">
@@ -348,7 +370,13 @@
                     <div class="retractable">
                         <h1>Состав:</h1>
                         <p>
-                            фирменный красный соус "Наша пицца"<span>;</span> сыр "Моцарелла"<span>;</span> ветчина <span>;</span> маслины <span>;</span> оливково-чесночный соус <span>;</span> свежие шампиньоны <span>;</span> средиземноморские травы <span>;</span> 
+                            фирменный красный соус "Наша пицца"<span>;</span>
+                            сыр "Моцарелла"<span>;</span>
+                            ветчина <span>;</span>
+                            маслины <span>;</span>
+                            оливково-чесночный соус <span>;</span>
+                            свежие шампиньоны <span>;</span>
+                            средиземноморские травы <span>;</span>
                         </p>
                         <p></p>
                     </div>
@@ -362,7 +390,12 @@
                     <div class="retractable">
                         <h1>Состав:</h1>
                         <p>
-                            фирменный томатный соус "Наша пицца"<span>;</span> охотничьи колбаски<span>;</span> морковь "По-корейски" <span>;</span> хрустящие маринованные огурчики <span>;</span> сыр "Моцарелла" <span>;</span> средиземноморские травы <span>;</span> 
+                            фирменный томатный соус "Наша пицца"<span>;</span>
+                            охотничьи колбаски<span>;</span>
+                            морковь "По-корейски" <span>;</span>
+                            хрустящие маринованные огурчики <span>;</span>
+                            сыр "Моцарелла" <span>;</span>
+                            средиземноморские травы <span>;</span>
                         </p>
                         <p></p>
                     </div>
@@ -376,7 +409,13 @@
                     <div class="retractable">
                         <h1>Состав:</h1>
                         <p>
-                            фирменный томатный соус "Наша пицца"<span>;</span> сыр "Моцарелла"<span>;</span> колбаска "Пепперони" <span>;</span> куриная грудка <span>;</span> сыр "Пармезан" <span>;</span> соус сладкий чили <span>;</span> средиземноморские травы <span>;</span>
+                            фирменный томатный соус "Наша пицца"<span>;</span>
+                            сыр "Моцарелла"<span>;</span>
+                            колбаска "Пепперони" <span>;</span>
+                            куриная грудка <span>;</span>
+                            сыр "Пармезан" <span>;</span>
+                            соус сладкий чили <span>;</span>
+                            средиземноморские травы <span>;</span>
                         </p>
                         <p></p>
                     </div>
@@ -391,9 +430,16 @@
                     <div class="retractable">
                         <h1>Состав:</h1>
                         <p>
-                            сливочно-чесночный соус<span>;</span> запеченая буженина в печи<span>;</span> грибы гриль <span>;</span> сыр "Моцарелла" <span>;</span> золотистый лук фри <span>;</span> хрустящие маринованные огурчики <span>;</span> соус "Датский" <span>;</span> средиземноморские травы <span>;</span>
+                            сливочно-чесночный соус<span>;</span>
+                            запеченая буженина в печи<span>;</span>
+                            грибы гриль <span>;</span>
+                            сыр "Моцарелла" <span>;</span>
+                            золотистый лук фри <span>;</span>
+                            хрустящие маринованные огурчики <span>;</span>
+                            соус "Датский" <span>;</span>
+                            средиземноморские травы <span>;</span>
                         </p>
-                       <p></p>
+                        <p></p>
                     </div>
                 </div>
             </aside>
@@ -408,9 +454,18 @@
                     <div class="retractable">
                         <h1>Состав:</h1>
                         <p>
-                            фирменный красный соус "Наша пицца"<span>;</span> сыр "Моцарелла" <span>;</span> томаты свежие <span>;</span> сыр "Пармезан" <span>;</span> перец болгарский сладкий <span>;</span> курочка <span>;</span> буженина запеченая <span>;</span> говядина запеченая <span>;</span> бекон хрустящий <span>;</span> ветчина <span>;</span>
+                            фирменный красный соус "Наша пицца"<span>;</span>
+                            сыр "Моцарелла" <span>;</span>
+                            томаты свежие <span>;</span>
+                            сыр "Пармезан" <span>;</span>
+                            перец болгарский сладкий <span>;</span>
+                            курочка <span>;</span>
+                            буженина запеченая <span>;</span>
+                            говядина запеченая <span>;</span>
+                            бекон хрустящий <span>;</span>
+                            ветчина <span>;</span>
                         </p>
-                       <p></p>
+                        <p></p>
                     </div>
                 </div>
                 <img class="oregano" src="img/oregano.png" alt="">
@@ -423,7 +478,10 @@
                     <div class="retractable">
                         <h1>Состав:</h1>
                         <p>
-                            фирменный томатный соус "Наша пицца"<span>;</span> ветчина <span>;</span> сыр "Моцарелла" <span>;</span> средиземноморские травы <span>;</span>
+                            фирменный томатный соус "Наша пицца"<span>;</span>
+                            ветчина <span>;</span>
+                            сыр "Моцарелла" <span>;</span>
+                            средиземноморские травы <span>;</span>
                         </p>
                         <p></p>
                     </div>
@@ -438,9 +496,14 @@
                     <div class="retractable">
                         <h1>Состав:</h1>
                         <p>
-                            фирменный сливочно-чесночный соус<span>;</span> сыр "Моцарелла" <span>;</span> ветчина <span>;</span> свежие томаты <span>;</span> оливково-чесночный соус <span>;</span> средиземноморские травы <span>;</span>
+                            фирменный сливочно-чесночный соус<span>;</span>
+                            сыр "Моцарелла" <span>;</span>
+                            ветчина <span>;</span>
+                            свежие томаты <span>;</span>
+                            оливково-чесночный соус <span>;</span>
+                            средиземноморские травы <span>;</span>
                         </p>
-                       <p></p>
+                        <p></p>
                     </div>
                 </div>
                 <div class="info">
@@ -452,7 +515,15 @@
                     <div class="retractable">
                         <h1>Состав:</h1>
                         <p>
-                           фирменный томатный соус "Наша пицца"<span>;</span> сыр "Моцарелла" <span>;</span> болгарский перец сладкий <span>;</span> говядина запеченая в печи <span>;</span> шампиньоны свежие <span>;</span> перчик халапеньо <span>;</span> соус сладкий чили <span>;</span> сыр "Пармезан" <span>;</span> средиземноморские травы <span>;</span>
+                            фирменный томатный соус "Наша пицца"<span>;</span>
+                            сыр "Моцарелла" <span>;</span>
+                            болгарский перец сладкий <span>;</span>
+                            говядина запеченая в печи <span>;</span>
+                            шампиньоны свежие <span>;</span>
+                            перчик халапеньо <span>;</span>
+                            соус сладкий чили <span>;</span>
+                            сыр "Пармезан" <span>;</span>
+                            средиземноморские травы <span>;</span>
                         </p>
                         <p></p>
                     </div>
@@ -466,7 +537,11 @@
                     <div class="retractable">
                         <h1>Состав:</h1>
                         <p>
-                           фирменный томатный соус "Наша пицца"<span>;</span> сыр "Моцарелла" <span>;</span> ветчина <span>;</span> ананас консервированный <span>;</span> средиземноморские травы <span>;</span>
+                            фирменный томатный соус "Наша пицца"<span>;</span>
+                            сыр "Моцарелла" <span>;</span>
+                            ветчина <span>;</span>
+                            ананас консервированный <span>;</span>
+                            средиземноморские травы <span>;</span>
                         </p>
                         <p></p>
                     </div>
@@ -483,9 +558,17 @@
                     <div class="retractable">
                         <h1>Состав:</h1>
                         <p>
-                           фирменный сливочно-чесночный соус "Шпинат Альфредо"<span>;</span> сыр "Моцарелла" <span>;</span> куриная грудка <span>;</span> золотистый бекон <span>;</span> томаты свежие <span>;</span> шампиньоны <span>;</span> соус "Рэнч" <span>;</span> сыр "Пармезан" <span>;</span> травы средиземноморские <span>;</span>
+                            фирменный сливочно-чесночный соус "Шпинат Альфредо"<span>;</span>
+                            сыр "Моцарелла" <span>;</span>
+                            куриная грудка <span>;</span>
+                            золотистый бекон <span>;</span>
+                            томаты свежие <span>;</span>
+                            шампиньоны <span>;</span>
+                            соус "Рэнч" <span>;</span>
+                            сыр "Пармезан" <span>;</span>
+                            травы средиземноморские <span>;</span>
                         </p>
-                       <p></p>
+                        <p></p>
                     </div>
                 </div>
                 <div class="info">
@@ -497,9 +580,12 @@
                     <div class="retractable">
                         <h1>Состав:</h1>
                         <p>
-                            фирменный томатный соус "Наша пицца"<span>;</span> куриная грудка <span>;</span> сыр "Моцарелла" <span>;</span> средиземноморские травы<span>;</span>
+                            фирменный томатный соус "Наша пицца"<span>;</span>
+                            куриная грудка <span>;</span>
+                            сыр "Моцарелла" <span>;</span>
+                            средиземноморские травы<span>;</span>
                         </p>
-                       <p></p>
+                        <p></p>
                     </div>
                 </div>
                 <div class="info">
@@ -511,7 +597,13 @@
                     <div class="retractable">
                         <h1>Состав:</h1>
                         <p>
-                            фирменный сливочно-чесночный соус <span>;</span> нежнейшее куриное филе в хрустящей корочке <span>;</span> спелые итальянские томаты <span>;</span> сыр "Моцарелла" <span>;</span> сыр "Чеддер" <span>;</span> сыр "Пармезан" <span>;</span> средиземноморские травы <span>;</span>
+                            фирменный сливочно-чесночный соус <span>;</span>
+                            нежнейшее куриное филе в хрустящей корочке <span>;</span>
+                            спелые итальянские томаты <span>;</span>
+                            сыр "Моцарелла" <span>;</span>
+                            сыр "Чеддер" <span>;</span>
+                            сыр "Пармезан" <span>;</span>
+                            средиземноморские травы <span>;</span>
                         </p>
                         <p></p>
                     </div>
@@ -525,7 +617,11 @@
                     <div class="retractable">
                         <h1>Состав:</h1>
                         <p>
-                            фирменный томатный соус "Наша пицца"<span>;</span> сыр "Моцарелла" <span>;</span> колбаска "Пеперони" <span>;</span> сыр "Пармезан" <span>;</span> средиземноморские травы <span>;</span>
+                            фирменный томатный соус "Наша пицца"<span>;</span>
+                            сыр "Моцарелла" <span>;</span>
+                            колбаска "Пеперони" <span>;</span>
+                            сыр "Пармезан" <span>;</span>
+                            средиземноморские травы <span>;</span>
                         </p>
                         <p></p>
                     </div>
@@ -539,9 +635,13 @@
                     <div class="retractable">
                         <h1>Состав:</h1>
                         <p>
-                            фирменный томатный соус "Наша пицца"<span>;</span> сыр "Моцарелла" <span>;</span> куриная грудка <span>;</span> ананас консервированный <span>;</span> средиземноморские травы <span>;</span>
+                            фирменный томатный соус "Наша пицца"<span>;</span>
+                            сыр "Моцарелла" <span>;</span>
+                            куриная грудка <span>;</span>
+                            ананас консервированный <span>;</span>
+                            средиземноморские травы <span>;</span>
                         </p>
-                       <p></p>
+                        <p></p>
                     </div>
                 </div>
             </main>
@@ -557,7 +657,12 @@
                     <div class="retractable">
                         <h1>Состав:</h1>
                         <p>
-                            фирменный красный соус "Наша пицца"<span>;</span> сыр "Дор блю" <span>;</span> сыр "Моцарелла" <span>;</span> сыр "Чеддер" <span>;</span> сыр "Пармезан" <span>;</span> средиземноморские травы <span>;</span>
+                            фирменный красный соус "Наша пицца"<span>;</span>
+                            сыр "Дор блю" <span>;</span>
+                            сыр "Моцарелла" <span>;</span>
+                            сыр "Чеддер" <span>;</span>
+                            сыр "Пармезан" <span>;</span>
+                            средиземноморские травы <span>;</span>
                         </p>
                         <p></p>
                     </div>
@@ -573,7 +678,13 @@
                     <div class="retractable">
                         <h1>Состав:</h1>
                         <p>
-                            фирменный томатный соус "Наша пицца"<span>;</span> сыр "Моцарелла" <span>;</span> цыпленок-гриль <span>;</span> бекон<span>;</span> золотистый лук фри<span>;</span> соус барбекю<span>;</span> травы средиземноморские<span>;</span>
+                            фирменный томатный соус "Наша пицца"<span>;</span>
+                            сыр "Моцарелла" <span>;</span>
+                            цыпленок-гриль <span>;</span>
+                            бекон<span>;</span>
+                            золотистый лук фри<span>;</span>
+                            соус барбекю<span>;</span>
+                            травы средиземноморские<span>;</span>
                         </p>
                         <p></p>
                     </div>
@@ -594,16 +705,18 @@
                             Закажи <span>4</span>
                             любые пиццы
                         
+                        
                         </p>
                         <p>
                             - получи <span>пятую</span>
                             пиццу
                         
+                        
                         </p>
                         <p>
                             <span>бесплатно</span>
                         </p>
-                        <button>ВЫБРАТЬ ПИЦЦЫ</button>
+                        <a href="pizza.html">ВЫБРАТЬ ПИЦЦЫ</a>
                     </div>
                 </div>
             </div>
@@ -618,16 +731,18 @@
                             Закажи <span>2</span>
                             любые пиццы
                         
+                        
                         </p>
                         <p>
                             - получи <span>1 л </span>
                             Кока-Коллы
                         
+                        
                         </p>
                         <p>
                             <span>бесплатно</span>
                         </p>
-                        <button>ВЫБРАТЬ ПИЦЦЫ</button>
+                        <a href="pizza.html">ВЫБРАТЬ ПИЦЦЫ</a>
                     </div>
                 </div>
             </div>
@@ -656,10 +771,10 @@
                             <a href="aboutCompanies.html">О компании</a>
                         </li>
                         <li>
-                            <a class="active" href="#">Связаться с руководством</a>
+                            <a class="active" id="guide">Связаться с руководством</a>
                         </li>
                         <li>
-                            <a href="#">Контакты</a>
+                            <a href="contacts.html">Контакты</a>
                         </li>
                     </ul>
                 </nav>

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Оплата и доставка</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/stylePizza.css">
-    <link rel="stylesheet" href="css/styleKombo.css">
-    <link rel="stylesheet" href="css/styleDilevery.css">
-    <link rel="stylesheet" href="css/styleBonusProgramms.css">
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
-</head>
-<body>
-    <header>
+    <head>
+        <meta charset="UTF-8">
+        <title>Оплата и доставка</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/stylePizza.css">
+        <link rel="stylesheet" href="css/styleKombo.css">
+        <link rel="stylesheet" href="css/styleDilevery.css">
+        <link rel="stylesheet" href="css/styleBonusProgramms.css">
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+    </head>
+    <body>
+        <header>
             <div class="upperpanel">
                 <div class="phone">
                     <div>
@@ -43,9 +43,10 @@
                 <div class="shop">
                     <img src="img/White/07.Wallet.png" alt="">
                     <div>Корзина пуста</div>
-                    <div>
+                    <div class="tooltip" title="Сделайте заказ, чтобы получить бонусы">
                         <span>0</span>
                         бонусных баллов
+                    
                     </div>
                 </div>
             </div>
@@ -128,101 +129,151 @@
                 </nav>
             </div>
         </header>
-         <div class="bg-modal">
-             <div class="model-account">
+        <div class="bg-modal">
+            <div class="model-account">
                 <div class="registration-account">
-                   <a class="registration-button" href="#">Регистрация</a> 
-                   <img class = "close-account" src="img/close.png" alt="">
+                    <a class="registration-button" href="#">Регистрация</a>
+                    <img class="close-account" src="img/close.png" alt="">
                 </div>
                 <p>ВХОД</p>
                 <span>Номер телефона*</span>
-                <input id = "phone" type="tel" name="phone" value="+7(___)___-____">
+                <input id="phone" type="tel" name="phone" value="+7(___)___-____">
                 <p>Получить код в СМС</p>
                 <div class="block-password">
                     <span>Пароль или код из смс*</span>
-                    <input type="password" name="password" id = "password">
-                    <div class="showPassword" title="Показать пароль"></div>  
+                    <input type="password" name="password" id="password">
+                    <div class="showPassword" title="Показать пароль"></div>
                 </div>
                 <button>ВОЙТИ</button>
-            </div> 
+            </div>
             <div class="model-account-second">
                 <div class="in-account">
-                   <a class="in-button" href="#">Вход</a> 
-                   <img class = "close-account-second" src="img/close.png" alt="">
+                    <a class="in-button" href="#">Вход</a>
+                    <img class="close-account-second" src="img/close.png" alt="">
                 </div>
                 <p>Регистрация</p>
                 <p>Для регистрации введите номер телефона и нажмите на надпись «получить код в СМС». После этого введите код, и нажмите кнопку «Регистрация»</p>
                 <span>Номер телефона*</span>
-                <input id = "phone" type="tel" name="phone" value="+7(___)___-____">
+                <input id="phone" type="tel" name="phone" value="+7(___)___-____">
                 <p>Получить код в СМС</p>
                 <div class="block-password">
                     <span>Пароль или код из смс*</span>
-                    <input type="password" name="password" id = "password">
-                    <div class="showPassword" title="Показать пароль"></div>  
+                    <input type="password" name="password" id="password">
+                    <div class="showPassword" title="Показать пароль"></div>
                 </div>
                 <button>ВОЙТИ</button>
-            </div> 
+            </div>
         </div>
-          <div class="content">
+        <div class="bg-modal-guide">
+            <div class="model-account" id="model-account-guide">
+                <div class="registration-account">
+                    <img class="close-account-third" src="img/close.png" alt="">
+                </div>
+                <p>СВЯЗАТЬСЯ С РУКОВОДСТВОМ</p>
+                <span>Имя*</span>
+                <input type="text">
+                <span>Телефон*</span>
+                <input id="phoneGuide" type="tel" name="phone" value="+7(___)___-____">
+                <span>Текст сообщения*</span>
+                <textarea name="text" cols="32" rows="10"></textarea>
+                <button>Отправить</button>
+            </div>
+        </div>
+        <div class="content">
             <div class="catalogue">
                 <nav>
                     <ul>
-                        <li><a href="index.html">Главная</a></li>
+                        <li>
+                            <a href="index.html">Главная</a>
+                        </li>
                         <span>></span>
-                        <li><a href="Catalogue.html">Бонусная программа</a></li>
+                        <li>
+                            <a href="Catalogue.html">Бонусная программа</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
             <aside class="content-left">
-                    <div class="background-bazilik">
-                        <img src="img/bazilik.png" alt="">
-                    </div>
+                <div class="background-bazilik">
+                    <img src="img/bazilik.png" alt="">
+                </div>
             </aside>
         </div>
         <div class="content">
-            <h3 class="header-kombo">Бонусная программа <span>"Наша пицца"</span></h3>
+            <h3 class="header-kombo">
+                Бонусная программа <span>"Наша пицца"</span>
+            </h3>
             <div class="content-center">
-            <img class="olives" src="img/olivki.png" alt="">
-            <img class="oregano" src="img/oregano.png" alt="">
-            <img class="background-muka" src="img/muka.png" alt="">
+                <img class="olives" src="img/olivki.png" alt="">
+                <img class="oregano" src="img/oregano.png" alt="">
+                <img class="background-muka" src="img/muka.png" alt="">
                 <div class="content-text">
                     <div>
                         <div>
                             <h4 style="text-align: center;">Как получить бонусы?</h4>
                         </div>
                         <div>
-                            <p>За каждый заказ вы получите <span>бонусные баллы</span> в ваш Личный кабинет <span>(10% от суммы заказа)</span>.</p>
-                            <p>Например, за заказ в<span> 10 руб.</span> вы получите <span>10 баллов</span>, что является эквивалентом <span>1 руб.</span></p>
-                            <p>Если в заказе использован <span>промокод</span>, бонусные баллы за этот заказ <span>не начисляются.</span></p>
-                        </div>     
+                            <p>
+                                За каждый заказ вы получите <span>бонусные баллы</span>
+                                в ваш Личный кабинет <span>(10% от суммы заказа)</span>
+                                .
+                            </p>
+                            <p>
+                                Например, за заказ в<span>10 руб.</span>
+                                вы получите <span>10 баллов</span>
+                                , что является эквивалентом <span>1 руб.</span>
+                            </p>
+                            <p>
+                                Если в заказе использован <span>промокод</span>
+                                , бонусные баллы за этот заказ <span>не начисляются.</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="content-center">
                 <div class="content-text">
-                   <div>
                     <div>
-                        <h4 style="text-align: center;">Как заказывать выгодно?</h4>
-                    </div>
                         <div>
-                            <p>Вы можете <span>оплачивать бонусами часть стоимости</span> будущих заказов.</p>
-                            <p>Например, накопив <span>100 бонусных баллов</span> вы можете оплатить <span> 50% заказа</span>,</p>
-                            <p>т.е. <span>50 бонусных баллов</span>, что является эквивалентом <span>5 руб</span></p>
+                            <h4 style="text-align: center;">Как заказывать выгодно?</h4>
+                        </div>
+                        <div>
+                            <p>
+                                Вы можете <span>оплачивать бонусами часть стоимости</span>
+                                будущих заказов.
+                            </p>
+                            <p>
+                                Например, накопив <span>100 бонусных баллов</span>
+                                вы можете оплатить <span>50% заказа</span>
+                                ,
+                            </p>
+                            <p>
+                                т.е. <span>50 бонусных баллов</span>
+                                , что является эквивалентом <span>5 руб</span>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="content-center">
                 <div class="content-text">
                     <div>
                         <div>
-                           <h4 style="text-align: center;">Как получать больше бонусов?</h4>
+                            <h4 style="text-align: center;">Как получать больше бонусов?</h4>
                         </div>
                         <div>
-                            <p><span>Каждый месяц</span> мы проводим розыгрыши в нашей <span>группе Вконтакте</span></p>
-                            <p>и <span>дарим бонусные баллы</span> активным клиентам. <span> Регистрируйтесь </span> на сайте,</p>
-                            <p>чтобы получать бонусы и <span>следите за розыгрышами и акциями.</span></p>
+                            <p>
+                                <span>Каждый месяц</span>
+                                мы проводим розыгрыши в нашей <span>группе Вконтакте</span>
+                            </p>
+                            <p>
+                                и <span>дарим бонусные баллы</span>
+                                активным клиентам. <span>Регистрируйтесь </span>
+                                на сайте,
+                            </p>
+                            <p>
+                                чтобы получать бонусы и <span>следите за розыгрышами и акциями.</span>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -252,10 +303,10 @@
                             <a href="aboutCompanies.html">О компании</a>
                         </li>
                         <li>
-                            <a class="active" href="#">Связаться с руководством</a>
+                            <a class="active" id="guide">Связаться с руководством</a>
                         </li>
                         <li>
-                            <a href="#">Контакты</a>
+                            <a href="contacts.html">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -311,6 +362,5 @@
             </div>
         </section>
         <script type="text/javascript" src="script/script.js"></script>
-  
-</body>
+    </body>
 </html>

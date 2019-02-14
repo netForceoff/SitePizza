@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Оплата и доставка</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/stylePizza.css">
-    <link rel="stylesheet" href="css/styleKombo.css">
-    <link rel="stylesheet" href="css/styleDilevery.css">
-    <link rel="stylesheet" href="css/styleAboutCompanies.css">
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
-</head>
-<body>
-    <header>
+    <head>
+        <meta charset="UTF-8">
+        <title>Оплата и доставка</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/stylePizza.css">
+        <link rel="stylesheet" href="css/styleKombo.css">
+        <link rel="stylesheet" href="css/styleDilevery.css">
+        <link rel="stylesheet" href="css/styleAboutCompanies.css">
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+    </head>
+    <body>
+        <header>
             <div class="upperpanel">
                 <div class="phone">
                     <div>
@@ -43,9 +43,10 @@
                 <div class="shop">
                     <img src="img/White/07.Wallet.png" alt="">
                     <div>Корзина пуста</div>
-                    <div>
+                    <div class="tooltip" title="Сделайте заказ, чтобы получить бонусы">
                         <span>0</span>
                         бонусных баллов
+                    
                     </div>
                 </div>
             </div>
@@ -128,48 +129,67 @@
                 </nav>
             </div>
         </header>
-         <div class="bg-modal">
-             <div class="model-account">
+        <div class="bg-modal">
+            <div class="model-account">
                 <div class="registration-account">
-                   <a class="registration-button" href="#">Регистрация</a> 
-                   <img class = "close-account" src="img/close.png" alt="">
+                    <a class="registration-button" href="#">Регистрация</a>
+                    <img class="close-account" src="img/close.png" alt="">
                 </div>
                 <p>ВХОД</p>
                 <span>Номер телефона*</span>
-                <input id = "phone" type="tel" name="phone" value="+7(___)___-____">
+                <input id="phone" type="tel" name="phone" value="+7(___)___-____">
                 <p>Получить код в СМС</p>
                 <div class="block-password">
                     <span>Пароль или код из смс*</span>
-                    <input type="password" name="password" id = "password">
-                    <div class="showPassword" title="Показать пароль"></div>  
+                    <input type="password" name="password" id="password">
+                    <div class="showPassword" title="Показать пароль"></div>
                 </div>
                 <button>ВОЙТИ</button>
-            </div> 
+            </div>
             <div class="model-account-second">
                 <div class="in-account">
-                   <a class="in-button" href="#">Вход</a> 
-                   <img class = "close-account-second" src="img/close.png" alt="">
+                    <a class="in-button" href="#">Вход</a>
+                    <img class="close-account-second" src="img/close.png" alt="">
                 </div>
                 <p>Регистрация</p>
                 <p>Для регистрации введите номер телефона и нажмите на надпись «получить код в СМС». После этого введите код, и нажмите кнопку «Регистрация»</p>
                 <span>Номер телефона*</span>
-                <input id = "phone" type="tel" name="phone" value="+7(___)___-____">
+                <input id="phone" type="tel" name="phone" value="+7(___)___-____">
                 <p>Получить код в СМС</p>
                 <div class="block-password">
                     <span>Пароль или код из смс*</span>
-                    <input type="password" name="password" id = "password">
-                    <div class="showPassword" title="Показать пароль"></div>  
+                    <input type="password" name="password" id="password">
+                    <div class="showPassword" title="Показать пароль"></div>
                 </div>
                 <button>ВОЙТИ</button>
-            </div> 
+            </div>
         </div>
-          <div class="content">
+        <div class="bg-modal-guide">
+            <div class="model-account" id="model-account-guide">
+                <div class="registration-account">
+                    <img class="close-account-third" src="img/close.png" alt="">
+                </div>
+                <p>СВЯЗАТЬСЯ С РУКОВОДСТВОМ</p>
+                <span>Имя*</span>
+                <input type="text">
+                <span>Телефон*</span>
+                <input id="phoneGuide" type="tel" name="phone" value="+7(___)___-____">
+                <span>Текст сообщения*</span>
+                <textarea name="text" cols="32" rows="10"></textarea>
+                <button>Отправить</button>
+            </div>
+        </div>
+        <div class="content">
             <div class="catalogue">
                 <nav>
                     <ul>
-                        <li><a href="index.html">Главная</a></li>
+                        <li>
+                            <a href="index.html">Главная</a>
+                        </li>
                         <span>></span>
-                        <li><a href="Catalogue.html">О компании</a></li>
+                        <li>
+                            <a href="Catalogue.html">О компании</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -177,12 +197,14 @@
         <div class="content">
             <h3 class="header-kombo">О компании "Наша пицца"</h3>
             <div class="content-center">
-            <img class="oregano" src="img/oregano.png" alt="">
-            <img class="background-muka" src="img/muka.png" alt="">
+                <img class="oregano" src="img/oregano.png" alt="">
+                <img class="background-muka" src="img/muka.png" alt="">
                 <div class="content-text block_1">
                     <div>
                         <div>
-                            <h4>Компания «Наша пицца» <span>7 лет на рынке</span></h4>
+                            <h4>
+                                Компания «Наша пицца» <span>7 лет на рынке</span>
+                            </h4>
                             <h4>доставки вкусной еды</h4>
                         </div>
                         <div>
@@ -198,12 +220,17 @@
             </div>
             <div class="content-center">
                 <div class="content-text block_2">
-                   <div>
                     <div>
-                        <h4>Мы готовим <span>самые большие пиццы</span></h4>
-                        <h4><span>в Бресте</span> - диаметром 42 см и весом</h4>
-                        <h4>больше 1 кг</h4>
-                    </div>
+                        <div>
+                            <h4>
+                                Мы готовим <span>самые большие пиццы</span>
+                            </h4>
+                            <h4>
+                                <span>в Бресте</span>
+                                - диаметром 42 см и весом
+                            </h4>
+                            <h4>больше 1 кг</h4>
+                        </div>
                         <div>
                             <p>Доставляем пиццу в термоконтейнерах, поэтому </p>
                             <p>наша пицца всегда горячая. Бесплатно доставляем </p>
@@ -212,15 +239,18 @@
                     </div>
                 </div>
             </div>
-
             <div class="content-center">
                 <div class="content-text">
                     <div id="content-colums">
                         <div>
                             <img src="img/icon_1.png" alt="">
                             <h4>При приготовлении</h4>
-                            <h4>пиццы <span>не используем</span></h4>
-                            <h4><span>полуфабрикаты</span></h4>
+                            <h4>
+                                пиццы <span>не используем</span>
+                            </h4>
+                            <h4>
+                                <span>полуфабрикаты</span>
+                            </h4>
                             <p>Раскатываем тесто вручную </p>
                             <p>сразу после того, как принят </p>
                             <p>заказ.</p>
@@ -229,13 +259,17 @@
                             <img src="img/icon_2.png" alt="">
                             <h4>Секрет вкуса нашей</h4>
                             <h4>пиццы - настоящие</h4>
-                            <h4><span>итальянские рецептуры</span></h4>
+                            <h4>
+                                <span>итальянские рецептуры</span>
+                            </h4>
                             <p>И линейка фирменных соусов</p>
                             <p>из натуральных компонентов.</p>
                         </div>
                         <div>
                             <img src="img/icon_3.png" alt="">
-                            <h4>У нас <span>лучший выбор</span></h4>
+                            <h4>
+                                У нас <span>лучший выбор</span>
+                            </h4>
                             <h4>суши, роллов в городе.</h4>
                             <p>Также можно заказать салаты,</p>
                             <p>закуски, десерты, напитки,</p>
@@ -251,17 +285,20 @@
                     <div>
                         <div>
                             <h4>Готовим еду только из проверенных</h4>
-                            <h4>ингредиентов, <span>не используем вредные </span></h4>
-                            <h4><span>добавки.</span></h4>
+                            <h4>
+                                ингредиентов, <span>не используем вредные </span>
+                            </h4>
+                            <h4>
+                                <span>добавки.</span>
+                            </h4>
                         </div>
                         <div>
                             <p>Контролируем качество на каждом этапе</p>
                             <p>приготовления.</p>
                         </div>
-                        
                     </div>
                     <div>
-                       <img src="img/pizza4.png" alt=""> 
+                        <img src="img/pizza4.png" alt="">
                     </div>
                 </div>
             </div>
@@ -269,25 +306,33 @@
                 <div class="content-text block_3">
                     <div>
                         <div>
-                           <h4>Постоянно <span>улучшаем организацию </span></h4>
-                           <h4><span>производства и доставки продукта</span></h4>
+                            <h4>
+                                Постоянно <span>улучшаем организацию </span>
+                            </h4>
+                            <h4>
+                                <span>производства и доставки продукта</span>
+                            </h4>
                         </div>
                         <div>
-                            <p>Соблюдаем нормы гигиены. В компании </p> 
+                            <p>Соблюдаем нормы гигиены. В компании </p>
                             <p>работают только сертифицированные</p>
                             <p>повара. Сотрудники регулярно обновляют </p>
                             <p>знания, проходят обучение.</p>
                         </div>
                     </div>
                 </div>
-             </div>   
+            </div>
             <div class="content-center">
                 <div class="content-text">
                     <div id="content-colums">
                         <div>
                             <img src="img/icon_4.png" alt="">
-                            <h4><span>Поддерживаем</span></h4>
-                            <h4><span>обратную связь,</span></h4>
+                            <h4>
+                                <span>Поддерживаем</span>
+                            </h4>
+                            <h4>
+                                <span>обратную связь,</span>
+                            </h4>
                             <h4>учитываем мнение</h4>
                             <h4>покупателей</h4>
                             <p>Адекватно реагируем</p>
@@ -296,7 +341,9 @@
                         </div>
                         <div>
                             <img src="img/icon_5.png" alt="">
-                            <h4><span>Заботимся о клиентах:</span></h4>
+                            <h4>
+                                <span>Заботимся о клиентах:</span>
+                            </h4>
                             <h4>проводим акции,</h4>
                             <h4>которые выгодны,</h4>
                             <h4>прежде всего, нашим</h4>
@@ -306,27 +353,31 @@
                             <p>стоимости заказа.</p>
                         </div>
                         <div>
-                           <img src="img/icon_6.png" alt="">
-                           <h4>В компании <span>опытная</span></h4>
-                           <h4>команда сотрудников,</h4>
-                           <h4>средний возраст</h4>
-                           <h4>– 27 лет</h4>
-                           <p>Легко адаптируемся к</p>
-                           <p>изменениям на рынке,</p>
-                           <p>открыты новшествам,</p>
-                           <p>креативно подходим к</p>
-                           <p>решению задач.</p>
+                            <img src="img/icon_6.png" alt="">
+                            <h4>
+                                В компании <span>опытная</span>
+                            </h4>
+                            <h4>команда сотрудников,</h4>
+                            <h4>средний возраст</h4>
+                            <h4>– 27 лет</h4>
+                            <p>Легко адаптируемся к</p>
+                            <p>изменениям на рынке,</p>
+                            <p>открыты новшествам,</p>
+                            <p>креативно подходим к</p>
+                            <p>решению задач.</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="content-center">
                 <div class="content-text address-not-flex">
-                    <div id = "content-colums">
+                    <div id="content-colums">
                         <div class="address-content">
                             <div>
                                 <h4>Наш адрес</h4>
-                                <h4><span>г. Брест, ул. Пушкинская 23</span></h4>
+                                <h4>
+                                    <span>г. Брест, ул. Пушкинская 23</span>
+                                </h4>
                             </div>
                             <div>
                                 <h4>+375 (29) 222-22-14 (мобильный)</h4>
@@ -334,22 +385,30 @@
                             </div>
                             <div>
                                 <h4>E-mail</h4>
-                                <h4><span>info@nasha-pizza.by</span></h4>
+                                <h4>
+                                    <span>info@nasha-pizza.by</span>
+                                </h4>
                             </div>
                         </div>
                         <div class="address-content">
                             <div>
                                 <h4>Доставка по г. Бресту</h4>
-                                <h4><span>Бесплатная</span></h4>
+                                <h4>
+                                    <span>Бесплатная</span>
+                                </h4>
                             </div>
                             <div>
                                 <h4>Время работы доставки и </h4>
                                 <h4>прием заказов</h4>
-                                <h4><span>с 10:00 до 23:00</span></h4>
+                                <h4>
+                                    <span>с 10:00 до 23:00</span>
+                                </h4>
                             </div>
                             <div>
                                 <h4>Минимальная сумма заказа</h4>
-                                <h4><span>200 руб</span></h4>
+                                <h4>
+                                    <span>200 руб</span>
+                                </h4>
                             </div>
                         </div>
                     </div>
@@ -363,7 +422,6 @@
                             <img src="img/m3.jpg" alt="">
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
@@ -391,10 +449,10 @@
                             <a href="aboutCompanies.html">О компании</a>
                         </li>
                         <li>
-                            <a class="active" href="#">Связаться с руководством</a>
+                            <a class="active" id="guide">Связаться с руководством</a>
                         </li>
                         <li>
-                            <a href="#">Контакты</a>
+                            <a href="contacts.html">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -450,6 +508,5 @@
             </div>
         </section>
         <script type="text/javascript" src="script/script.js"></script>
-  
-</body>
+    </body>
 </html>

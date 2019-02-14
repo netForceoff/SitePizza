@@ -19,36 +19,63 @@ let whiteBackground = 'img/menu white.png';
 
 let accountButton = document.querySelector('.account');
 let windowModelAccount = document.querySelector('.bg-modal');
+let windowGuide = document.querySelector('.bg-modal-guide');
 let inBlock = document.querySelector('.model-account');
 let registrationBlock = document.querySelector('.model-account-second');
+let guideBlock = document.querySelector('.model-account-guide');
+let modelAcountGuide = document.getElementById('model-account-guide');
 
 let buttonCloseBlockAccount = document.querySelector('.close-account');
 let buttonCloseBlockAccountSecond = document.querySelector('.close-account-second');
+let buttonCloseBlockThird = document.querySelector('.close-account-third');
 let buttonForRegistration = document.querySelector('.registration-button');
 let buttonForIn = document.querySelector('.in-button');
 
 let inputPhone = document.getElementById('phone');
+let inputPhoneGuide = document.getElementById('phoneGuide');
 let inputPassword = document.getElementById('password');
 let buttonShowPassword = document.querySelector('.showPassword');
+
+let buttonGuide = document.querySelector('#guide');
 
 inputPhone.addEventListener('input', mask, false);
 inputPhone.addEventListener("focus", mask, false);
 inputPhone.addEventListener("blur", mask, false);
 
-buttonForIn.addEventListener('click', () => {
+inputPhoneGuide.addEventListener('input', mask, false);
+inputPhoneGuide.addEventListener("focus", mask, false);
+inputPhoneGuide.addEventListener("blur", mask, false);
+
+buttonCloseBlockThird.addEventListener('click', ()=>{
+    windowGuide.style.display = 'none';
+    document.body.style.overflowX = 'hidden';
+    document.body.style.overflowY = 'auto';
+}
+);
+
+buttonGuide.addEventListener('click', ()=>{
+    windowGuide.style.display = 'block';
+    windowGuide.style.top = window.pageYOffset + 'px';
+    document.body.style.overflow = 'hidden';
+    modelAcountGuide.style.top = "200px";
+}
+);
+
+buttonForIn.addEventListener('click', ()=>{
     registrationBlock.style.display = 'none';
     inBlock.style.display = 'block';
-});
+}
+);
 
-buttonForRegistration.addEventListener('click', () => {
+buttonForRegistration.addEventListener('click', ()=>{
     registrationBlock.style.display = 'block';
     inBlock.style.display = 'none';
-});
-
+}
+);
 
 buttonShowPassword.addEventListener('click', swapOnRed);
 
- function swapOnRed() {
+function swapOnRed() {
     buttonShowPassword.style.background = 'red';
     inputPassword.type = 'text';
     buttonShowPassword.removeEventListener('click', swapOnRed);
@@ -62,82 +89,94 @@ function swapOnGreen() {
     buttonShowPassword.addEventListener('click', swapOnRed);
 }
 
-
 function mask(event) {
-    var matrix = "+7 (___) ___ ____",
-    i = 0,
-    def = matrix.replace(/\D/g, ""),
-    val = this.value.replace(/\D/g, "");
+    var matrix = "+7 (___) ___ ____"
+      , i = 0
+      , def = matrix.replace(/\D/g, "")
+      , val = this.value.replace(/\D/g, "");
 
-    if (def.length >= val.length) val = def;
+    if (def.length >= val.length)
+        val = def;
 
     this.value = matrix.replace(/./g, function(a) {
         return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
     });
 
     if (event.type == "blur") {
-        if (this.value.length == 2) this.value = "";
-    } else setCursorPosition(this.value.length, this)
-};
-
-buttonCloseBlockAccount.addEventListener('click', () => {
+        if (this.value.length == 2)
+            this.value = "";
+    } else
+        setCursorPosition(this.value.length, this)
+}
+;
+buttonCloseBlockAccount.addEventListener('click', ()=>{
     windowModelAccount.style.display = 'none';
-     document.body.style.overflowX = 'hidden';
-     document.body.style.overflowY = 'auto';
-});
+    document.body.style.overflowX = 'hidden';
+    document.body.style.overflowY = 'auto';
+}
+);
 
-buttonCloseBlockAccountSecond.addEventListener('click', () => {
+buttonCloseBlockAccountSecond.addEventListener('click', ()=>{
     windowModelAccount.style.display = 'none';
-     document.body.style.overflowX = 'hidden';
-     document.body.style.overflowY = 'auto';
-});
+    document.body.style.overflowX = 'hidden';
+    document.body.style.overflowY = 'auto';
+}
+);
 
-accountButton.addEventListener('click', () => {
+accountButton.addEventListener('click', ()=>{
     windowModelAccount.style.display = 'block';
     document.body.style.overflow = 'hidden';
-});
+}
+);
 
 visitAndPaint(li, icons, a);
 openBox(box, selectBox);
 
 function giveActiveStatusToMenuItem(li, icons, a) {
-    li.forEach((elem, index) => {
-        elem.addEventListener('click', () => {
+    li.forEach((elem,index)=>{
+        elem.addEventListener('click', ()=>{
             icons[idnex].src = arrayWithImg[idnex];
             a[idnex].style.color = '#FCB800';
-        });
-    });
+        }
+        );
+    }
+    );
 }
 
 function visitAndPaint(li, icons, a) {
-    li.forEach((elem,idnex) => {
-        elem.addEventListener('mouseover', ()=> {
+    li.forEach((elem,idnex)=>{
+        elem.addEventListener('mouseover', ()=>{
             icons[idnex].src = arrayWithImg[idnex];
             a[idnex].style.color = '#FCB800';
             elem.removeEventListener('mouseover', this);
-        });
+        }
+        );
 
-        elem.addEventListener('mouseout', () => {
+        elem.addEventListener('mouseout', ()=>{
             icons[idnex].src = arrayWithImg2[idnex];
             a[idnex].style.color = 'white';
-        });
-    });
+        }
+        );
+    }
+    );
 }
 
-box.addEventListener('mouseover', () => {
+box.addEventListener('mouseover', ()=>{
     box.style.color = 'white';
     img.src = whiteBackground;
     box.removeEventListener('mouseover', this);
-});
+}
+);
 
-box.addEventListener('mouseout', () => {
+box.addEventListener('mouseout', ()=>{
     box.style.color = 'black';
     img.src = blackBackground;
-});
+}
+);
 
 function openBox(box, selectBox) {
     box.addEventListener('click', open);
-    
+
     function open() {
         selectBox.style.display = 'block';
         box.removeEventListener('click', open);
@@ -151,24 +190,25 @@ function openBox(box, selectBox) {
     }
 }
 
-
-buttonCloseBlock.addEventListener('click', () => {
+buttonCloseBlock.addEventListener('click', ()=>{
     for (let elem of checkboxAll) {
         elem.checked = false;
     }
     openBox(box, selectBox);
-});
+}
+);
 
-closeBox.addEventListener('click', () => {
+closeBox.addEventListener('click', ()=>{
     selectBox.style.display = 'none';
     openBox(box, selectBox);
-});
-
-window.onscroll = () => {
-    if (this.pageYOffset < 300) {
-    box.style.display = 'none';
-    selectBox.style.display = 'none';
-} else {
-    box.style.display = 'block';
 }
+);
+
+window.onscroll = ()=>{
+    if (this.pageYOffset < 300) {
+        box.style.display = 'none';
+        selectBox.style.display = 'none';
+    } else {
+        box.style.display = 'block';
+    }
 }
