@@ -8,19 +8,11 @@
 
 body {
 	background: url(../img/background.jpg) no-repeat center center;
-	-ms-background: url(../img/background.jpg) no-repeat center center;
-	-moz-background: url(../img/background.jpg) no-repeat center center;
-	-o-background: url(../img/background.jpg) no-repeat center center;
-	-webkit-background: url(../img/background.jpg) no-repeat center center;
 	font-size: 18px;
 	font-family: 'Sarabun', sans-serif;
 	color: white;
-
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    background-size: cover;
+ 	-ms-background-size: cover;
+ 	background-size: cover;
     overflow-x: hidden;
 }
 
@@ -36,12 +28,12 @@ header {
 .logo {
 	position: absolute;
 	top: 15px;
-	left: 50%;
+	left: 52%;
 	margin-left: -62px;
 }
 
 .logo a {
-	width: 125px;
+	max-width: 125px;
 	height: 100px;
 	position: absolute;
 }
@@ -141,7 +133,7 @@ header {
 
 .tooltip::before {
 	content: attr(title);
-	width: 150px;
+	max-width: 150px;
 	background: white;
 	color: black;
 	border-radius: 5px;
@@ -195,7 +187,7 @@ header {
 	z-index: 5;
 	left: 770px;
 	top: 290px;
-	width: 380px;
+	max-width: 380px;
 	-o-background: rgba(255, 255, 255);
 	-moz-background: rgba(255, 255, 255);
 	-webkit-background: rgba(255, 255, 255);
@@ -229,7 +221,7 @@ header {
 
 .model-account button, .model-account-second button {
 	height: 40px;
-	width: 340px;
+	max-width: 340px;
 	-ms-margin-left: 20px;
 	margin-left: 20px;
 	-ms-margin-bottom: 35px;
@@ -259,7 +251,7 @@ header {
 
 .model-account input, .model-account-second input {
 	height: 35px;
-	width: 338px;
+	max-width: 338px;
 	border: 1px solid #FCB800;
 	-ms-margin-left: 20px;
 	margin-left: 20px;
@@ -364,7 +356,8 @@ header {
 
 .upperpanel {
 	text-align: center;
-	width: 1300px;
+	max-width: 1300px;
+	width: 100%;
 	-ms-margin: 0px auto;
 	margin: 0px auto;
 }
@@ -376,9 +369,9 @@ header {
 	height: 100px;
 	-ms-margin: 30px auto;
 	margin: 30px auto;
-	width: 1300px;
+	max-width: 1300px;
+	width: 100%;
 	position: relative;
-	min-width: 1000px;
 }
 
 .lowerpannel nav ul {
@@ -435,7 +428,7 @@ header {
 /*Баннер */
 
 .banner {
-	width: 1400px;
+	max-width: 1400px;
 	height: 550px;
 	-ms-margin: 0px auto;
 	margin: 0px auto;
@@ -501,7 +494,7 @@ header {
 }
 
 .banner-second {
-	width: 1400px;
+	max-width: 1400px;
 	height: 550px;
 	-ms-margin: 0px auto;
 	-ms-margin-top: -35px;
@@ -533,7 +526,7 @@ header {
 /* Content */
 
 .content {
-	width: 1155px;
+	max-width: 1155px;
 	-ms-margin: 0px auto;
 	margin: 0px auto;
 	text-align: center;
@@ -550,7 +543,7 @@ header {
 }
 
 .info {
-	width: 345px;
+	max-width: 345px;
 	height: 491px;
 	-ms-margin-bottom: 45px;
 	margin-bottom: 45px;
@@ -580,7 +573,8 @@ header {
 }
 
 .info button{
-	width: 300px;
+	max-width: 300px;
+	width: 100%;
 	height: 65px;
 	border: 2px solid #FCB800;
 	border-radius: 5px;
@@ -637,7 +631,7 @@ header {
 }
 
 .retractable {
-	width: 345px;
+	max-width: 345px;
 	height: 0px;
 	-ms-background: black;
 	-moz-background: black;
@@ -769,7 +763,8 @@ main {
 }
 
 .content-text {
-	width: 470px;
+	max-width: 470px;
+	width: 100%;
 	-ms-background: black;
 	-moz-background: black;
 	background: black;
@@ -797,7 +792,7 @@ main {
 	-ms-margin-top: 40px;
 	margin-top: 40px;
 	height: 60px;
-	width: 300px;
+	max-width: 300px;
 	-ms-background: black;
 	-moz-background: black;
 	background: black;
@@ -834,7 +829,7 @@ footer {
 	margin: 0px auto;
 	-ms-margin-top: 250px;
 	margin-top: 250px;
-	width: 1400px;
+	max-width: 1400px;
 	overflow: hidden;
 	position: relative;
 }
@@ -960,7 +955,7 @@ footer {
 }
 
 .footer-licence {
-	width: 1400px;
+	max-width: 1400px;
 	-ms-margin: 0px auto;
 	margin: 0px auto;
 	-ms-margin-top: 50px;
@@ -985,3 +980,28 @@ footer {
 }
 
 
+@media screen and (min-width: 993px) and (max-width: 1024px) {
+	.lowerpannel {
+		width: 95%;
+	}
+
+	.lowerpannel nav ul li {
+		padding: 0 15px;
+	}
+
+	.phone {
+		padding-left: 25px;
+	}
+
+	.shop {
+		padding-right: 20px;
+	}
+
+	.account {
+		padding-right: 70px;
+	}
+
+	.banner {
+		width: 100%;
+	}
+}
